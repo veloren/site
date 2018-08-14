@@ -27,3 +27,5 @@ build_search_index = true
 
 [extra]
 # Put all your custom variables here
+
+feather_header_image = "/assets/header.png"
