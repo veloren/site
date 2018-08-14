@@ -1,8 +1,22 @@
 # The URL the site will be built for
 base_url = "https://veloren.net"
 
+# Site title and description
+title = "Veloren"
+description = "An open-world, open-source voxel RPG"
+
+# RSS feed
+generate_rss = true
+rss_limit = 50
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
+
+# Default language used in RSS and i18n
+default_language = "en"
+
+# Theme to use
+theme = "feather"
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Gutenberg
