@@ -25,7 +25,7 @@ To play the game, extract all files and run `voxygen`, the 3D frontend.
 
 If you want to host your own local server, run `server-cli` in the background.
 
-## Latest Nightly Release, 0.2.0
+## Latest Nightly Release
 
 [Download for Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/master/download?job=nightly-windows-debug)
 
