@@ -1,6 +1,6 @@
 [build]
-	base    = "docs"
-	publish = "docs/public"
+	base    = ""
+	publish = "public"
 	command = "gutenberg build"
 
 [build.environment]
