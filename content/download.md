@@ -3,8 +3,6 @@ title = "Download Veloren"
 description = "Download Veloren for a variety of platforms"
 +++
 
-*Although we do support MacOS, we do not currently provide builds for MacOS. If you wish to run Veloren on MacOS, you can [compile it yourself](https://gitlab.com/veloren/game/wikis/Developer's-Corner/Introduction).*
-
 ## Latest Stable Release, 0.1.0
 
 ### Windows x64
@@ -24,6 +22,16 @@ To play the game, extract all files and run `voxygen`, the 3D frontend.
 *Please Note: Voxygen currently has a command-line startup interface, so must be run from a terminal.*
 
 If you want to host your own local server, run `server-cli` in the background.
+
+### macOS
+
+[Download for macOS](/download/macos.zip)
+
+To run the game, extract all files and run `./voxygen`, the 3D frontend, from a terminal window.
+Unfortunately due to a keyboard key mapping issue you cannot move around in this version.
+
+*We do not currently provide a server build for macOS. If you wish to run a Veloren server on macOS, you can [compile it yourself](https://gitlab.com/veloren/game/wikis/Developer's-Corner/Introduction).*
+
 
 ## Latest Nightly Release
 
