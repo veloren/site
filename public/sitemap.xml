@@ -1,0 +1,26 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+            <loc>http://127.0.0.1:1111/blog/welcome/</loc>
+            
+                <lastmod>2018-08-14</lastmod>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/content/</loc>
+            
+        </url>
+    
+        <url>
+            <loc>http://127.0.0.1:1111/download/</loc>
+            
+        </url>
+    
+    
+        <url>
+            <loc>http://127.0.0.1:1111/</loc>
+        </url>
+    
+    
+</urlset>
