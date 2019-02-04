@@ -59,7 +59,7 @@
               <!-- TODO: modularize this so we don't repeat ourselves -->
               <div class='info'>
                 <span>{{ page.reading_time }} minute read</span>
-                {% if page.date %}
+                {% if page.date and page.title != "Welcome!" %}
                   <span class='divider'/>
                   <span>{{ page.date | date(format="%d %B %Y") }}</span>
                 {% endif %}
