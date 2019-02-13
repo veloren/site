@@ -8,6 +8,36 @@
       <meta name=”description” content=”Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress.”>
       <meta name=”robots” content=”index, follow”>
 
+      {% if page %}
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@velorenproject">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="The Veloren devblog website">
+        <meta name="twitter:image" content="https://veloren.net/logo.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Veloren" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{ page.permalink }}" />
+        <meta property="og:image" content="https://veloren.net/logo.png" />
+        <meta property="og:description" content="The Veloren devblog website" />
+      {% else %}
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@velorenproject">
+        <meta name="twitter:title" content="Veloren">
+        <meta name="twitter:description" content="The Veloren devblog website">
+        <meta name="twitter:image" content="https://veloren.net/logo.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Veloren" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://veloren.net/" />
+        <meta property="og:image" content="https://veloren.net/logo.png" />
+        <meta property="og:description" content="The Veloren devblog website" />
+      {% endif %}
+      
       <!-- Enable responsiveness on mobile devices-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
