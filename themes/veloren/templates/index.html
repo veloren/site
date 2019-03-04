@@ -13,7 +13,11 @@
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@velorenproject">
         <meta name="twitter:title" content="{{ page.title }}">
-        <meta name="twitter:description" content="The Veloren devblog website">
+        {% if page.description %}
+          <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+          <meta name="twitter:description" content="The Veloren devblog website">
+        {% endif %}
         <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/467861553178345502/547506321788764199/Logo_Square.png">
 
         <!-- Open Graph data -->
@@ -21,13 +25,21 @@
         <meta property="og:type" content="article" />
         <meta property="og:url" content="{{ page.permalink }}" />
         <meta property="og:image" content="https://cdn.discordapp.com/attachments/467861553178345502/547506321788764199/Logo_Square.png" />
-        <meta property="og:description" content="The Veloren devblog website" />
+        {% if page.description %}
+          <meta name="og:description" content="{{ page.description }}">
+        {% else %}
+          <meta name="og:description" content="The Veloren devblog website">
+        {% endif %}
       {% else %}
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="@velorenproject">
         <meta name="twitter:title" content="Veloren">
-        <meta name="twitter:description" content="The Veloren devblog website">
+        {% if page.description %}
+          <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+          <meta name="twitter:description" content="The Veloren devblog website">
+        {% endif %}
         <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/467861553178345502/547506321788764199/Logo_Square.png">
 
         <!-- Open Graph data -->
@@ -35,7 +47,11 @@
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://veloren.net/" />
         <meta property="og:image" content="https://cdn.discordapp.com/attachments/467861553178345502/547506321788764199/Logo_Square.png" />
-        <meta property="og:description" content="The Veloren devblog website" />
+        {% if page.description %}
+          <meta name="og:description" content="{{ page.description }}">
+        {% else %}
+          <meta name="og:description" content="The Veloren devblog website">
+        {% endif %}
       {% endif %}
       
       <!-- Enable responsiveness on mobile devices-->
