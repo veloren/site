@@ -14,6 +14,13 @@ Veloren currently in an early stage of development, but you can already play the
 
 We're pleased to say we've finally created a development blog (hint: you're reading it). On this blog, we'll regularly put up articles discussion various parts of Veloren's development, new additions, and a weekly *This week in Veloren*  update.
 
+# Join Us
+
+Veloren is open-source! Join us in making this game the best it can be.
+* [Gitlab - Grab the source](https://gitlab.com/veloren/veloren)
+* [Discord - Join the discussion](https://discord.gg/ecUxc9N) 
+* [Reddit - Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/) 
+
 # Download
 
 ## Latest Stable Release, 0.1.0
