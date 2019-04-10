@@ -7,11 +7,11 @@
     </section>
     <div class="posts">
       {% for tag in tags %}
-          <section>
-            <a class='header-link' href="{{tag.slug}}">
-              <h4 class="title"> {{ tag.name }} </h4>
-            </a>
-          </section>
+        <section>
+          <a class="header-link" href="{{tag.slug}}">
+            <h4 class="title"> {{ tag.name }} </h4>
+          </a>
+        </section>
         <hr/>
       {% endfor %}
     </div>
