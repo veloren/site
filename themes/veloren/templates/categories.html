@@ -7,11 +7,11 @@
     </section>
     <div class="posts">
       {% for category in categories %}
-          <section>
-            <a class='header-link' href="{{category.slug}}">
-              <h4 class="title"> {{ category.name }} </h4>
-            </a>
-          </section>
+        <section>
+          <a class="header-link" href="{{category.slug}}">
+            <h4 class="title"> {{ category.name }} </h4>
+          </a>
+        </section>
         <hr/>
       {% endfor %}
     </div>
