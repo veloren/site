@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-      <!-- SEO Meta Tags -->
-      <meta name=”description” content=”Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress.”>
-      <meta name=”robots” content=”index, follow”>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress.">
+    <meta name="robots" content="index, follow">
 
-      {% if page %}
-        <!-- Twitter Card data -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@velorenproject">
-        <meta name="twitter:title" content="{{ page.title }}">
-        {% if page.description %}
-          <meta name="twitter:description" content="{{ page.description }}">
-        {% else %}
-          <meta name="twitter:description" content="The Veloren devblog website">
-        {% endif %}
-        <meta name="twitter:image" content="/Logo_Square.png">
-
-        <!-- Open Graph data -->
-        <meta property="og:title" content="Veloren" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="{{ page.permalink }}" />
-        <meta property="og:image" content="/Logo_Square.png" />
-        {% if page.description %}
-          <meta name="og:description" content="{{ page.description }}">
-        {% else %}
-          <meta name="og:description" content="The Veloren devblog website">
-        {% endif %}
+    {% if page %}
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@velorenproject">
+      <meta name="twitter:title" content="{{ page.title }}">
+      {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
       {% else %}
-        <!-- Twitter Card data -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@velorenproject">
-        <meta name="twitter:title" content="Veloren">
-        {% if page.description %}
-          <meta name="twitter:description" content="{{ page.description }}">
-        {% else %}
-          <meta name="twitter:description" content="The Veloren devblog website">
-        {% endif %}
-        <meta name="twitter:image" content="/Logo_Square.png">
-
-        <!-- Open Graph data -->
-        <meta property="og:title" content="Veloren" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://veloren.net/" />
-        <meta property="og:image" content="/Logo_Square.png" />
-        {% if page.description %}
-          <meta name="og:description" content="{{ page.description }}">
-        {% else %}
-          <meta name="og:description" content="The Veloren devblog website">
-        {% endif %}
+        <meta name="twitter:description" content="The Veloren devblog website">
       {% endif %}
-      
-      <!-- Enable responsiveness on mobile devices-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="twitter:image" content="/Logo_Square.png">
 
-      <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-
-      <!-- css -->
-      <link rel="stylesheet" href="/reset.css">
-      <link rel="stylesheet" href="/feather.css">
-
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
-
-      <!-- js -->
-      <script src='/js/images.js'></script>
-      <script src='/js/main.js'></script>
-
-      {% if config.extra.feather_analytics %}
-        {{ config.extra.feather_analytics | safe }}
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Veloren" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{{ page.permalink }}" />
+      <meta property="og:image" content="/Logo_Square.png" />
+      {% if page.description %}
+        <meta name="og:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="og:description" content="The Veloren devblog website">
       {% endif %}
-
-      {% if config.generate_rss %}
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% else %}
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@velorenproject">
+      <meta name="twitter:title" content="Veloren">
+      {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="twitter:description" content="The Veloren devblog website">
       {% endif %}
+      <meta name="twitter:image" content="/Logo_Square.png">
 
-      {% block extra_head %}
-      {% endblock extra_head %}
-    </head>
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Veloren" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://veloren.net/" />
+      <meta property="og:image" content="/Logo_Square.png" />
+      {% if page.description %}
+        <meta name="og:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="og:description" content="The Veloren devblog website">
+      {% endif %}
+    {% endif %}
 
-    <body>
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/feather.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+    <!-- js -->
+    <script src='/js/images.js'></script>
+    <script src='/js/main.js'></script>
+
+    {% if config.extra.feather_analytics %}
+      {{ config.extra.feather_analytics | safe }}
+    {% endif %}
+
+    {% if config.generate_rss %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+    {% endif %}
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+
+  <body>
     <a href="/">
-      <div class='header-image' style='background-image: url({% if config.extra.feather_header_image %}{{ config.extra.feather_header_image }}{% else %}/theme_images/default.gif{% endif %});'>
+      <div class="header-image" style="background-image: url({% if config.extra.feather_header_image %}{{ config.extra.feather_header_image }}{% else %}/theme_images/default.gif{% endif %});">
         <img class="logo" src="/logo.png" alt="veloren"/>
       </div>
     </a>
@@ -94,32 +93,32 @@
     <div class="container">
       <div class="posts">
         {% for page in section.pages %}
-            <section>
-              <a class='header-link' href="{{ page.permalink }}">
-                <h3 class="title"> {{ page.title }} </h3>
-              </a>
-              <p> 
-                {{ page.content | safe | striptags | truncate }} 
-              </p>
+          <section>
+            <a class="header-link" href="{{ page.permalink }}">
+              <h3 class="title"> {{ page.title }} </h3>
+            </a>
+            <p>
+              {{ page.content | safe | striptags | truncate }}
+            </p>
 
-              <!-- TODO: modularize this so we don't repeat ourselves -->
-              <div class='info'>
-                <span>{{ page.reading_time }} minute read</span>
-                {% if page.date and page.title != "Welcome!" %}
-                  <span class='divider'/>
-                  <span>{{ page.date | date(format="%d %B %Y") }}</span>
+            <!-- TODO: modularize this so we don't repeat ourselves -->
+            <div class="info">
+              <span>{{ page.reading_time }} minute read</span>
+              {% if page.date and page.title != "Welcome!" %}
+                <span class="divider"/>
+                <span>{{ page.date | date(format="%d %B %Y") }}</span>
+              {% endif %}
+              {% if page.category %}
+                <span class="divider"/>
+                <!-- link to page category if user is building categories -->
+                {% if config.generate_categories_pages %}
+                  <span><a href="/categories/{{page.category | slugify }}">{{ page.category }}</a></span>
+                {% else %}
+                  <span>{{ page.category }}</span>
                 {% endif %}
-                {% if page.category %}
-                  <span class='divider'/>
-                  <!-- link to page category if user is building categories -->
-                  {% if config.generate_categories_pages %}
-                    <span><a href="/categories/{{page.category | slugify }}">{{ page.category }}</a></span>
-                  {% else %}
-                    <span>{{ page.category }}</span>
-                  {% endif %}
-                {% endif %}
-              </div>
-            </section>
+              {% endif %}
+            </div>
+          </section>
           <hr/>
         {% endfor %}
       </div>
@@ -127,11 +126,10 @@
     {% endblock content %}
 
     <footer>
-      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/Keats/gutenberg">Gutenberg</a>
+      Feather theme by <a href="https://github.com/piedoom/feather">doomy</a>&nbsp;&nbsp;-&nbsp;&nbsp; Built with <a href="https://github.com/getzola/zola">Zola</a>
       {% if config.extra.feather_donate_link %}&nbsp;&nbsp;-&nbsp;&nbsp; <a href={{config.extra.feather_donate_link}}>Donate</a>
       {% endif %}
     </footer>
 
-    </body>
-
+  </body>
 </html>
