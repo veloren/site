@@ -62,6 +62,8 @@
     <!-- css -->
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/feather.css">
+    <link rel="stylesheet" href="/icons/css/fontello.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
@@ -88,6 +90,33 @@
         <img class="logo" src="/logo.png" alt="veloren"/>
       </div>
     </a>
+
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-section navbar-logo-section">
+          <a class="navbar-item navbar-logo" href="/">Veloren</a>
+        </div>
+
+        <div id="navbar-content-section" class="navbar-section navbar-content-section nav-content-hidden">
+          <a class="navbar-item" href="https://veloren.net/welcome/">
+            <i class="icon-download navbar-icon"></i>
+            <span class="navbar-item-text">Download</span>
+          </a>
+          <a class="navbar-item" href="https://book.veloren.net/">
+            <i class="icon-book navbar-icon"></i>
+            <span class="navbar-item-text">Manual</span>
+          </a>
+          <a class="navbar-item" href="https://discord.gg/kG85dbt">
+            <i class="icon-chat navbar-icon"></i>
+            <span class="navbar-item-text">Discord</span>
+          </a>
+        </div>
+
+        <div id="navbar-hamburger-menu" class="navbar-section navbar-hamburger-section">
+          <i class="icon-menu navbar-item navbar-icon"></i>
+        </div>
+      </div>
+    </nav>
 
     {% block content %}
     <div class="container">
@@ -131,5 +160,6 @@
       {% endif %}
     </footer>
 
+    <script src='/js/navbar.js'></script>
   </body>
 </html>
