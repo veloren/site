@@ -18,12 +18,16 @@ We're pleased to say we've finally created a development blog (hint: you're read
 
 Veloren is open-source! Join us in making this game the best it can be.
 * [Gitlab - Grab the source](https://gitlab.com/veloren/veloren)
-* [Discord - Join the discussion](https://discord.gg/ecUxc9N) 
-* [Reddit - Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/) 
+* [Discord - Join the discussion](https://discord.gg/ecUxc9N)
+* [Reddit - Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/)
 
 # Download
 
+*Although we still support the 0.1.1 release of Veloren, development has since moved to the new engine.*
+
 ## Latest Stable Release, 0.1.0
+
+**NOTICE: The public server for this release has been shut down. You can still play by running a local server, however.**
 
 ### Windows x64
 
@@ -53,7 +57,9 @@ Unfortunately due to a keyboard key mapping issue you cannot move around in this
 *We do not currently provide a server build for macOS. If you wish to run a Veloren server on macOS, you can [compile it yourself](https://gitlab.com/veloren/game/wikis/Developer's-Corner/Introduction).*
 
 
-## Latest Nightly Release
+## Latest Nightly Release, 0.1.1
+
+**NOTICE: The public server for this release has moved to `veloren.mac94.de:38888`. This must be entered as a custom address when running the game.**
 
 [Download for Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/master/download?job=nightly-windows-debug)
 
