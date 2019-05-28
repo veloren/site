@@ -1,12 +1,10 @@
 +++
-title = "Welcome!"
+title = "Welcome to Veloren!"
 description = "A welcome to the Veloren development blog"
 
 date = 2030-01-01
 weight = 0
 +++
-
-# Welcome to Veloren!
 
 Veloren is an open-world, open-source multiplayer voxel RPG. The game is in an early stage of development, but is playable.
 
@@ -36,7 +34,7 @@ To play the game, extract all files and run `veloren-voxygen`.
 
 ### Mac OS
 
-While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [The Book](https://book.veloren.net)
+While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [the book](https://book.veloren.net).
 
 ## 0.1.0
 
