@@ -2,7 +2,7 @@
 title = "Welcome to Veloren!"
 description = "A welcome to the Veloren development blog"
 
-date = 2030-01-01
+date = 2019-05-28
 weight = 0
 +++
 
