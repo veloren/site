@@ -8,24 +8,37 @@ weight = 0
 
 # Welcome to Veloren!
 
-Veloren is an open-world, open-source multiplayer voxel RPG.
-
-Veloren currently in an early stage of development, but you can already play the game.
-
-We're pleased to say we've finally created a development blog (hint: you're reading it). On this blog, we'll regularly put up articles discussion various parts of Veloren's development, new additions, and a weekly *This week in Veloren*  update.
+Veloren is an open-world, open-source multiplayer voxel RPG. The game is in an early stage of development, but is playable.
 
 # Join Us
 
 Veloren is open-source! Join us in making this game the best it can be.
+
 * [Gitlab - Grab the source](https://gitlab.com/veloren/veloren)
 * [Discord - Join the discussion](https://discord.gg/ecUxc9N)
 * [Reddit - Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/)
 
-# Download
+# Downloads
 
-*Although we still support the 0.1.1 release of Veloren, development has since moved to the new engine.*
+## 0.2.0
 
-## Latest Stable Release, 0.1.0
+## Windows x64
+
+[Download for Windows x64](https://gitlab.com/veloren/veloren/-/jobs/220570218/artifacts/raw/commit-windows-debug.zip)
+
+To play the game, extract all files and run `veloren-voxygen.exe`.
+
+### Linux x64
+
+[Download for Linux x64](https://gitlab.com/veloren/veloren/-/jobs/220570217/artifacts/raw/commit-linux-debug.tar.bz2)
+
+To play the game, extract all files and run `veloren-voxygen`.
+
+### Mac OS
+
+While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [The Book](https://book.veloren.net)
+
+## 0.1.0
 
 **NOTICE: The public server for this release has been shut down. You can still play by running a local server, however.**
 
@@ -57,7 +70,7 @@ Unfortunately due to a keyboard key mapping issue you cannot move around in this
 *We do not currently provide a server build for macOS. If you wish to run a Veloren server on macOS, you can [compile it yourself](https://gitlab.com/veloren/game/wikis/Developer's-Corner/Introduction).*
 
 
-## Latest Nightly Release, 0.1.1
+## 0.1.1
 
 **NOTICE: The public server for this release has moved to `veloren.mac94.de:38888`. This must be entered as a custom address when running the game.**
 
