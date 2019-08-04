@@ -18,6 +18,24 @@ Veloren is open-source! Join us in making this game the best it can be.
 
 # Downloads
 
+## 0.3.0
+
+## Windows x64
+
+[Download for Windows x64](https://gitlab.com/veloren/veloren/-/jobs/265513559/artifacts/raw/optional-release-windows-debug.zip)
+
+To play the game, extract all files and run `veloren-voxygen.exe`.
+
+### Linux x64
+
+[Download for Linux x64](https://gitlab.com/veloren/veloren/-/jobs/265513558/artifacts/raw/optional-release-linux-debug.tar.bz2)
+
+To play the game, extract all files and run `veloren-voxygen`.
+
+### Mac OS
+
+While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [the book](https://book.veloren.net).
+
 ## 0.2.0
 
 ## Windows x64
