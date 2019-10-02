@@ -22,6 +22,8 @@ Veloren is open-source! Join us in making this game the best it can be.
 
 Veloren is currently under heavy development. The nightly builds include many bug fixes for issues in the 0.3.0 release, and are currently the recommended version for playing the game.  
 
+Please note that the public nightly builds are a new feature and may occasionally be unavailable.
+
 ## Windows x64
 
 [Download for Windows x64](https://www.airshipper.songtronix.com/latest/windows)
