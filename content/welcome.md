@@ -20,7 +20,7 @@ Veloren is open-source! Join us in making this game the best it can be.
 
 ## Nightly
 
-Veloren is currently under heavy development. The nightly builds include many bug fixes for issues in the 0.3.0 release, and are currently the recommended version for playing the game.  
+Veloren is currently under heavy development. The nightly builds include many new features and bug fixes for issues in the last stable release, and are currently the recommended version for playing the game.  
 
 Please note that the public nightly builds are a new feature and may occasionally be unavailable.
 
