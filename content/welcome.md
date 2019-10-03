@@ -18,6 +18,28 @@ Veloren is open-source! Join us in making this game the best it can be.
 
 # Downloads
 
+## Nightly
+
+Veloren is currently under heavy development. The nightly builds include many new features and bug fixes for issues in the last stable release, and are currently the recommended version for playing the game.  
+
+Please note that the public nightly builds are a new feature and may occasionally be unavailable.
+
+## Windows x64
+
+[Download for Windows x64](https://www.airshipper.songtronix.com/latest/windows)
+
+To play the game, extract all files and run `veloren-voxygen.exe`.
+
+### Linux x64
+
+[Download for Linux x64](https://www.airshipper.songtronix.com/latest/linux)
+
+To play the game, extract all files and run `veloren-voxygen`.
+
+### Mac OS
+
+While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [the book](https://book.veloren.net).
+
 ## 0.3.0
 
 ## Windows x64
