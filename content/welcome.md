@@ -27,9 +27,8 @@ While Veloren does run on Mac OS, we don't currently produce builds for the plat
 
 Veloren is under heavy development. The nightly builds include many new features and bug fixes for issues in the last stable release and are *currently* the *recommended version* for playing the game.
 
-[Download for Windows x64](https://download.veloren.net/latest/windows)
-
-[Download for Linux x64](https://download.veloren.net/latest/linux)
+[Windows x64](https://download.veloren.net/latest/windows) -
+[Linux x64](https://download.veloren.net/latest/linux)
 
 ## Stable
 
@@ -37,39 +36,30 @@ Veloren is under heavy development. The nightly builds include many new features
 
 ### 0.4.0
 
-*Currently unavailable*
+[Windows x64](https://download.veloren.net/public/Windows/0.4.0-win-release.zip) - 
+[Linux x64](https://download.veloren.net/public/Linux/0.4.0-linux-release.tar.gz)
 
 ### 0.3.0
 
-[Download for Windows x64](https://gitlab.com/veloren/veloren/-/jobs/265513559/artifacts/raw/optional-release-windows-debug.zip)
-
-[Download for Linux x64](https://gitlab.com/veloren/veloren/-/jobs/265513558/artifacts/raw/optional-release-linux-debug.tar.bz2)
+[Windows x64](https://gitlab.com/veloren/veloren/-/jobs/265513559/artifacts/raw/optional-release-windows-debug.zip) - 
+[Linux x64](https://gitlab.com/veloren/veloren/-/jobs/265513558/artifacts/raw/optional-release-linux-debug.tar.bz2)
 
 ### 0.2.0
 
-[Download for Windows x64](https://gitlab.com/veloren/veloren/-/jobs/220570218/artifacts/raw/commit-windows-debug.zip)
-
-[Download for Linux x64](https://gitlab.com/veloren/veloren/-/jobs/220570217/artifacts/raw/commit-linux-debug.tar.bz2)
+[Windows x64](https://gitlab.com/veloren/veloren/-/jobs/220570218/artifacts/raw/commit-windows-debug.zip) -
+[Linux x64](https://gitlab.com/veloren/veloren/-/jobs/220570217/artifacts/raw/commit-linux-debug.tar.bz2)
 
 ### 0.1.0 - Legacy
 
-**NOTICE: The public server for this release has been shut down. You can still play by running a local server, however.**
-
-[Download for Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-windows-optimized)
+[Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-windows-optimized) -
+[Linux x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-linux-optimized) -
+[macOS](/download/macos.zip)
 
 To play the game, extract all files and run `voxygen.exe`, the 3D frontend.
-
 If you want to host your own local server, run `server-cli.exe` in the background.
-
-[Download for Linux x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-linux-optimized)
-
 To play the game, extract all files and run `voxygen`, the 3D frontend.
-
 *Please Note: Voxygen currently has a command-line startup interface, so must be run from a terminal.*
-
 If you want to host your own local server, run `server-cli` in the background.
-
-[Download for macOS](/download/macos.zip)
 
 To run the game, extract all files and run `./voxygen`, the 3D frontend, from a terminal window.
 Unfortunately due to a keyboard key mapping issue you cannot move around in this version.
