@@ -17,10 +17,10 @@ body {
 
 .main_bg {
 	@media (min-width: $main_width) {
-		background-image: url(header2.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(header2.png);
+		background-size: cover, cover;
+		background-repeat: no-repeat, no-repeat;
+		background-position: center bottom, center bottom;
 		background-attachment: fixed, fixed;
 	}
 
