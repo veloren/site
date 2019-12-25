@@ -1,4 +1,4 @@
 <figure class="inline-image">
-	<a href="{{src}}" target="_blank"><img src="{{src}}" alt="{{alt}}" title="{{alt}}" /></a>
+	<a href="{{src}}" target="_blank"><img src="{{src}}" alt="{%if alt %}{{alt}}{% endif %}" title="{%if alt %}{{alt}}{% endif %}" /></a>
 	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
 </figure>
