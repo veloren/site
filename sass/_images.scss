@@ -25,11 +25,18 @@
 .gallery {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 
+	a {
+		margin: 0.5em;
+	}
 	img {
 		max-width: 192px * 2;
 		max-height: 108px * 2;
 		object-fit: cover;
+    transition: filter 0.3s ease;
+		&:hover {
+			filter: brightness(110%);
+		}
 	}
 }

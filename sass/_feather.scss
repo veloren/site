@@ -135,6 +135,10 @@ a {
 	font-weight: bold;
 	color: #ed1249;
 	text-decoration: none;
+	transition: color 0.5s ease;
+	&:hover {
+		color: #f96b00;
+	}
 }
 
 ::selection {

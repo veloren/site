@@ -19,4 +19,4 @@ header.png
 header.png
 {% end %}
 
-What are you waiting for?
+<p style="text-align: center; margin-top: 1em;">What are you waiting for?</p>
