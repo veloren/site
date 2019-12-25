@@ -2,8 +2,7 @@
 	{% for url in body | split(pat="\n") %}
 		{% set src = url | trim %}
 		{% if src != "" %}
-			{% set src = get_url(path=src, trailing_slash=false) %}
-			<a href="{{src}}" target="_blank"><img src="{{src}}" alt="" title="" /></a>
+			<a href="{{ get_url(path=src, trailing_slash=false) }}" target="_blank"><img src="{{ resize_image(path='../static/' ~ src, width=384, height=216, op='fill') }}" alt="" title="" /></a>
 		{% endif %}
 	{% endfor %}
 </div>
