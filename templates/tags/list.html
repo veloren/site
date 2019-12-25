@@ -1,0 +1,19 @@
+{% extends "404.html" %}
+{# Currently, we do not need a category list, so we disable it.
+
+{% extends "index.html" %}
+
+{% block content %}
+<div class="container">
+	<section class="post">
+        <ul class="base-list">
+            {% for category in terms %}
+                <li>
+                    <a href="{{ category.permalink }}">{{ category.name }}</a>({{ category.pages | length }})
+                </li>
+            {% endfor %}
+        </ul>
+	</section>
+</div>
+{% endblock content %}
+#}
