@@ -1,0 +1,35 @@
+.inline-image {
+	display: block;
+	max-width: 85%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em 0 1em 0;
+
+	img {
+		display: inline;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	figcaption {
+		padding-top: 0.5em;
+		font-style: italic;
+		color: #777777;
+
+		p {
+			text-align: center;
+		}
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+
+	img {
+		max-width: 192px * 2;
+		max-height: 108px * 2;
+		object-fit: cover;
+	}
+}

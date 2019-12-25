@@ -1,0 +1,58 @@
+/* 100% custom css rules, not derived from any template. */
+
+$main_width: 900px;
+
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	background-color: black;
+
+	display: flex;
+	flex-flow: column;
+}
+
+.main_bg {
+	@media (min-width: $main_width) {
+		background-image: url(header2.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-attachment: fixed, fixed;
+	}
+
+	flex: 1 0 1px;
+	padding-bottom: 2em;
+}
+
+main {
+	background-color: #f2f2EC; //rgba(255,255,255,0.9);
+	margin: 0 auto;
+	padding: 0.5em 1em 1em 1em;
+	max-width: $main_width;
+}
+
+
+.home_button {
+	display: block;
+
+	max-width: 0.5 * $main_width;
+	margin: 10px auto;
+	font-size: 20px;
+	line-height: 40px;
+
+	background-color: #0d0d13;
+	user-select: none;
+	font-family: 'Montserrat', sans-serif;
+
+	padding: 3px 5px;
+
+	transition: color 0.5s ease;
+	color: #ececec;
+	&:hover {
+		color: #d6d6d6;
+	}
+}

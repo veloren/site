@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="post">
+    <div class="title-and-info">
+      <h2>{{ page.title }}</h2>
+      <div class="info">
+        <span>{{ page.reading_time }} minute read</span>
+        {% if page.date and page.title != "Welcome!" %}
+          <span class="divider"/>
+          <span>{{ page.date | date(format="%d %B %Y") }}</span>
+        {% endif %}
+      </div>
+    </div>
+    <article>
+      {{ page.content | safe }}
+    </article>
+  </section>
+{% endblock content %}

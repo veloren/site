@@ -1,0 +1,9 @@
+<div class='gallery'>
+	{% for url in body | split(pat="\n") %}
+		{% set src = url | trim %}
+		{% if src != "" %}
+			{% set src = get_url(path=src, trailing_slash=false) %}
+			<a href="{{src}}" target="_blank"><img src="{{src}}" alt="" title="" /></a>
+		{% endif %}
+	{% endfor %}
+</div>
