@@ -37,7 +37,8 @@
 }
 
 .navbar-item:hover {
-  color: #d6d6d6;
+  //color: #d6d6d6;
+  color: #47bded;
 }
 
 .navbar-item-text {
@@ -50,6 +51,11 @@
   img {
     max-height: 40px;
     padding: 5px 0;
+
+    transition: filter 0.3s ease;
+    &:hover {
+      filter: brightness(110%);
+    }
   }
 }
 
