@@ -13,10 +13,10 @@ template = "404.html"
 Veloren is an open-world, open-source multiplayer voxel RPG. The game is in an early stage of development, but is playable.
 
 {% gallery() %}
-header.png
-header.png
-header.png
-header.png
+screenshot1.png
+screenshot2.png
+screenshot3.png
+screenshot4.png
 {% end %}
 
 <p style="text-align: center; margin-top: 1em;">What are you waiting for?</p>
