@@ -13,6 +13,17 @@
       </div>
     </div>
     <article>
+      {% if page.extra.banner is defined %}
+        {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
+        {% set url = page.extra.banner %}
+        {% if url is containing("media.discordapp.net") %}
+          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+        {% endif %}
+        <figure class="inline-image">
+          <a href="{{url}}" target="_blank"><img src="{{url}}" alt="banner" /></a>
+        </figure>
+        <hr />
+      {% endif %}
       {{ page.content | safe }}
     </article>
   </section>

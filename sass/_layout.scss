@@ -75,3 +75,18 @@ ul, ol {
 	// undo the damage from reset.css
 	margin-left: 1em;
 }
+
+section.post-overview {
+	display: flex;
+	flex-flow: row nowrap;
+}
+section.post-overview > .thumbnail {
+	flex: 0 0 auto;
+}
+section.post-overview > .overview {
+	flex: 1 1 auto;
+	padding-left: 16px;
+	.title {
+		margin-top: 0;
+	}
+}
