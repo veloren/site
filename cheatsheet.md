@@ -7,6 +7,7 @@ weight = 0
 slug = "devblog-42"
 
 [extra]
+banner = "https://.../screenshot.png"
 # uncomment one of these to replace this page's background image, either via an absolute url or a relative one
 #background = "https://.../screenshot.png"
 #background = "header.png"
