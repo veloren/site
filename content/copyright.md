@@ -6,8 +6,6 @@ weight = 0
 slug = "copyright"
 +++
 
-This website is © 2019-2020 the Veloren developers.
-
 This website was made with the help of other open source projects:
 
   * The site was generated using [Zola](https://www.getzola.org).
