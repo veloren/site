@@ -58,16 +58,16 @@ With caption:
 
 # Audio
 
-mp3, direct download:
+ogg, direct download:
 
-{{ audio(src="https://.../foo.mp3") }}
+{{ audio(src="https://.../foo.ogg") }}
 
 With a caption:
 
-{{ audio(src="https://.../foo.mp3", caption="Nice music") }}
+{{ audio(src="https://.../foo.ogg", caption="Nice music") }}
 
-ogg, direct download:
+mp3, direct download:
 
-{{ audio(src="https://.../foo.ogg", type="audio/ogg") }}
-{{ audio(src="https://.../foo.ogg", type="audio/ogg", caption="Nice music") }}
+{{ audio(src="https://.../foo.mp3", type="audio/mpeg3") }}
+{{ audio(src="https://.../foo.mp3", type="audio/mpeg3", caption="Nice music") }}
 
