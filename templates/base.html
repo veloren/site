@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress.">
+    <meta name="robots" content="index, follow">
+
+    {% if page %}
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@velorenproject">
+      <meta name="twitter:title" content="{{ page.title }}">
+      {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="twitter:description" content="The Veloren devblog website">
+      {% endif %}
+      <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Veloren" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{{ page.permalink }}" />
+      <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
+      {% if page.description %}
+        <meta name="og:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="og:description" content="The Veloren devblog website">
+      {% endif %}
+    {% else %}
+      <!-- Twitter Card data -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@velorenproject">
+      <meta name="twitter:title" content="Veloren">
+      {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="twitter:description" content="The Veloren devblog website">
+      {% endif %}
+      <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
+
+      <!-- Open Graph data -->
+      <meta property="og:title" content="Veloren" />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="https://veloren.net/" />
+      <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
+      {% if page.description %}
+        <meta name="og:description" content="{{ page.description }}">
+      {% else %}
+        <meta name="og:description" content="The Veloren devblog website">
+      {% endif %}
+    {% endif %}
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{{ get_url(path='veloren.css', trailing_slash=false) }}">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path='icons/favicon/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ get_url(path='icons/favicon/apple-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ get_url(path='icons/favicon/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ get_url(path='icons/favicon/apple-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ get_url(path='icons/favicon/apple-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ get_url(path='icons/favicon/apple-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ get_url(path='icons/favicon/apple-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ get_url(path='icons/favicon/apple-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='icons/favicon/apple-icon-180x180.png') }}" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ get_url(path='icons/favicon/android-icon-192x192.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='icons/favicon/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ get_url(path='icons/favicon/favicon-96x96.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='icons/favicon/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ get_url(path='icons/favicon/manifest.json') }}" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="{{ get_url(path='ms-icon-144x144.png') }}" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- rss -->
+    {% if config.generate_rss %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+    {% endif %}
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-section navbar-logo-section">
+          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img src="{{ get_url(path='logo.png', trailing_slash=false) }}" alt="Veloren"/></a>
+        </div>
+
+        <div id="navbar-content-section" class="navbar-section navbar-content-section nav-content-hidden">
+          <a class="navbar-item" href="{{ get_url(path='download') }}">
+            <i class="icon-download navbar-icon"></i>
+            <span class="navbar-item-text">Download</span>
+          </a>
+          <a class="navbar-item" href="https://book.veloren.net/">
+            <i class="icon-book navbar-icon"></i>
+            <span class="navbar-item-text">Manual</span>
+          </a>
+          <a class="navbar-item" href="{{ get_url(path='joinus') }}">
+            <i class="icon-chat navbar-icon"></i>
+            <span class="navbar-item-text">Join Us</span>
+          </a>
+        </div>
+
+        <div id="navbar-hamburger-menu" class="navbar-section navbar-hamburger-section">
+          <i class="icon-menu navbar-item navbar-icon"></i>
+        </div>
+      </div>
+  	</nav>
+
+    <div class='main_bg'{% if page.extra.background is defined
+      %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url({% if page.extra.background is starting_with('http')
+        %}{{ page.extra.background }}{% else 
+        %}{{ get_url(path=page.extra.background, trailing_slash=false) }}{% endif %})"{% endif %}>
+      <main>
+        {% block content %}
+        {% endblock content %}
+      </main>
+    </div>
+
+    <script src="{{ get_url(path='js/navbar.js', trailing_slash=false) }}"></script>
+  </body>
+</html>

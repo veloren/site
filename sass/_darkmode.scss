@@ -1,0 +1,43 @@
+// This overrides some site-wide colors for users who prefer a dark theme
+
+@media (prefers-color-scheme: dark) {
+	// note: the navbar is always white on black
+
+	// overrides from _layout.scss
+	main {
+		color: #f2f2EC;
+		background-color: #161616; // rgb(13, 13, 19);
+	}
+
+	.home_button {
+		background-color: #ececec;
+		color: #0d0d13;
+
+		&:hover {
+			color: #47bded;
+		}
+	}
+
+	a.header-link * {
+		color: #bebebd;
+	}
+
+	// overrides from _feather.scss
+	h1,h2,h3,h4,h5,h6 {
+		color: #bebebd;
+	}
+
+	pre {
+		background-color: #2b303b;
+	}
+
+	code {
+		color: white;
+		background-color: #2b303b;
+	}
+
+	blockquote {
+		border-left-color: #24221a;
+	}
+}
+

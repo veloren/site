@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% set cats = get_taxonomy(kind="tags") %}
+	{% for cat in cats.items %}
+		{% if cat.name == "devblog" %}
+			{% for page in cat.pages %}
+				<section class="post post-overview">
+					<div class="thumbnail">
+						{% if page.extra.banner is defined %}
+							{# we want to link to media.discordapp.net for resizing #}
+							{% set url = page.extra.banner %}
+							{% if url is containing("cdn.discordapp.com") %}
+								{% set url = url | replace(from="cdn.discordapp.com", to="media.discordapp.net") | split(pat="?") | first %}
+							{% endif %}
+							<a href="{{ page.permalink }}">
+								<img src="{{url}}?width=192&height=108" width="192" height="108" />
+							</a>
+						{% endif %}
+					</div>
+					<div class="overview">
+						<a class="header-link" href="{{ page.permalink }}">
+							<h3 class="title"> {{ page.title }} </h3>
+						</a>
+						<p>
+							{{ page.content | striptags | truncate | safe }}
+						</p>
+
+						<div class="info">
+							<span>{{ page.reading_time }} minute read</span>
+							{% if page.date and page.title != "Welcome!" %}
+							<span class="divider"/>
+							<span>{{ page.date | date(format="%d %B %Y") }}</span>
+							{% endif %}
+						</div>
+					</div>
+				</section>
+			{% endfor %}
+		{% endif %}
+	{% endfor %}
+{% endblock content %}
