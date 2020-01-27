@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<section class="post">
+		<article>
+
+			{% set page = get_page(path="home.md") %}
+			{{page.content | safe}}
+
+			<a class='home_button' href="{{ get_url(path='download') }}">
+				<i class="icon-download"></i> Download the game!
+			</a>
+			<a class='home_button' href="https://book.veloren.net/">
+				<i class="icon-book"></i> Read the manual!
+			</a>
+			<a class='home_button' href="{{ get_url(path='joinus') }}">
+				<i class="icon-chat"></i> Join our community!
+			</a>
+		</article>
+	</section>
+
+	<section class="post">
+		<article>
+			<div class="posts">
+				<h2>Latest development updates:</h2>
+				{% set cats = get_taxonomy(kind="tags") %}
+				{% set show_posts = 3 %}
+				{% for cat in cats.items %}
+					{% if cat.name == "devblog" %}
+						{% for page in cat.pages %}
+							{% if show_posts > 0 and page.date %}
+								{% set_global show_posts = show_posts - 1 %}
+								<section class="post-overview">
+									<div class="thumbnail">
+										{% if page.extra.banner is defined %}
+											{# we want to link to media.discordapp.net for resizing #}
+											{% set url = page.extra.banner %}
+											{% if url is containing("cdn.discordapp.com") %}
+												{% set url = url | replace(from="cdn.discordapp.com", to="media.discordapp.net") | split(pat="?") | first %}
+											{% endif %}
+											<a href="{{ page.permalink }}">
+												<img src="{{url}}?width=192&height=108" width="192" height="108" />
+											</a>
+										{% endif %}
+									</div>
+									<div class="overview">
+										<a class="header-link" href="{{ page.permalink }}">
+											<h3 class="title"> {{ page.title }} </h3>
+										</a>
+										<p>
+											{{ page.content | striptags | truncate | safe }}
+										</p>
+
+										<div class="info">
+											<span>{{ page.reading_time }} minute read</span>
+											{% if page.date and page.title != "Welcome!" %}
+											<span class="divider"/>
+											<span>{{ page.date | date(format="%d %B %Y") }}</span>
+											{% endif %}
+										</div>
+									</div>
+								</section>
+							{% endif %}
+						{% endfor %}
+					{% endif %}
+				{% endfor %}
+				<section>
+					{# We could link to the auto-generated taxonomy at /tags/devblogs/, but /devblogs/ is a much nicer url. #}
+					{# <a class="header-link" href="{{get_taxonomy_url(kind="tags", name="devblog")}}"> #}
+					<a class="header-link" href="{{get_url(path="@/devblogs.md")}}">
+						<h3 class="title">Read older posts...</h3>
+					</a>
+				</section>
+			</div>
+		</article>
+	</section>
+{% endblock content %}

@@ -10,13 +10,10 @@ generate_rss = true
 rss_limit = 50
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 # Default language used in RSS and i18n
 default_language = "en"
-
-# Theme to use
-theme = "veloren"
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Gutenberg
@@ -25,7 +22,9 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+taxonomies = [
+	{ name = "tags" }
+]
+
 [extra]
 # Put all your custom variables here
-
-feather_header_image = "/header2.png"

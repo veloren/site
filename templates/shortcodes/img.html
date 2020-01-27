@@ -1,0 +1,15 @@
+{#
+	Sanitize the URL first. Discord has two domains for hosted images:
+	- media.discordapp.net, which allows resizing
+	- cdn.discordapp.com, which only hosts full resolution. Presumably it's faster.
+
+	For full sized images, we want to always link to the cdn and strip any ?width=&height= parameters.
+#}
+{% set url = src %}
+{% if url is containing("media.discordapp.net") %}
+	{% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+{% endif %}
+<figure class="inline-image">
+	<a href="{{url}}" target="_blank"><img src="{{url}}" alt="{%if alt %}{{alt}}{% endif %}" title="{%if alt %}{{alt}}{% endif %}" /></a>
+	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
+</figure>

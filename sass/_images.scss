@@ -1,0 +1,61 @@
+.inline-image {
+	display: block;
+	max-width: 85%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em 0 1em 0;
+
+	a {
+		cursor: zoom-in;
+	}
+
+	img {
+		display: inline;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.ratio169 {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 56.25%;
+
+		& > iframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	figcaption {
+		padding-top: 0.5em;
+		font-style: italic;
+		color: #777777;
+
+		p {
+			text-align: center;
+		}
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	a {
+		margin: 0.5em;
+	}
+	img {
+		max-width: 192px * 2;
+		max-height: 108px * 2;
+		object-fit: cover;
+    transition: filter 0.3s ease;
+		&:hover {
+			filter: brightness(110%);
+		}
+	}
+}
