@@ -8,7 +8,7 @@ weight = 0
 +++
 
 # Minimum requirements:
-- Gpu with OpenGL support >= 3.2
+- GPU with OpenGL support >= 3.2
 - 4GB RAM
 - multi-core CPU
 - 2GB of free disk space
