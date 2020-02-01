@@ -31,6 +31,11 @@ Veloren is under heavy development. The nightly builds include many new features
 
 *Note that currently the official server hosted at server.veloren.net runs nightly version so you have to run your own server or play singleplayer.*
 
+### 0.5.0
+
+[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.5.0-windows.zip) - 
+[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
+
 ### 0.4.0
 
 [Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.4.0-windows.zip) - 
