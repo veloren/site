@@ -1,5 +1,5 @@
 +++
-title = "Download Veloren!"
+title = "Download Veloren"
 description = "Download Veloren"
 
 aliases = ["welcome"]
