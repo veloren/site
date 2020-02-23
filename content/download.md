@@ -17,6 +17,9 @@ weight = 0
 
 To play the game, extract all files and run `veloren-voxygen`.
 
+## Airshipper (Launcher)
+Incase you get annoyed by the endless updates you manually need to download you can get the launcher right [here](https://www.songtronix.com).
+
 ## Mac OS
 While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [the book](https://book.veloren.net).
 
