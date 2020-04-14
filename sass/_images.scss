@@ -50,8 +50,8 @@
 		margin: 0.5em;
 	}
 	img {
-		max-width: 192px * 2;
-		max-height: 108px * 2;
+		max-width: 90vw;
+		max-height: 90vw;
 		object-fit: cover;
     transition: filter 0.3s ease;
 		&:hover {
