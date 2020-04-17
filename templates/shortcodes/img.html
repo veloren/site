@@ -10,6 +10,6 @@
 	{% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
 {% endif %}
 <figure class="inline-image">
-	<a href="{{url}}" target="_blank"><img src="{{url}}" alt="{%if alt %}{{alt}}{% endif %}" title="{%if alt %}{{alt}}{% endif %}" /></a>
+	<a href="{{url}}" target="_blank"><img src="{{url}}" loading="lazy" alt="{%if alt %}{{alt}}{% endif %}" title="{%if alt %}{{alt}}{% endif %}" /></a>
 	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
 </figure>
