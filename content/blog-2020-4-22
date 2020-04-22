@@ -1,0 +1,63 @@
++++
+title = "This Week In Veloren 64"
+description = "Dungeons, Paths and wgpu"
+
+date = 2020-04-22
+weight = 0
+slug = "devblog-61"
+
+[extra]
+banner = "https://media.discordapp.net/attachments/523568428905398283/701515993058377798/unknown.png"
+
+[taxonomies]
+tags = ["devblog"]
++++
+
+This week we take a look at the work put in on dungeons, the details added to towns and the overhauls to convert to iced and wgpu
+
+\- slipped, impromptu TWiV Editor
+
+# Contributor Work
+
+Thanks to this week's contributors, @zesterer, @Pfau, @Songtronix, @Imbris, @Capucho, @CapsizeGlimmer, @xMAC94x, and @Shandley!
+
+This week the grind to 0.6 release continues. @zesterer has put a lot more work into the civsim branch. Basically Veloren 2, in addition to towns the branch now contains multi-level dungeons with optional paths, loot, bosses and ranged enemies with new AI. We also have seen progrees from @Shandley to add character persistence to the game, along with huge steps forward from @Imbris and @Capucho to integrate iced and wgpu!
+
+# Towns and Dungeons
+
+Paths have seen a major step forward this week. In earlier blogs we've shown off the map of paths around the world that civilizations use to trade between each other and help themselves develop. While simulation is still largely an invisible background process, the paths are now visible! You can find these paths anywhere around the world and use them to trace back to multiple civilizations.
+
+{{ img(src="https://media.discordapp.net/attachments/523568428905398283/701606065044979882/screenshot_1587346186231.png?") }}
+
+The paths are also pretty smart in how they work. Following a path you'll notice that they take you through the easiest paths between mountains. They'll bridge over water when they need to, and when they enter a town you can stay on them to explore the whole town itself! They also have streetlights.
+
+{{ img(src="https://media.discordapp.net/attachments/634860358623821835/702258024114552912/unknown.png") }}
+
+{{ youtube(id="9GFTFGE1kx4", caption="A look at the new paths and procedural towns") }}
+
+One of the big visual changes is the new block shader, giving a 3x3 noisy texture to blocks in the world
+
+{{ img(src="https://media.discordapp.net/attachments/523568428905398283/701871760538075146/unknown.png", caption="The new block shaders")}}
+
+{{ img(src="https://media.discordapp.net/attachments/523568428905398283/701870219810832414/unknown.png", caption="The shaders help bridge the gap between small and large voxels in fields")}}
+
+{{ img(src="https://cdn.discordapp.com/attachments/523568428905398283/701876031333597324/unknown.png") }}
+
+
+# wgpu with @Capucho
+
+wgpu is a graphical backend that we've been eyeing for a long time, looking forward to a conversion to it as it provides access to APIs like Vulkan, DirectX and Metal. Now, I barely know anything about wgpu but i do know that converting to wgpu is very advantageous for Veloren and also a super hard to do. I've built a compilation showcasing Capucho's heroic struggle, which started to yield visible results this week!
+
+{{ img(src="https://i.imgur.com/aYGdTmK.png", caption="It's been a trip")}}
+
+# Other work 
+
+Shandley has been working a ton on persistence this week. This is one of the main features we're targeting before 0.6 release, as character saving is going to be a huge complement to some other recent features like changes to inventory, combat and the loot found in the world. More on that next week!
+
+{{ img(src="https://media.discordapp.net/attachments/467073814208053248/701638298736787536/unknown.png", caption="The same main menu, but in Iced! The conversion to the new GUI library has progressed nicely so far, text is next.")}}
+
+New music has been completed and heading into master this week from badbbad! 6 new tracks will nearly double the game's playlist. Is this where we plug the SoundCloud? https://soundcloud.com/velorenofficial
+
+{{ img(src="https://media.discordapp.net/attachments/523568428905398283/702077289235742740/screenshot_1587457488787.png?width=1453&height=864", caption="Sharp continuing work on the LOD branch") }}
+
+{{ img(src="https://external-preview.redd.it/ZZk-wyDUs6Sr-e0-CDmdqK2N2u9-oThVfDOAehHQByk.png?width=1024&auto=webp&s=98bdccde577959791f3f730053c6a5e93593b207", caption="Chlling with the flax. See you next week!") }}
