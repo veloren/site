@@ -39,29 +39,29 @@ _Note that currently the official server hosted at server.veloren.net runs night
 
 ### 0.6.0
 
-[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.6.0-windows.zip) -
-[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.6.0-linux.tar.gz) -
-[MacOS x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.6.0-macos.zip)
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-linux.tar.gz) -
+[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-macos.zip)
 
 ### 0.5.0
 
-[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.5.0-windows.zip) -
-[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
 
 ### 0.4.0
 
-[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.4.0-windows.zip) -
-[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.4.0-linux.tar.gz)
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-linux.tar.gz)
 
 ### 0.3.0
 
-[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.3.0-windows.zip) -
-[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.3.0-linux.tar.gz)
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-linux.tar.gz)
 
 ### 0.2.0
 
-[Windows x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.2.0-windows.zip) -
-[Linux x64](https://veloren.sfo2.cdn.digitaloceanspaces.com/releases/0.2.0-linux.tar.gz)
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-linux.tar.gz)
 
 ### 0.1.0 - Legacy
 
