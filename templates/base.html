@@ -19,13 +19,30 @@
       {% else %}
         <meta name="twitter:description" content="The Veloren devblog website">
       {% endif %}
-      <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
+      {% if page.extra.banner is defined %}
+        {% set url = page.extra.banner %}
+        {% if url is containing("media.discordapp.net") %}
+          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+        {% endif %}
+        <meta name="twitter:image" content="{{ url }}" />
+      {% else %}
+        <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
+      {% endif %}
 
       <!-- Open Graph data -->
       <meta property="og:title" content="Veloren" />
       <meta property="og:type" content="article" />
       <meta property="og:url" content="{{ page.permalink }}" />
-      <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
+
+      {% if page.extra.banner is defined %}
+        {% set url = page.extra.banner %}
+        {% if url is containing("media.discordapp.net") %}
+          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+        {% endif %}
+        <meta property="og:image" content="{{ url }}" />
+      {% else %}
+        <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
+      {% endif %}
       {% if page.description %}
         <meta name="og:description" content="{{ page.description }}">
       {% else %}
@@ -124,7 +141,7 @@
 
     <div class='main_bg'{% if page.extra.background is defined
       %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url({% if page.extra.background is starting_with('http')
-        %}{{ page.extra.background }}{% else 
+        %}{{ page.extra.background }}{% else
         %}{{ get_url(path=page.extra.background, trailing_slash=false) }}{% endif %})"{% endif %}>
       <main>
         {% block content %}
