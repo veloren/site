@@ -85,6 +85,8 @@ p, ul, ol {
 	font-size: 16px;
 	text-align: justify;
 	margin-bottom: 16px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 ul, ol {
