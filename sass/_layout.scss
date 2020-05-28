@@ -83,6 +83,11 @@ section.post-overview {
 section.post-overview > .thumbnail {
 	flex: 0 0 auto;
 }
+
+.thumbnail > a > img {
+	border-radius: 4px;
+}
+
 section.post-overview > .overview {
 	flex: 1 1 auto;
 	padding-left: 16px;
