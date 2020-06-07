@@ -7,7 +7,7 @@ aliases = ["welcome"]
 weight = 0
 +++
 
-# Minimum requirements:
+## Minimum requirements:
 
 - GPU with OpenGL support >= 3.2
 - 4GB RAM
@@ -16,26 +16,49 @@ weight = 0
 
 # Downloads
 
-To play the game, extract all files and run `veloren-voxygen`.
+To play the game, extract all files and run `veloren-voxygen` or use the launcher.
 
 ## Airshipper (Launcher)
 
 Incase you get annoyed by the endless updates you manually need to download you can get the launcher right [here](https://www.songtronix.com).
-
-## Mac OS
-
-While Veloren does run on Mac OS, we don't currently produce builds for the platform. You can build Veloren from source yourself using the instructions in [the book](https://book.veloren.net).
 
 ## Nightly
 
 Veloren is under heavy development. The nightly builds include many new features and bug fixes for issues in the last stable release and are _currently_ the _recommended version_ for playing the game.
 
 [Windows x64](https://download.veloren.net/latest/windows) -
-[Linux x64](https://download.veloren.net/latest/linux)
+[Linux x64](https://download.veloren.net/latest/linux) - 
+[Mac x64](https://download.veloren.net/latest/macos)
+
+## Linux packages
+
+#### Flatpak
+
+`flatpak install flathub net.veloren.veloren`
+
+#### Fedora
+
+[COPR repo](https://copr.fedorainfracloud.org/coprs/atim/veloren/
+): `sudo dnf copr enable atim/veloren -y && sudo dnf install veloren -y`
+
+#### Snap
+
+`sudo snap install veloren --edge`
+
+#### Arch
+
+[AUR latest binary release](https://aur.archlinux.org/packages/veloren-bin/
+): `yay -Sy veloren-bin`
+
+[AUR latest release](https://aur.archlinux.org/packages/veloren/
+): `yay -Sy veloren`
+
+[AUR latest master](https://aur.archlinux.org/packages/veloren-git
+): `yay -Sy veloren-git`
 
 ## Stable
 
-_Note that currently the official server hosted at server.veloren.net runs nightly version so you have to run your own server or play singleplayer._
+*Note that currently the official server hosted at server.veloren.net runs nightly version so you have to run your own server or play singleplayer.*
 
 ### 0.6.0
 
@@ -68,12 +91,3 @@ _Note that currently the official server hosted at server.veloren.net runs night
 [Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-windows-optimized) -
 [Linux x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-linux-optimized) -
 [macOS](/download/macos.zip)
-
-To play the game, extract all files and run `voxygen.exe`, the 3D frontend.
-If you want to host your own local server, run `server-cli.exe` in the background.
-To play the game, extract all files and run `voxygen`, the 3D frontend.
-_Please Note: Voxygen currently has a command-line startup interface, so must be run from a terminal._
-If you want to host your own local server, run `server-cli` in the background.
-
-To run the game, extract all files and run `./voxygen`, the 3D frontend, from a terminal window.
-Unfortunately due to a keyboard key mapping issue you cannot move around in this version.
