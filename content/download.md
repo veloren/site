@@ -60,6 +60,12 @@ Veloren is under heavy development. The nightly builds include many new features
 
 *Note that currently the official server hosted at server.veloren.net runs nightly version so you have to run your own server or play singleplayer.*
 
+### 0.7.0
+
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-linux.tar.gz) -
+[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-macos.tar.gz)
+
 ### 0.6.0
 
 [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-windows.zip) -
