@@ -1,10 +1,10 @@
-/*__           _   _               
-/ _|         | | | |              
-| |_ ___  __ _| |_| |__   ___ _ __ 
+/*__           _   _
+/ _|         | | | |
+| |_ ___  __ _| |_| |__   ___ _ __
 |  _/ _ \/ _` | __| '_ \ / _ \ '__|
-| ||  __/ (_| | |_| | | |  __/ |   
-|_| \___|\__,_|\__|_| |_|\___|_|  
-*/ 
+| ||  __/ (_| | |_| | | |  __/ |
+|_| \___|\__,_|\__|_| |_|\___|_|
+*/
 
 // Variables and Mixins
 $break-small: 500px; // at what point the site becomes "mobile"
@@ -85,8 +85,6 @@ p, ul, ol {
 	font-size: 16px;
 	text-align: justify;
 	margin-bottom: 16px;
-	text-overflow: ellipsis;
-	overflow: hidden;
 }
 
 ul, ol {
@@ -149,7 +147,7 @@ a {
 }
 ::-moz-selection {
 	background: rgba(237, 18, 73,0.5); /* Gecko Browsers */
-}	
+}
 
 // Code
 pre, code {
@@ -162,7 +160,7 @@ pre, code {
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 12px;
-	color: grey;	
+	color: grey;
 }
 
 // overall rules
@@ -182,7 +180,7 @@ section {
 	p, h1, h2, h3, h4, h5, h6, span, ul, ol {
 		padding: 0 $hpadding;
 
-		@media (max-width: $break-small){ 
+		@media (max-width: $break-small){
 			padding: 0 $hpadding-small;
 		}
 	}
@@ -193,7 +191,7 @@ section {
 	}
 */
 	article {
-		// reduce header size for items within 
+		// reduce header size for items within
 		// an article (e.g. a blog post)
 		h1,h2,h3,h4,h5,h6 {
 			margin-top: 36px;
@@ -229,7 +227,7 @@ section {
 		padding: 0 8px;
 		content: "•";
 	}
-	@media (max-width: $break-small){ 
+	@media (max-width: $break-small){
 		padding: 0 $hpadding-small;
 	}
 }
@@ -276,7 +274,7 @@ section {
 			border-radius: 0;
 		}
 	}
-} 
+}
 
 // inline code
 code {
@@ -305,7 +303,7 @@ pre {
 		color: inherit;
 		background-color: transparent;
 	}
-	@media (max-width: $break-small){ 
+	@media (max-width: $break-small){
 		padding-left: $hpadding-small;
 		padding-right: $hpadding-small;
 		border-radius: 0;
@@ -366,7 +364,7 @@ img.loaded {
 	padding-bottom: 56.25%;
 	padding-top: 30px; height: 0; overflow: hidden;
 }
-	
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -390,7 +388,7 @@ footer {
 
 	@media (max-width: $break-small){
 		padding-left: $hpadding;
-		padding-right: $hpadding;	
+		padding-right: $hpadding;
 	}
 }
 */
