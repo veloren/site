@@ -1,4 +1,5 @@
 # The URL the site will be built for
+# local testing, full path `file:///path/to/repos/site/public/`
 base_url = "https://veloren.net"
 
 # Site title and description

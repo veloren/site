@@ -1,0 +1,19 @@
+# Publishes veloren-server-cli to the gitlab container registry
+# https://gitlab.com/veloren/veloren/container_registry
+.publish:
+  stage: publish
+  tags:
+    - veloren-docker
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: always
+    - when: never
+
+pages:
+  extends: .publish
+  artifacts:
+    paths:
+      - public
+  script:
+    - cargo install --git https://github.com/getzola/zola.git --rev  84ecd2ac5e2913426ea6e6a9dc55928e81d0df25;
+    - zola build
