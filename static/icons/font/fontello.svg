@@ -3,8 +3,8 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
 <defs>
-<font id="download" horiz-adv-x="1000" >
-<font-face font-family="download" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
 <missing-glyph horiz-adv-x="1000" />
 <glyph glyph-name="download" unicode="&#xe800;" d="M714 100q0 15-10 25t-25 11-25-11-11-25 11-25 25-11 25 11 10 25z m143 0q0 15-10 25t-26 11-25-11-10-25 10-25 25-11 26 11 10 25z m72 125v-179q0-22-16-37t-38-16h-821q-23 0-38 16t-16 37v179q0 22 16 38t38 16h259l75-76q33-32 76-32t76 32l76 76h259q22 0 38-16t16-38z m-182 318q10-23-8-39l-250-250q-10-11-25-11t-25 11l-250 250q-17 16-8 39 10 21 33 21h143v250q0 15 11 25t25 11h143q14 0 25-11t10-25v-250h143q24 0 33-21z" horiz-adv-x="928.6" />
 
@@ -15,6 +15,8 @@
 <glyph glyph-name="heart" unicode="&#xe803;" d="M500-79q-14 0-25 10l-348 336q-5 5-15 15t-31 37-38 54-30 67-13 77q0 123 71 192t196 70q34 0 70-12t67-33 54-38 42-38q20 20 42 38t54 38 67 33 70 12q125 0 196-70t71-192q0-123-128-251l-347-335q-10-10-25-10z" horiz-adv-x="1000" />
 
 <glyph glyph-name="menu" unicode="&#xf0c9;" d="M857 100v-71q0-15-10-25t-26-11h-785q-15 0-25 11t-11 25v71q0 15 11 25t25 11h785q15 0 26-11t10-25z m0 286v-72q0-14-10-25t-26-10h-785q-15 0-25 10t-11 25v72q0 14 11 25t25 10h785q15 0 26-10t10-25z m0 285v-71q0-14-10-25t-26-11h-785q-15 0-25 11t-11 25v71q0 15 11 26t25 10h785q15 0 26-10t10-26z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="user-plus" unicode="&#xf234;" d="M393 350q-89 0-152 63t-62 151 62 152 152 63 151-63 63-152-63-151-151-63z m536-71h196q7 0 13-6t5-12v-107q0-8-5-13t-13-5h-196v-197q0-7-6-12t-12-6h-107q-8 0-13 6t-5 12v197h-197q-7 0-12 5t-6 13v107q0 7 6 12t12 6h197v196q0 7 5 13t13 5h107q7 0 12-5t6-13v-196z m-411-125q0-29 21-51t50-21h143v-133q-38-28-95-28h-488q-67 0-108 39t-41 106q0 30 2 58t8 61 15 60 24 55 34 45 48 30 62 11q11 0 22-10 44-34 86-51t92-17 92 17 86 51q11 10 22 10 73 0 121-54h-125q-29 0-50-21t-21-50v-107z" horiz-adv-x="1142.9" />
 </font>
 </defs>
 </svg>
