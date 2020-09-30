@@ -13,9 +13,7 @@ variables:
   GIT_CLEAN_FLAGS: -f
 
 default:
-  image:
-    name: registry.hub.docker.com/balthek/zola:0.12.2
-    entrypoint: [""]
+  image: registry.gitlab.com/veloren/veloren-docker-ci:base
   # https://docs.gitlab.com/ee/ci/pipelines/settings.html#auto-cancel-pending-pipelines
   interruptible: true
   # Retry automatically incase the runner times out or there's a runner failure
@@ -24,6 +22,13 @@ default:
     when:
       - runner_system_failure
       - stuck_or_timeout_failure
+
+before_script:
+  - source $HOME/.cargo/env
+  - df -h /
+  - free -h
+  - cargo --version
+  - rm -rf target || echo "some quickfix, idk why needed"
 
 workflow:
   rules:
