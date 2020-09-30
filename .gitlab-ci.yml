@@ -1,0 +1,36 @@
+stages:
+  - check
+  - publish
+
+variables:
+  # Note: this is deprecated!
+  # https://docs.gitlab.com/ee/ci/yaml/#git-strategy
+  # However in gitlab web ui it's set to fetch so it should be fine ¯\_(ツ)_/¯
+  GIT_STRATEGY: fetch
+  # Note: this is deprecated!
+  # ttps://docs.gitlab.com/ee/ci/yaml/#shallow-cloning
+  GIT_DEPTH: 3
+  GIT_CLEAN_FLAGS: -f
+
+default:
+  image:
+    name: registry.hub.docker.com/balthek/zola:0.12.2
+    entrypoint: [""]
+  # https://docs.gitlab.com/ee/ci/pipelines/settings.html#auto-cancel-pending-pipelines
+  interruptible: true
+  # Retry automatically incase the runner times out or there's a runner failure
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+
+workflow:
+  rules:
+    - if: $CI_MERGE_REQUEST_IID
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH
+
+include:
+  - local: .gitlab/CI/check.gitlab-ci.yml
+  - local: .gitlab/CI/publish.gitlab-ci.yml

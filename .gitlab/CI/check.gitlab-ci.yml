@@ -1,0 +1,15 @@
+# Publishes veloren-server-cli to the gitlab container registry
+# https://gitlab.com/veloren/veloren/container_registry
+.check:
+  stage: check
+  tags:
+    - veloren-docker
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: never
+    - when: always
+
+build-pages:
+  extends: .check
+  script:
+    - zola build
