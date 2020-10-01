@@ -7,8 +7,9 @@ title = "Veloren"
 description = "An open-world, open-source voxel RPG"
 
 # RSS feed
-generate_rss = true
-rss_limit = 50
+generate_feed = true
+feed_filename = "rss.xml"
+feed_limit = 50
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
