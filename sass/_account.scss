@@ -1,0 +1,135 @@
+/* 100% custom css rules, not derived from any template. */
+
+.account {
+    --focus-color: #3083A6;
+    font-family: 'Source Sans Pro';
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login {
+        max-width: 375px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .login, .login * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        padding: 30px;
+        background: #eeeeee;
+        padding-bottom: 15px;
+    }
+
+    .header {
+        margin: 0px;
+        margin-bottom: 15px;
+        text-align: left;
+        color: #333333;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid #dddddd;
+        background: #ffffff;
+        outline: none;
+        transition: border-color 0.5s;
+
+        &:focus {
+            border-color: var(--focus-color);
+        }
+
+        &::placeholder {
+            color: #4b4b4b;
+        }
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        background: var(--focus-color);
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .login-links {
+        margin-top: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        font-size: 0.9em;
+        color: var(--focus-color);
+        text-decoration: none;
+    }
+
+    span {
+        font-size: 0.9em;
+        color: #333333;
+        text-align: left;
+        display: block;
+    }
+
+    p {
+        font-size: 0.9em;
+        color: #333333;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .alertbox {
+        padding: 20px;
+        color: white;
+        margin-bottom: 15px;
+    }
+
+    .alerttext {
+        color: white;
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .success {
+        background-color: #4CAF50;
+    }
+
+    .error {
+        background-color: #f44336;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+          color: black;
+      }
+    }
+
+    .hidden {
+        display: none;
+    }
+}
