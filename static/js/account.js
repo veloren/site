@@ -2,22 +2,22 @@ import init, { hash } from "./argon2wasm.js";
 
 init();
 
-function post_to_backend() {
-  let username = document.getElementById("username");
-  let password = document.getElementById("password");
-  let password_rep = document.getElementById("password_repeat");
+function postToBackend() {
+  const username = document.getElementById("username");
+  const password = document.getElementById("password");
+  const password_rep = document.getElementById("password_repeat");
 
-  let alert = document.getElementById("AlertBox");
-  let alerttext = document.getElementById("alerttext");
+  const alert = document.getElementById("alertbox");
+  const alerttext = document.getElementById("alerttext");
 
-  if (password.value != password_rep.value) {
+  if (password.value !== password_rep.value) {
     alert.classList.add("error");
     alert.classList.remove("hidden");
     alerttext.textContent = "Passwords do not match.";
   } else if (
-    password.value.length == 0 ||
-    password_rep.value.length == 0 ||
-    username.value.length == 0
+    password.value.length === 0 ||
+    password_rep.value.length === 0 ||
+    username.value.length === 0
   ) {
     alert.classList.add("error");
     alert.classList.remove("hidden");
@@ -34,13 +34,13 @@ function post_to_backend() {
   }
 }
 
-window.post_to_backend = post_to_backend;
+window.postToBackend = postToBackend;
 
-function close_alert() {
-  document.getElementById("AlertBox").classList.add("hidden");
+function closeAlert() {
+  document.getElementById("alertbox").classList.add("hidden");
 }
 
-window.close_alert = close_alert;
+window.closeAlert = closeAlert;
 
 class RegisterPayload {
   constructor(username, password) {
@@ -54,7 +54,7 @@ class RegisterPayload {
     httpr.open("POST", url);
     httpr.send(JSON.stringify(this));
 
-    let alert = document.getElementById("AlertBox");
+    const alert = document.getElementById("alertbox");
     alert.classList.add('hidden');
     alert.classList.remove('error');
     alert.classList.remove('success');
@@ -67,7 +67,7 @@ class RegisterPayload {
       if (httpr.status != 200) {
         alert.classList.add("error");
 
-        if (httpr.responseText.length == 0) {
+        if (httpr.responseText.length === 0) {
           alerttext.textContent =
             "Error " + httpr.status + ": " + httpr.statusText;
         } else {

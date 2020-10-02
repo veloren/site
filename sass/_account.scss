@@ -3,134 +3,133 @@
 .account {
     --focus-color: #3083A6;
     font-family: 'Source Sans Pro';
-}
 
-.account .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.account .login {
-    max-width: 375px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-}
+    .login {
+        max-width: 375px;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    }
 
-.account .login,
-.account .login * {
-    box-sizing: border-box;
-}
+    .login, .login * {
+        box-sizing: border-box;
+    }
 
-.account .container {
-    padding: 30px;
-    background: #eeeeee;
-    padding-bottom: 15px;
-}
+    .container {
+        padding: 30px;
+        background: #eeeeee;
+        padding-bottom: 15px;
+    }
 
-.account .header {
-    margin: 0px;
-    margin-bottom: 15px;
-    text-align: left;
-    color: #333333;
-}
+    .header {
+        margin: 0px;
+        margin-bottom: 15px;
+        text-align: left;
+        color: #333333;
+    }
 
-.account input {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #dddddd;
-    background: #ffffff;
-    outline: none;
-    transition: border-color 0.5s;
-}
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid #dddddd;
+        background: #ffffff;
+        outline: none;
+        transition: border-color 0.5s;
 
-.account input:focus {
-    border-color: var(--focus-color);
-}
+        &:focus {
+            border-color: var(--focus-color);
+        }
 
-.account input::placeholder {
-    color: #4b4b4b;
-}
+        &::placeholder {
+            color: #4b4b4b;
+        }
+    }
 
-.account button {
-    margin-top: 10px;
-    padding: 10px;
-    color: #ffffff;
-    font-weight: bold;
-    background: var(--focus-color);
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        background: var(--focus-color);
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.account .login-links {
-    margin-top: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
+    .login-links {
+        margin-top: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
 
-.account a {
-    font-size: 0.9em;
-    color: var(--focus-color);
-    text-decoration: none;
-}
+    a {
+        font-size: 0.9em;
+        color: var(--focus-color);
+        text-decoration: none;
+    }
 
-.account span {
-    font-size: 0.9em;
-    color: #333333;
-    text-align: left;
-    display: block;
-}
+    span {
+        font-size: 0.9em;
+        color: #333333;
+        text-align: left;
+        display: block;
+    }
 
-.account p {
-    font-size: 0.9em;
-    color: #333333;
-    text-align: left;
-    display: block;
-    margin-bottom: 5px;
-}
+    p {
+        font-size: 0.9em;
+        color: #333333;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
 
-.account .alertbox {
-    padding: 20px;
-    color: white;
-    margin-bottom: 15px;
-}
+    .alertbox {
+        padding: 20px;
+        color: white;
+        margin-bottom: 15px;
+    }
 
-.account .alerttext {
-    color: white;
-    font-size: 1em;
-    text-align: left;
-}
+    .alerttext {
+        color: white;
+        font-size: 1em;
+        text-align: left;
+    }
 
-.account .success {
-    background-color: #4CAF50;
-}
+    .success {
+        background-color: #4CAF50;
+    }
 
-.account .error {
-    background-color: #f44336;
-}
+    .error {
+        background-color: #f44336;
+    }
 
-.account .closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
 
-.account .closebtn:hover {
-  color: black;
-}
+      &:hover {
+          color: black;
+      }
+    }
 
-.account .hidden {
-    display: none;
+    .hidden {
+        display: none;
+    }
 }
