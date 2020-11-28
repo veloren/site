@@ -22,10 +22,6 @@ function postToBackend() {
     alert.classList.add("error");
     alert.classList.remove("hidden");
     alerttext.textContent = "Please enter a valid password and username.";
-  } else if (password.value.length > 20) {
-    alert.classList.add("error");
-    alert.classList.remove("hidden");
-    alerttext.textContent = "Password must be under 21 characters.";
   } else {
     // hash the password before transmitting
     let hash_string = hash(password.value);
