@@ -30,6 +30,12 @@ You can download nightly here directly without the launcher but note that for an
 [AUR latest release](https://aur.archlinux.org/packages/veloren/
 ): `yay -Sy veloren`
 
+### 0.8.0
+
+[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-windows.zip) -
+[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-linux.tar.gz) -
+[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-macos.tar.gz)
+
 ### 0.7.0
 
 [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-windows.zip) -
