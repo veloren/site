@@ -14,13 +14,13 @@ weight = 0
 - multi-core CPU
 - 2GB of free disk space
 
-<a class='home_button' href="https://github.com/Songtronix/Airshipper/releases/download/v0.4.1/airshipper-windows.msi">
+<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-windows.msi">
     <i class="icon-download"></i> Download Airshipper (Windows)
 </a>
-<a class='home_button' href="https://github.com/Songtronix/Airshipper/releases/download/v0.4.1/airshipper-linux.zip">
+<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.zip">
     <i class="icon-download"></i> Download Airshipper (Linux)
 </a>
-<a class='home_button' href="https://github.com/Songtronix/Airshipper/releases/download/v0.4.1/airshipper-macos.zip">
+<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.zip">
     <i class="icon-download"></i> Download Airshipper (Mac)
 </a>
 
