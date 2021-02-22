@@ -32,11 +32,12 @@ _Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren 
 
 `flatpak install flathub net.veloren.veloren`
 
-#### Arch
+#### Arch User Repository
 
-`yay -Sy airshipper`
+The launcher and the game are both available in the AUR:
 
-`yay -Sy veloren-git`
+* [Airshipper]("https://aur.archlinux.org/packages/airshipper/")
+* [Veloren]("https://aur.archlinux.org/packages/veloren/")
 
 #### Snap
 
