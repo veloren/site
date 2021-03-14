@@ -2,4 +2,3 @@ build
 public
 static/processed_images/
 .idea
-**/files/
