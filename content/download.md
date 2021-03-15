@@ -36,8 +36,8 @@ _Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren 
 
 The launcher and the game are both available in the AUR:
 
-* [Airshipper]("https://aur.archlinux.org/packages/airshipper/")
-* [Veloren]("https://aur.archlinux.org/packages/veloren/")
+* [Airshipper](https://aur.archlinux.org/packages/airshipper/)
+* [Veloren](https://aur.archlinux.org/packages/veloren/)
 
 #### Snap
 
