@@ -39,4 +39,7 @@ for i, link in enumerate(links):
     filenames[link] = "{}.{}".format(i, extension)
 
     with open('files/filenames.json', 'w') as json_file:
-        json.dump(filenames, json_file)
+        json.dump(filenames, json_file, indent=4)
+
+with open('files/filenames.json', 'w') as json_file:
+    json.dump(filenames, json_file, indent=4)
