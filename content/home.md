@@ -8,6 +8,14 @@ template = "404.html"
 # We render this with 404.html, because we do not want this to be accessible at /home/, just at /
 +++
 
+<figure class="inline-image">
+	<video autoplay="autoplay" playsinline="" muted="" loop="" width="100%">
+		<source src="veloren.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	</video>
+	
+</figure>
+
 # Welcome to Veloren!
 
 Veloren is a multiplayer voxel RPG written in Rust. It is inspired by games such
