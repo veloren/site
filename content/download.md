@@ -14,15 +14,11 @@ weight = 0
 - multi-core CPU
 - 2GB of free disk space
 
-<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-windows.msi">
-    <i class="icon-download"></i> Download Airshipper (Windows)
-</a>
-<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.zip">
-    <i class="icon-download"></i> Download Airshipper (Linux)
-</a>
-<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.zip">
-    <i class="icon-download"></i> Download Airshipper (Mac)
-</a>
+### Download Veloren launcher
+
+* <a href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-windows.msi">Airshipper (Windows)</a>
+* <a href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.zip">Airshipper (Linux)</a>
+* <a href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.zip">Airshipper (Mac)</a>
 
 _Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date. Currently due to our irregular and frequent updates we recommend using it._
 

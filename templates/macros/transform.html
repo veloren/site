@@ -1,0 +1,22 @@
+{# Transforms a Discord media URL to its equivalent CDN URL and discards the query component.
+It's assumed the benefit of the CDN URL is that it's faster to load,
+however it cannot be resized with query parameters.
+The macro doesn't check if the provided input is a valid Discord media URL. #}
+{% macro to_discord_cdn(url) -%}
+  {{ url
+  | replace(from="media.discordapp.net", to="cdn.discordapp.com")
+  | split(pat="?")
+  | first }}
+{%- endmacro to_discord_cdn %}
+
+{# Transforms a Discord CDN URL to its equivalent media URL and discards the query component.
+The benefit of "media.discordapp.net" is that it allows resizing by appending query parameters.
+The query parameter format for that is `?width=<width>&height=<height>`,
+with integer values in the angle brackets.
+The macro doesn't check if the provided input is a valid Discord CDN URL. #}
+{% macro to_discord_media(url) -%}
+  {{ url
+  | replace(from="cdn.discordapp.net", to="media.discordapp.com")
+  | split(pat="?")
+  | first }}
+{%- endmacro to_discord_media %}

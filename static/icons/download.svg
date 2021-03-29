@@ -1,0 +1,17 @@
+<svg width="16" height="16" shape-rendering="crispEdges">
+  <path fill="#cbdbfc" d="M7 1H6v1h1V1zM6 0H5v1h1V0zM9 1H8v1h1V1zm1-1H9v1h1V0z" />
+  <path fill="#fff" d="M7 2H6v1h1V2zM6 1H5v1h1V1zM9 2H8v1h1V2zm1-1H9v1h1V1z" />
+  <path fill="#7a4c36" d="M7 1v8h1V1H7z" />
+  <path fill="#a9a9a9" d="M5 10h3V9H5v1z" />
+  <path fill="#868686" d="M6 11h3v-1h1V9H8v1H6v1z" />
+  <path fill="#8f563b" d="M1 12h6v-1H1v1zM8 12h4v-1H8v1z" />
+  <path fill="#7e4830" d="M0 13h7v-1H0v1zM9 13h2v-1H9v1z" />
+  <path fill="#7a4c36" d="M0 14h6v-1H0v1z" />
+  <path fill="#683c27" d="M7 13H6v1h1v-1zm0-2v2h2v-1H8v-1H7z" />
+  <path fill="#7a4c36" d="M7 14h4v-1H7v1z" />
+  <path fill="#d9a066" d="M13 13h1v1h-1z" />
+  <path fill="#7e4830" d="M0 15h11v-1H0v1z" />
+  <path fill="#eec39a" d="M12 12h3v3h-3v-3zm2 1h-1v1h1v-1z" />
+  <path fill="#683c27" d="M1 16h11v-1H1v1z" />
+  <path fill="#663931" d="M12 16h3v-1h-3v1zm-1-4v3h1v-3h-1zm4 0v3h1v-3h-1zm-3 0h3v-1h-3v1z" />
+</svg>

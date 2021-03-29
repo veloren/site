@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("fonts/Inter-Bold.woff2?v=3.16") format("woff2"),
+       url("fonts/Inter-Bold.woff?v=3.16") format("woff");
+}
+
+$title-font: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$body-font: Georgia, Times, Times New Roman, serif;
+$navbar-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+$body-font-size: 1.1em;
+
+$background-color-100: black;
+$background-color-200: #0d0d13;
+
+$text-background-color: #f2f2EC;
+
+$text-color: black;
+$negative-text-color: #ececec;
+
+$link-color: #ed1249;
+$negative-link-color: $negative-text-color;
+
+$info-color: grey;

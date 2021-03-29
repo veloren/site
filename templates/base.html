@@ -1,163 +1,112 @@
+{% import "macros/icon.html" as icon %}
+{% import "macros/transform.html" as transform %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-	<link rel="shortcut icon" href="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress.">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#2cb3a8">
-
-    {% if page %}
-      <!-- Twitter Card data -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="@velorenproject">
-      <meta name="twitter:title" content="{{ page.title }}">
-      {% if page.description %}
-        <meta name="twitter:description" content="{{ page.description }}">
-      {% else %}
-        <meta name="twitter:description" content="The Veloren devblog website">
-      {% endif %}
-      {% if page.extra.banner is defined %}
-        {% set url = page.extra.banner %}
-        {% if url is containing("media.discordapp.net") %}
-          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
-        {% endif %}
-        <meta name="twitter:image" content="{{ url }}" />
-      {% else %}
-        <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
-      {% endif %}
-
-      <!-- Open Graph data -->
-      <meta property="og:title" content="Veloren" />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content="{{ page.permalink }}" />
-
-      {% if page.extra.banner is defined %}
-        {% set url = page.extra.banner %}
-        {% if url is containing("media.discordapp.net") %}
-          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
-        {% endif %}
-        <meta property="og:image" content="{{ url }}" />
-      {% else %}
-        <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
-      {% endif %}
-      {% if page.description %}
-        <meta name="og:description" content="{{ page.description }}">
-      {% else %}
-        <meta name="og:description" content="The Veloren devblog website">
-      {% endif %}
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta charset="utf-8"/>
+    {# SEO meta Tags #}
+    <meta content="Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress." name="description"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="#2cb3a8" name="theme-color"/>
+    {# Twitter Card data #}
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="@velorenproject" name="twitter:site"/>
+    {% if page.title %}
+      <meta content="{{ page.title }}" name="twitter:title"/>
     {% else %}
-      <!-- Twitter Card data -->
-      <meta name="twitter:card" content="summary_large_image">
-      <meta name="twitter:site" content="@velorenproject">
-      <meta name="twitter:title" content="Veloren">
-      {% if page.description %}
-        <meta name="twitter:description" content="{{ page.description }}">
-      {% else %}
-        <meta name="twitter:description" content="The Veloren devblog website">
-      {% endif %}
-      <meta name="twitter:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}">
-
-      <!-- Open Graph data -->
-      <meta property="og:title" content="Veloren" />
-      <meta property="og:type" content="article" />
-      <meta property="og:url" content="https://veloren.net/" />
-      <meta property="og:image" content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" />
-      {% if page.description %}
-        <meta name="og:description" content="{{ page.description }}">
-      {% else %}
-        <meta name="og:description" content="The Veloren devblog website">
-      {% endif %}
+      <meta content="Veloren" name="twitter:title"/>
     {% endif %}
-
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="{{ get_url(path='veloren.css', trailing_slash=false) }}">
-
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet" crossorigin="anonymous">
-
-    <!-- icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ get_url(path='icons/favicon/apple-icon-57x57.png') }}" />
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ get_url(path='icons/favicon/apple-icon-60x60.png') }}" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ get_url(path='icons/favicon/apple-icon-72x72.png') }}" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ get_url(path='icons/favicon/apple-icon-76x76.png') }}" />
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ get_url(path='icons/favicon/apple-icon-114x114.png') }}" />
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ get_url(path='icons/favicon/apple-icon-120x120.png') }}" />
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ get_url(path='icons/favicon/apple-icon-144x144.png') }}" />
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ get_url(path='icons/favicon/apple-icon-152x152.png') }}" />
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path='icons/favicon/apple-icon-180x180.png') }}" />
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ get_url(path='icons/favicon/android-icon-192x192.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='icons/favicon/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ get_url(path='icons/favicon/favicon-96x96.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='icons/favicon/favicon-16x16.png') }}" />
-    <link rel="manifest" href="{{ get_url(path='icons/favicon/manifest.json') }}" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="{{ get_url(path='ms-icon-144x144.png') }}" />
-    <meta name="theme-color" content="#ffffff" />
-
-    <!-- rss -->
+    {% if page.description %}
+      <meta content="{{ page.description }}" name="twitter:description"/>
+    {% else %}
+      <meta content="The Veloren devblog website" name="twitter:description"/>
+    {% endif %}
+    {% if page.extra.banner is defined %}
+      {% set url = page.extra.banner %}
+      {% if url is containing("media.discordapp.net") %}
+        {% set url = transform::to_discord_cdn(url=url) %}
+      {% endif %}
+      <meta content="{{ url }}" name="twitter:image"/>
+    {% else %}
+      <meta content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" name="twitter:image"/>
+    {% endif %}
+    {# Open Graph data #}
+    <meta content="Veloren" property="og:title"/>
+    <meta content="article" property="og:type"/>
+    {% if page.permalink is defined %}
+      <meta content="{{ page.permalink }}" property="og:url"/>
+    {% else %}
+      <meta content="https://veloren.net/" property="og:url"/>
+    {% endif %}
+    {% if page.extra.banner is defined %}
+      {% set url = page.extra.banner %}
+      {% if url is containing("media.discordapp.net") %}
+        {% set url = transform::to_discord_cdn(url=url) %}
+      {% endif %}
+      <meta content="{{ url }}" property="og:image"/>
+    {% else %}
+      <meta content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" property="og:image"/>
+    {% endif %}
+    {% if page.description %}
+      <meta content="{{ page.description }}" name="og:description"/>
+    {% else %}
+      <meta content="The Veloren devblog website" name="og:description"/>
+    {% endif %}
+    {# Enable responsiveness on mobile devices #}
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>{{ config.title }}</title>
+    {# Stylesheet #}
+    <link href="{{ get_url(path='veloren.css', trailing_slash=false) }}" rel="stylesheet"/>
+    {# Favicons #}
+    <link href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}" rel="apple-touch-icon"/>
+    <link href="{{ get_url(path='icons/favicon/icon-192.png') }}" rel="icon"/>
+    <link href="{{ get_url(path='icons/favicon/manifest.json') }}" rel="manifest"/>
+    {# RSS #}
     {% if config.generate_feed %}
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path='rss.xml', trailing_slash=false) }}">
+      <link href="{{ get_url(path='rss.xml', trailing_slash=false) }}" rel="alternate" title="RSS" type="application/rss+xml"/>
     {% endif %}
-
-    {% block extra_head %}
-    {% endblock extra_head %}
+    {% block extra_head %}{% endblock extra_head %}
   </head>
-
   <body>
     <nav class="navbar">
       <div class="navbar-content">
         <div class="navbar-section navbar-logo-section">
-          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img src="{{ get_url(path='logo.png', trailing_slash=false) }}" alt="Veloren"/></a>
+          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png', trailing_slash=false) }}"/> </a>
         </div>
-
-        <div id="navbar-content-section" class="navbar-section navbar-content-section nav-content-hidden">
+        <div class="navbar-section navbar-content-section nav-content-hidden" id="navbar-content-section">
           <a class="navbar-item" href="{{ get_url(path='download') }}">
-            <i class="icon-download navbar-icon"></i>
+            {{ icon::load(path='static/icons/download.svg') }}
             <span class="navbar-item-text">Download</span>
           </a>
           <a class="navbar-item" href="{{ get_url(path='account') }}">
-            <i class="icon-account navbar-icon"></i>
+            {{ icon::load(path='static/icons/account.svg') }}
             <span class="navbar-item-text">Account</span>
           </a>
           <a class="navbar-item" href="https://book.veloren.net/">
-            <i class="icon-book navbar-icon"></i>
+            {{ icon::load(path='static/icons/manual.svg') }}
             <span class="navbar-item-text">Manual</span>
           </a>
           <a class="navbar-item" href="{{ get_url(path='joinus') }}">
-            <i class="icon-chat navbar-icon"></i>
+            {{ icon::load(path='static/icons/join-us.svg') }}
             <span class="navbar-item-text">Join Us</span>
           </a>
           <a class="navbar-item" href="https://opencollective.com/veloren">
-            <i class="icon-support navbar-icon"></i>
+            {{ icon::load(path='static/icons/donate.svg') }}
             <span class="navbar-item-text">Donate</span>
           </a>
         </div>
-
-        <div id="navbar-hamburger-menu" class="navbar-section navbar-hamburger-section" onclick="toggleMobileMenu()">
-          <i class="icon-menu navbar-item navbar-icon"></i>
+        <div class="navbar-section navbar-hamburger-section" id="navbar-hamburger-menu" onclick="toggleMobileMenu()">
+          <p>{{ icon::load(path='static/icons/menu.svg') }}</p>
         </div>
       </div>
-  	</nav>
-
-    <div class='main_bg'{% if page.extra.background is defined
-      %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url({% if page.extra.background is starting_with('http')
-        %}{{ page.extra.background }}{% else
-        %}{{ get_url(path=page.extra.background, trailing_slash=false) }}{% endif %})"{% endif %}>
+    </nav>
+    {# TODO: Inline styles? On my website?? #}
+    <div class="main_bg" {% if page.extra.background is defined %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url({% if page.extra.background is starting_with('http') %}{{ page.extra.background }}{% else %}{{ get_url(path=page.extra.background, trailing_slash=false) }}{% endif %})" {% endif %}>
       <main>
-        {% block content %}
-        {% endblock content %}
+        {% block content %}{% endblock content %}
       </main>
     </div>
-
-    <script src="{{ get_url(path='js/navbar.js', trailing_slash=false) }}"></script>
+    <script src="{{ get_url(path='js/navbar.js') }}"></script>
   </body>
-</html>
+</html></head></html>

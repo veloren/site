@@ -1,33 +1,35 @@
+{% import "macros/transform.html" as transform %}
+
 {% extends "base.html" %}
 
 {% block extra_head %}
-<script type="module" src="{{ get_url(path='js/account.js', trailing_slash=false) }}"></script>
+    <script src="{{ get_url(path='js/account.js', trailing_slash=false) }}" type="module"></script>
 {% endblock extra_head %}
 
 {% block content %}
-<section class="post">
-    <div class="title-and-info">
-        <h2>{{ page.title }}</h2>
-        <div class="info">
-            {% if page.date and page.title != "Welcome!" %}
-            <span class="divider"/>
-            <span>{{ page.date | date(format="%d %B %Y") }}</span>
-            {% endif %}
+    <section class="post">
+        <div class="title-and-info">
+            <h2>{{ page.title }}</h2>
+            <div class="info">
+                {% if page.date and page.title != "Welcome!" %}
+                    <span class="divider"/>
+                    <span>{{ page.date | date(format="%d %B %Y") }}</span>
+                {% endif %}
+            </div>
         </div>
-    </div>
-    <article>
-        {% if page.extra.banner is defined %}
-        {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
-        {% set url = page.extra.banner %}
-        {% if url is containing("media.discordapp.net") %}
-        {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
-        {% endif %}
-        <figure class="inline-image">
-            <a href="{{url}}" target="_blank"><img src="{{url}}" alt="banner" /></a>
-        </figure>
-        <hr />
-        {% endif %}
-        {{ page.content | safe }}
-    </article>
-</section>
+        <article>
+            {% if page.extra.banner is defined %}
+                {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
+                {% set url = page.extra.banner %}
+                {% if url is containing("media.discordapp.net") %}
+                    {% set url = transform::to_discord_cdn(url=url) %}
+                {% endif %}
+                <figure class="inline-image">
+                    <a href="{{ url }}" target="_blank"><img alt="banner" src="{{ url }}"/> </a>
+                </figure>
+                <hr/>
+            {% endif %}
+            {{ page.content | safe }}
+        </article>
+    </section>
 {% endblock content %}

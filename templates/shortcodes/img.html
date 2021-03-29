@@ -1,3 +1,4 @@
+{% import "macros/transform.html" as transform %}
 {#
 	Sanitize the URL first. Discord has two domains for hosted images:
 	- media.discordapp.net, which allows resizing
@@ -7,9 +8,15 @@
 #}
 {% set url = src %}
 {% if url is containing("media.discordapp.net") %}
-	{% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+  {% set url = transform::to_discord_cdn(url=url) %}
 {% endif %}
 <figure class="inline-image">
-	<a href="{{url}}" target="_blank"><img src="{{url}}" loading="lazy" alt="{%if alt %}{{alt}}{% endif %}" title="{%if alt %}{{alt}}{% endif %}" /></a>
-	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
+  {# TODO: Extract image's intrinsic dimensions to assist with lazy loading #}
+  <a href="{{ url }}" target="_blank"><img {% if alt %} alt="{{ alt }}" {% endif %} loading="lazy" src="{{ url }}"/>
+  </a>
+  {% if caption %}
+    <figcaption>
+      <p>{{ caption }}</p>
+    </figcaption>
+  {% endif %}
 </figure>
