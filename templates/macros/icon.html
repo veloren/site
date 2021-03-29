@@ -1,5 +1,5 @@
 {# Returns inline-able SVG during buildtime.
-The advantage is that inline SVGs can be manipulated by CSS, unline external ones.
+The advantage is that inline SVGs can be manipulated by CSS, unlike external ones.
 The macro requires the path to point to a file in a local directory and have the `.svg` file extension. #}
 {% macro load(path) -%}
   {# The dashes are necessary to remove any whitespace from the result #}
