@@ -17,10 +17,10 @@ weight = 0
 <a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-windows.msi">
     <i class="icon-download"></i> Download Airshipper (Windows)
 </a>
-<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.zip">
+<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.tar.gz">
     <i class="icon-download"></i> Download Airshipper (Linux)
 </a>
-<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.zip">
+<a class='home_button' href="https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.tar.gz">
     <i class="icon-download"></i> Download Airshipper (Mac)
 </a>
 
