@@ -75,7 +75,7 @@
           <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png', trailing_slash=false) }}"/> </a>
         </div>
         <div class="navbar-section navbar-content-section nav-content-hidden" id="navbar-content-section">
-          <a class="navbar-item" href="{{ get_url(path='download') }}">
+          <a class="navbar-item" href="{{ get_url(path='download') }}" >
             {{ icon::load(path='static/icons/download.svg') }}
             <span class="navbar-item-text">Download</span>
           </a>
@@ -83,7 +83,7 @@
             {{ icon::load(path='static/icons/account.svg') }}
             <span class="navbar-item-text">Account</span>
           </a>
-          <a class="navbar-item" href="https://book.veloren.net/">
+          <a class="navbar-item" href="https://book.veloren.net/" target="_blank" rel="noopener">
             {{ icon::load(path='static/icons/manual.svg') }}
             <span class="navbar-item-text">Manual</span>
           </a>
@@ -91,7 +91,7 @@
             {{ icon::load(path='static/icons/join-us.svg') }}
             <span class="navbar-item-text">Join Us</span>
           </a>
-          <a class="navbar-item" href="https://opencollective.com/veloren">
+          <a class="navbar-item" href="https://opencollective.com/veloren" target="_blank" rel="noopener">
             {{ icon::load(path='static/icons/donate.svg') }}
             <span class="navbar-item-text">Donate</span>
           </a>
