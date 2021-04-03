@@ -17,16 +17,26 @@ compile_sass = true
 # Default language used in RSS and i18n
 default_language = "en"
 
+taxonomies = [
+	{ name = "tags" }
+]
+
+
+# Configuration of the Markdown rendering
+[markdown]
+
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Gutenberg
 highlight_code = true
 
+# Whether to set rel="nofollow" for all external links
+external_links_no_follow = true
+
+# Whether to set rel="noreferrer" for all external links
+external_links_no_referrer = true
+
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-taxonomies = [
-	{ name = "tags" }
-]
 
 [extra]
 # Put all your custom variables here

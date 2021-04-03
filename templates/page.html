@@ -1,3 +1,5 @@
+{% import "macros/transform.html" as transform %}
+
 {% extends "base.html" %}
 
 {% block content %}
@@ -17,7 +19,7 @@
         {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
         {% set url = page.extra.banner %}
         {% if url is containing("media.discordapp.net") %}
-          {% set url = url | replace(from="media.discordapp.net", to="cdn.discordapp.com") | split(pat="?") | first %}
+          {% set url = transform::to_discord_cdn(url=url) %}
         {% endif %}
         <figure class="inline-image">
           <a href="{{url}}" target="_blank"><img src="{{url}}" alt="banner" /></a>

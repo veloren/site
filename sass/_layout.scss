@@ -1,4 +1,4 @@
-/* 100% custom css rules, not derived from any template. */
+@import 'variables';
 
 $main_width: 900px;
 
@@ -29,7 +29,7 @@ body {
 }
 
 main {
-	background-color: #f2f2EC; //rgba(255,255,255,0.9);
+	background-color: #f2f2EC;
 	color: black;
 	margin: 0 auto;
 	padding: 0.5em 1em 1em 1em;
@@ -38,36 +38,6 @@ main {
 	@media (min-width: $main_width) {
 		// increase padding on large screens
 		padding: 0.5em 1.5em 1em 1.5em;
-	}
-}
-
-
-.home_button {
-	display: block;
-
-	max-width: 0.5 * $main_width;
-	margin: 0.5em auto;
-	font-size: 20px;
-	line-height: 40px;
-
-	background-color: #0d0d13;
-	user-select: none;
-	font-family: 'Montserrat', sans-serif;
-
-	padding: 3px 5px;
-
-	color: #ececec;
-	&:hover {
-		//color: #d6d6d6;
-		color: #47bded;
-	}
-}
-
-a.header-link * {
-	transition: color 0.5s ease;
-	color: #414142;
-	&:hover {
-		color: #47bded;
 	}
 }
 

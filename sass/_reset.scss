@@ -1,37 +1,44 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+  font-weight: normal;
+}
 
-/* HTML5 display-role reset for older browsers */
+ul {
+  list-style: none;
+}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+button, input, select {
+  margin: 0;
+}
 
-body {
-  line-height: 1; }
+html {
+  box-sizing: border-box;
+}
 
-blockquote, q {
-  quotes: none; }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-blockquote {
-  &:before, &:after {
-    content: '';
-    content: none; } }
+img, video {
+  height: auto;
+  max-width: 100%;
+}
 
-q {
-  &:before, &:after {
-    content: '';
-    content: none; } }
+iframe {
+  border: 0;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
