@@ -4,12 +4,21 @@
   font-weight: 700;
   font-display: block;
   src: url("fonts/Inter-Bold.woff2?v=3.16") format("woff2"),
-       url("fonts/Inter-Bold.woff?v=3.16") format("woff");
 }
 
-$title-font: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-$body-font: Georgia, Times, Times New Roman, serif;
-$navbar-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'Open Sans';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("fonts/OpenSans-Regular.woff2?v=3.16") format("woff2"),
+}
+
+$system_fonts: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial;
+
+$title-font: 'Inter', $system_fonts, sans-serif;
+$body-font: 'Open Sans', $system_fonts, sans-serif;
+$navbar-font: $body-font;
 
 $body-font-size: 1.1em;
 
