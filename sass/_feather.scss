@@ -2,8 +2,8 @@
 
 // Variables and Mixins
 $break-small: 500px; // at what point the site becomes "mobile"
-$hpadding: 0; // The side-padding
-$hpadding-small: 16px; // The side-padding on mobile
+$hpadding: 1.25rem; // The side-padding
+$hpadding-small: .75rem; // The side-padding on mobile
 
 // ------------------------------------------------ //
 //					  Typography 					//
@@ -126,6 +126,7 @@ a {
 // Code
 pre, code {
 	font-family: "Lucida Console", Monaco, monospace;
+
 }
 
 // Misc.
