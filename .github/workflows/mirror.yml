@@ -1,0 +1,29 @@
+name: Mirror Gitlab repo
+
+# Every other day
+on:
+  schedule:
+    - cron: "0 0 1-31/2 * *"
+
+jobs:
+  mirror-gitlab-repo:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Clone Gitlab repo
+        run: git lfs install;
+          git clone https://gitlab.com/veloren/site.git;
+
+      - name: Uninstall LFS
+        run: cd site;
+          git lfs uninstall;
+          git lfs migrate export --include="*" --everything -y;
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: master
+          force: true
+          tags: true
+          directory: site
