@@ -20,6 +20,12 @@ You can download nightly here directly without the launcher but note that for an
 [Linux x64](https://download.veloren.net/latest/linux) - 
 [Mac x64](https://download.veloren.net/latest/macos)
 
+#### Flatpak
+
+This package is usually out of sync with the main server, but is still updated rather regularly.
+
+`flatpak install flathub net.veloren.veloren`
+
 ## Linux packages (Latest stable)
 
 #### Arch
