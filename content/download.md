@@ -43,6 +43,8 @@ _Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren 
 
 #### PPA for Ubuntu-based distributions
 
+_Note: unofficial repository_
+
 * ```
   sudo add-apt-repository ppa:frinksy/airshipper
   sudo apt-get update
@@ -60,6 +62,8 @@ The launcher and the game are both available in the AUR:
 * [Veloren](https://aur.archlinux.org/packages/veloren/)
 
 #### Copr for RPM-based distribitions
+
+_Note: unofficial repository_
 
 *  For Fedora:
     ```
