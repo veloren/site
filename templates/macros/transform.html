@@ -20,3 +20,11 @@ The macro doesn't check if the provided input is a valid Discord CDN URL. #}
   | split(pat="?")
   | first }}
 {%- endmacro to_discord_media %}
+
+{# Wraps given string into a mention element if it matches Discord's username format,
+either with or without the discriminator. #}
+{% macro to_mention(username) -%}
+  {% if username is matching("^@[^#]+(?:#\d{4})?$") %}
+    {{ '<span class="mention">' ~ username ~ '</span>' }}
+  {% endif %}
+{%- endmacro to_mention %}
