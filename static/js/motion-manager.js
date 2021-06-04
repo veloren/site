@@ -10,6 +10,7 @@ function reducedMotionCheck() {
   }
 }
 
-reducedMotionCheck();
-
-motionQuery.addEventListener("change", reducedMotionCheck);
+if (videos !== null) {
+  reducedMotionCheck();
+  motionQuery.addEventListener("change", reducedMotionCheck);
+}
