@@ -145,30 +145,30 @@ body {
 section {
 	margin: 46px 0;
 }
-	article {
-		// reduce header size for items within
-		// an article (e.g. a blog post)
-		h1, h2, h3, h4, h5, h6 {
-			margin-top: 36px;
-			margin-bottom: 12px;
-		}
-		h1 {
-			font-size: 36px;
-		}
-		h2 {
-			font-size: 24px;
-		}
-		h3, h4, h5, h6 {
-			font-size: 18px;
-		}
+
+article {
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 36px;
+		margin-bottom: 12px;
 	}
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3, h4, h5, h6 {
+		font-size: 18px;
+	}
+}
 
 .info {
 	padding: 0 $hpadding;
+	display: flex;
 	span {
 		padding: 0px;
 	}
-	.divider:before {
+	.divider::before {
 		padding: 0 8px;
 		content: "•";
 	}
