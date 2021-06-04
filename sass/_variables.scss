@@ -1,26 +1,19 @@
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style:  normal;
-  font-weight: 700;
-  font-display: block;
-  src: url("fonts/Inter-Bold.woff2?v=3.16") format("woff2"),
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: block;
-  src: url("fonts/OpenSans-Regular.woff2?v=3.16") format("woff2"),
+  font-weight: 300 900;
+  font-display: fallback;
+  src: url("fonts/Inter.var.woff2?v=3.18") format("woff2"),
 }
 
 $system_fonts: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial;
 
 $title-font: 'Inter', $system_fonts, sans-serif;
-$body-font: 'Open Sans', $system_fonts, sans-serif;
+$body-font: $title-font;
 $navbar-font: $body-font;
 
 $body-font-size: 1.1em;
+$body-letter-spacing: -0.013em;
 
 $background-color-100: black;
 $background-color-200: #0d0d13;
