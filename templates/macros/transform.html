@@ -28,3 +28,24 @@ either with or without the discriminator. #}
     {{ '<span class="mention">' ~ username ~ '</span>' }}
   {% endif %}
 {%- endmacro to_mention %}
+
+{# I don't want to talk about it. #}
+{% macro replace_tags_with_mentions(s) -%}
+  {# This handles like 99% of the cases. If you find an edge case, add another filter. #}
+  {% set words_list = s
+                      | replace(from=">", to="> ") | replace(from=",", to=" ") | replace(from="!", to=" !")
+                      | replace(from=".<", to=" ") | replace(from=":", to=" ") | replace(from="and", to=" ")
+                      | split(pat=" ") %}
+  {% for word in words_list %}
+    {% set word = word | trim %}
+    {% if word is starting_with("@") %}
+      {% set mention = '<span class="mention">' ~ word ~ '</span>' %}
+      {# In case we accidentally nest mentions, this will undo it #}
+      {% set nested_mention = '<span class="mention">' ~ mention ~ '</span>' %}
+      {% set_global s = s
+                        | replace(from=word, to=mention)
+                        | replace(from=nested_mention, to=mention) %}
+    {% endif %}
+  {% endfor %}
+  {{ s | safe }}
+{%- endmacro replace_tags_with_mentions %}

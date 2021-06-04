@@ -25,7 +25,7 @@
         </figure>
         <hr />
       {% endif %}
-      {{ page.content | safe }}
+      {{ transform::replace_tags_with_mentions(s=page.content) }}
     </article>
   </section>
 {% endblock content %}
