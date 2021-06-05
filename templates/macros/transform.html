@@ -34,7 +34,7 @@ either with or without the discriminator. #}
   {# This handles like 99% of the cases. If you find an edge case, add another filter. #}
   {% set words_list = s
                       | replace(from=">", to="> ") | replace(from=",", to=" ") | replace(from="!", to=" !")
-                      | replace(from=".<", to=" ") | replace(from=":", to=" ") | replace(from="and", to=" ")
+                      | replace(from=".<", to=" ") | replace(from=":", to=" ")
                       | split(pat=" ") %}
   {% for word in words_list %}
     {% set word = word | trim %}
