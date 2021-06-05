@@ -25,11 +25,11 @@ template = "account.html"
                     <span class="closebtn" onclick="window.closeAlert();">&times;</span>
                     <span id="alerttext" class="alerttext" >.</span>
                 </div>
-                <div class="header">Enter account details</div>
+                <h4>Enter account details</h4>
                 <input id="username" type="text" name="username" placeholder="Username">
                 <input id="password" type="password" name="password" placeholder="Password">
                 <input id="password_repeat" type="password" placeholder="Repeat Password">
-                <p><strong>NOTE:</strong> We <strong>cannot</strong> reset your account if you forget your password.
+                <p>Please note, we <strong>cannot</strong> reset your account if you forget your password.
                 Make sure it's <a href="https://www.xkcd.com/936/" target="_blank">secure</a> and write it down.</p>
                 <button type='button' onclick="window.postToBackend();">I acknowledge and want to register</button>
             </div>

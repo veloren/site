@@ -1,21 +1,21 @@
 @import 'variables';
 
-$main_width: 900px;
+$main_width: 960px;
 
-html {
-	height: 100%;
+html, body {
+	min-height: 100vh;
 }
 
 body {
 	position: relative;
-	min-height: 100%;
 	background-color: black;
-
 	display: flex;
 	flex-flow: column;
-}
+	flex: 1 0 1px;
+	padding-bottom: 2em;
+	line-height: 1.75;
+	overflow-wrap: break-word;
 
-.main_bg {
 	@media (min-width: $main_width) {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(header2.png);
 		background-size: cover, cover;
@@ -23,46 +23,19 @@ body {
 		background-position: center bottom, center bottom;
 		background-attachment: fixed, fixed;
 	}
-
-	flex: 1 0 1px;
-	padding-bottom: 2em;
 }
 
 main {
 	background-color: #f2f2EC;
+	min-height: 80vh;
 	color: black;
 	margin: 0 auto;
 	padding: 0.5em 1em 1em 1em;
-	max-width: $main_width;
+	width: $main_width;
 
 	@media (min-width: $main_width) {
 		// increase padding on large screens
-		padding: 0.5em 3em 1em 3em;
-	}
-}
-
-ul, ol {
-	// undo the damage from reset.css
-	padding-left: 2em;
-}
-
-section.post-overview {
-	display: flex;
-	flex-flow: row nowrap;
-}
-section.post-overview > .thumbnail {
-	flex: 0 0 auto;
-}
-
-.thumbnail > a > img {
-	border-radius: 4px;
-}
-
-section.post-overview > .overview {
-	flex: 1 1 auto;
-	padding-left: 16px;
-	.title {
-		margin-top: 0;
+		padding: 0.5em 4em 1em 4em;
 	}
 }
 

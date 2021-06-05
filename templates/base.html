@@ -103,11 +103,8 @@
         </div>
       </div>
     </nav>
-    {# TODO: Inline styles? On my website?? #}
-    <div class="main_bg" {% if page.extra.background is defined %} style="background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url({% if page.extra.background is starting_with('http') %}{{ page.extra.background }}{% else %}{{ get_url(path=page.extra.background, trailing_slash=false) }}{% endif %})" {% endif %}>
-      <main>
-        {% block content %}{% endblock content %}
-      </main>
-    </div>
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
   </body>
 </html>

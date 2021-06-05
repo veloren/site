@@ -14,27 +14,34 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font;
 	font-weight: 700;
 	margin-bottom: .75em;
-	line-height: 1.2;
+	line-height: 1.3;
 	color: #414142;
+	margin-top: 1.5rem;
+	margin-bottom: .8rem;
 }
 
 h1 {
-	font-size: 4.5em;
+  margin-top: 0;
+  font-size: 3.052rem;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.441rem;
 }
 
 h3 {
-	font-size: 2.25em;
+	font-size: 1.953rem;
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: 1.563rem;
 }
 
-.title-and-info {
+h5 {
+	font-size: 1.25rem;
+}
+
+.title-container {
 	margin-bottom: 2.25em;
 }
 
@@ -57,15 +64,12 @@ p, ul, ol {
 	font-family: $body-font;
 	font-size: $body-font-size;
 	letter-spacing: $body-letter-spacing;
-	line-height: 1.7;
 	text-align: justify;
 	margin-bottom: 1em;
 }
 
 ul, ol {
-	p {
-		padding: 0 0 !important;
-	}
+	padding-left: 2em;
 	@media (max-width: $break-small){
 		list-style-position: inside;
 	}
@@ -120,61 +124,8 @@ a {
 	background: rgba(237, 18, 73,0.5); /* WebKit/Blink Browsers */
 }
 
-::-moz-selection {
-	background: rgba(237, 18, 73,0.5); /* Gecko Browsers */
-}
-
-// Code
-pre, code {
-	font-family: "Lucida Console", Monaco, monospace;
-
-}
-
-// Misc.
-.date, .info { // the small text that shows info related to dates, etc.
-	text-transform: uppercase;
-	font-size: .75em;
-	color: $info-color;
-}
-
-// overall rules
-body {
-	overflow-wrap: break-word;
-}
-
 section {
 	margin: 46px 0;
-}
-
-article {
-	h1, h2, h3, h4, h5, h6 {
-		margin-top: 36px;
-		margin-bottom: 12px;
-	}
-	h1 {
-		font-size: 36px;
-	}
-	h2 {
-		font-size: 24px;
-	}
-	h3, h4, h5, h6 {
-		font-size: 18px;
-	}
-}
-
-.info {
-	padding: 0 $hpadding;
-	display: flex;
-	span {
-		padding: 0px;
-	}
-	.divider::before {
-		padding: 0 8px;
-		content: "•";
-	}
-	@media (max-width: $break-small){
-		padding: 0 $hpadding-small;
-	}
 }
 
 // ------------------------------------------------ //
@@ -213,7 +164,12 @@ article {
 	}
 }
 
-// inline code
+// Code
+pre, code {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+// Inline code
 code {
 	white-space: pre;
 	white-space: pre-wrap;
