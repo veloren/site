@@ -9,7 +9,7 @@ template = "404.html"
 +++
 
 <figure class="inline-image header-video">
-	<video playsinline muted loop width="100%">
+	<video playsinline muted loop width="100%" height="226">
 		<source src="veloren.mp4" type="video/mp4">
 		Your browser does not support the video tag.
 	</video>

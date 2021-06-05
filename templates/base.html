@@ -56,12 +56,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>{{ config.title }}</title>
     {# Stylesheet #}
-    <link rel="preload" href="{{ get_url(path='fonts/Inter.var.woff2') }}" as="font" type="font/woff2" crossorigin>
     <link href="{{ get_url(path='veloren.css') }}" rel="stylesheet" type="text/css"/>
     {# Favicons #}
     <link href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}" rel="apple-touch-icon"/>
     <link href="{{ get_url(path='icons/favicon/icon-192.png') }}" rel="icon"/>
     <link href="{{ get_url(path='icons/favicon/manifest.json') }}" rel="manifest"/>
+    {# Unadjusts letter-spacing when the custom font loads in. #}
+    <script>document.fonts.ready.then(() => { document.body.style = "letter-spacing: initial;" })</script>
     <script defer src="{{ get_url(path='js/navbar.js') }}"></script>
     <script defer src="{{ get_url(path='js/motion-manager.js') }}"></script>
     {# RSS #}
@@ -74,7 +75,7 @@
     <nav class="navbar">
       <div class="navbar-content">
         <div class="navbar-section navbar-logo-section">
-          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png') }}"/> </a>
+          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png') }}" height="225"/> </a>
         </div>
         <div class="navbar-section navbar-content-section nav-content-hidden" id="navbar-content-section">
           <a class="navbar-item" href="{{ get_url(path='download') }}" >

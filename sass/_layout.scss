@@ -15,6 +15,7 @@ body {
 	padding-bottom: 2em;
 	line-height: 1.75;
 	overflow-wrap: break-word;
+	letter-spacing: $body-letter-spacing;
 
 	@media (min-width: $main_width) {
 		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(header2.png);

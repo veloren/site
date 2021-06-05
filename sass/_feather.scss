@@ -62,8 +62,6 @@ hr {
 // paragraphs and lists
 p, ul, ol {
 	font-family: $body-font;
-	font-size: $body-font-size;
-	letter-spacing: $body-letter-spacing;
 	text-align: justify;
 	margin-bottom: 1em;
 }
@@ -114,6 +112,8 @@ blockquote {
 // Links and Selections
 a {
 	color: $link-color;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
 
 	&:hover {
 		text-decoration: none;
