@@ -28,7 +28,7 @@
       {% endif %}
       <meta content="{{ url }}" name="twitter:image"/>
     {% else %}
-      <meta content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" name="twitter:image"/>
+      <meta content="{{ get_url(path='Logo_Square.png') }}" name="twitter:image"/>
     {% endif %}
     {# Open Graph data #}
     <meta content="Veloren" property="og:title"/>
@@ -45,7 +45,7 @@
       {% endif %}
       <meta content="{{ url }}" property="og:image"/>
     {% else %}
-      <meta content="{{ get_url(path='Logo_Square.png', trailing_slash=false) }}" property="og:image"/>
+      <meta content="{{ get_url(path='Logo_Square.png') }}" property="og:image"/>
     {% endif %}
     {% if page.description %}
       <meta content="{{ page.description }}" name="og:description"/>
@@ -56,8 +56,8 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>{{ config.title }}</title>
     {# Stylesheet #}
-    <link rel="preload" href="{{ get_url(path='fonts/Inter.var.woff2', trailing_slash=false) }}" as="font" type="font/woff2" crossorigin>
-    <link href="{{ get_url(path='veloren.css', trailing_slash=false) }}" rel="stylesheet" type="text/css"/>
+    <link rel="preload" href="{{ get_url(path='fonts/Inter.var.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <link href="{{ get_url(path='veloren.css') }}" rel="stylesheet" type="text/css"/>
     {# Favicons #}
     <link href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}" rel="apple-touch-icon"/>
     <link href="{{ get_url(path='icons/favicon/icon-192.png') }}" rel="icon"/>
@@ -66,7 +66,7 @@
     <script defer src="{{ get_url(path='js/motion-manager.js') }}"></script>
     {# RSS #}
     {% if config.generate_feed %}
-      <link href="{{ get_url(path='rss.xml', trailing_slash=false) }}" rel="alternate" title="RSS" type="application/rss+xml"/>
+      <link href="{{ get_url(path='rss.xml') }}" rel="alternate" title="RSS" type="application/rss+xml"/>
     {% endif %}
     {% block extra_head %}{% endblock extra_head %}
   </head>
@@ -74,7 +74,7 @@
     <nav class="navbar">
       <div class="navbar-content">
         <div class="navbar-section navbar-logo-section">
-          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png', trailing_slash=false) }}"/> </a>
+          <a class="navbar-item navbar-logo" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ get_url(path='logo.png') }}"/> </a>
         </div>
         <div class="navbar-section navbar-content-section nav-content-hidden" id="navbar-content-section">
           <a class="navbar-item" href="{{ get_url(path='download') }}" >
