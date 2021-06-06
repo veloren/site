@@ -16,7 +16,7 @@ with integer values in the angle brackets.
 The macro doesn't check if the provided input is a valid Discord CDN URL. #}
 {% macro to_discord_media(url) -%}
   {{ url
-  | replace(from="cdn.discordapp.net", to="media.discordapp.com")
+  | replace(from="cdn.discordapp.com", to="media.discordapp.net")
   | split(pat="?")
   | first }}
 {%- endmacro to_discord_media %}
