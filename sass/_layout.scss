@@ -9,13 +9,12 @@ body {
 	background-color: black;
 	display: flex;
 	flex-flow: column;
-	flex: 1 0 1px;
 	line-height: 1.75;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
 		padding-bottom: 2em;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(header2.png);
+		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(bg_main.png);
 		background-size: cover, cover;
 		background-repeat: no-repeat, no-repeat;
 		background-position: center bottom, center bottom;
