@@ -1,7 +1,6 @@
 @import 'variables';
 
 // Variables and Mixins
-$break-small: 500px; // at what point the site becomes "mobile"
 $hpadding: 1.25rem; // The side-padding
 $hpadding-small: .75rem; // The side-padding on mobile
 
@@ -54,7 +53,7 @@ hr {
 	border: none;
 	margin-bottom: 48px;
 
-	@media (max-width: $break-small){
+	@media (max-width: $mobile-width){
 		width: calc(100% - 32px);
 	}
 }
@@ -68,7 +67,7 @@ p, ul, ol {
 
 ul, ol {
 	padding-left: 2em;
-	@media (max-width: $break-small){
+	@media (max-width: $mobile-width){
 		list-style-position: inside;
 	}
 }
@@ -121,7 +120,7 @@ a {
 }
 
 ::selection {
-	background: rgba(237, 18, 73,0.5); /* WebKit/Blink Browsers */
+	background: rgba(237, 18, 73,0.5);
 }
 
 section {
@@ -154,7 +153,7 @@ section {
 		padding-bottom: 6px;
 	}
 
-	@media (max-width: $break-small) {
+	@media (max-width: $mobile-width) {
 		border-radius: 0;
 		div {
 			padding-left: $hpadding;
@@ -196,7 +195,7 @@ pre {
 		color: inherit;
 		background-color: transparent;
 	}
-	@media (max-width: $break-small){
+	@media (max-width: $mobile-width){
 		padding-left: $hpadding-small;
 		padding-right: $hpadding-small;
 		border-radius: 0;

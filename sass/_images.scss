@@ -1,3 +1,5 @@
+@import 'variables';
+
 .inline-image {
 	display: block;
 	max-width: 85%;
@@ -64,4 +66,6 @@
 .header-video {
 	margin: 0 auto;
 	line-height: 0;
+	width: 100vw;
+	max-width: $main_width;
 }

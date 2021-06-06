@@ -1,7 +1,5 @@
 @import 'variables';
 
-$main_width: 960px;
-
 html, body {
 	min-height: 100vh;
 }
@@ -12,11 +10,11 @@ body {
 	display: flex;
 	flex-flow: column;
 	flex: 1 0 1px;
-	padding-bottom: 2em;
 	line-height: 1.75;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
+		padding-bottom: 2em;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(header2.png);
 		background-size: cover, cover;
 		background-repeat: no-repeat, no-repeat;
@@ -28,12 +26,12 @@ body {
 main {
 	background-color: #f2f2EC;
 	min-height: 80vh;
-	color: black;
-	margin: 0 auto;
+	color: $text-color;
 	padding: 0.5em 1em 1em 1em;
 	max-width: $main_width;
 
 	@media (min-width: $main_width) {
+		margin: 0 auto;
 		// increase padding on large screens
 		padding: 0.5em 4em 1em 4em;
 	}

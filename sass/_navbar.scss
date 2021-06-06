@@ -1,51 +1,41 @@
 @import 'variables';
 
-.navbar {
-  flex: 0 0 auto;
+nav {
   font-family: $navbar-font;
-  font-size: 1.2em;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: $main_width;
   height: 4em;
   background-color: $background-color-200;
-  user-select: none;
-  box-shadow: 0px 2px 12px 0px rgba(0,0,0,0.5);
-}
-
-.navbar-content {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 834px;
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
 }
 
 .navbar-section {
   display: flex;
   height: 100%;
-}
 
-.navbar-item {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
-  font-weight: normal;
-  color: $negative-link-color;
-
-  &:hover{
+  a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    font-weight: normal;
     color: $negative-link-color;
+
+    &:hover{
+      color: $negative-link-color;
+    }
+
+    span {
+      margin-left: .3em;
+      white-space: nowrap;
+    }
   }
 }
 
-.navbar-item-text {
-  margin-left: .3em;
-}
-
 .navbar-logo {
-  font-size: 20px;
   img {
     max-height: 40px;
     padding: 5px 0;
@@ -65,8 +55,8 @@
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-content-section {
+@media screen and (max-width: $mobile-width) {
+  #navbar-links {
     position: absolute;
     flex-direction: column;
     background-color: #0d0d13;
@@ -77,21 +67,22 @@
     height: auto;
   }
 
-  .navbar-content-section .navbar-item {
+  #navbar-links a {
     padding: 20px 0;
   }
 
   .navbar-hamburger-section {
     color: $negative-text-color;
     display: block;
-    padding: .9em .9em 0 0;
+    padding: 1.2em;
     cursor: pointer;
 
     svg {
-      width: 2em;
-      height: 2em;
+      width: 100%;
+      height: 100%;
     }
   }
+
   .nav-content-hidden {
     display: none;
   }

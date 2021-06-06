@@ -4,14 +4,13 @@
 
 {% extends "base.html" %}
 
-{# We're inlining the width because rsass doesn't think it's a valid function call. #}
 {% block header %}
-<figure class="header-video">
-  <video playsinline muted loop width="100%" height="100%" style="width:min(100vw,960px)">
-    <source src="veloren.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</figure>
+  <figure class="header-video">
+    <video playsinline muted loop width="100%" height="100%">
+      <source src="veloren.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </figure>
 {% endblock header %}
 
 {% block content %}
