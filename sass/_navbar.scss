@@ -47,11 +47,11 @@ nav {
   }
 }
 
-.navbar-hamburger-section {
+.navbar-hamburger {
   display: none;
 }
 
-.nav-content-hidden {
+.navbar-content {
   display: flex;
 }
 
@@ -63,15 +63,15 @@ nav {
     width: 100%;
     align-items: center;
     top: 4em;
-    padding: 20px 0;
+    padding: 1.25em;
     height: auto;
+
+    a {
+      padding: inherit;
+    }
   }
 
-  #navbar-links a {
-    padding: 20px 0;
-  }
-
-  .navbar-hamburger-section {
+  .navbar-hamburger {
     color: $negative-text-color;
     display: block;
     padding: 1.2em;
@@ -83,7 +83,7 @@ nav {
     }
   }
 
-  .nav-content-hidden {
+  .navbar-content {
     display: none;
   }
 }
