@@ -1,0 +1,67 @@
+// NOTE: Don't touch fonts unless you know what you're doing.
+// This is font overengineering at its finest.
+
+/*
+Inter v3.18, if these values change in a future update,
+ensure the fallback font still _roughly_ visually aligns.
+
+unitsPerEm 2816
+ascender 2728
+descender -680
+lineGap 0
+advanceWidthMax 7552
+*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  // Font weights below 300 are hard to read for the visually impaired.
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("fonts/Inter.var.woff2?v=3.18") format("woff2");
+}
+
+/*
+Ascent override and letter/word spacing are not consistent
+across different dppx. So we must account for it with the
+following media queries.
+*/
+@media (resolution: 1.5dppx)  {
+  @font-face {
+    font-family: "Arial Fallback";
+    src: local("Arial"), local("Helvetica");
+    ascent-override: 96%;
+    advance-override: 2.6818181818181817;
+  }
+
+  body {
+    letter-spacing: .46px;
+    word-spacing: initial;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  @font-face {
+    font-family: "Arial Fallback";
+    src: local("Arial"), local("Helvetica");
+    ascent-override: 92%;
+    advance-override: 2.6818181818181817;
+  }
+
+  body {
+    letter-spacing: .62px;
+    word-spacing: -1.1px;
+  }
+}
+
+// default (1dppx)
+@font-face {
+  font-family: "Arial Fallback";
+  src: local("Arial"), local("Helvetica");
+  ascent-override: 100%;
+  advance-override: 2.6818181818181817;
+}
+
+body {
+  letter-spacing: .46px;
+  word-spacing: -.1px;
+}
