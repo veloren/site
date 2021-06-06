@@ -31,7 +31,7 @@ main {
 	color: black;
 	margin: 0 auto;
 	padding: 0.5em 1em 1em 1em;
-	width: $main_width;
+	max-width: $main_width;
 
 	@media (min-width: $main_width) {
 		// increase padding on large screens
