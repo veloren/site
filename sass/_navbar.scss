@@ -36,10 +36,9 @@ nav {
 }
 
 .navbar-logo {
-  img {
-    max-height: 40px;
-    padding: 5px 0;
+  flex-shrink: 0;
 
+  img {
     transition: filter 0.3s ease;
     &:hover {
       filter: brightness(110%);
