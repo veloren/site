@@ -20,12 +20,17 @@ nav {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 20px;
+    padding: 0 1.5em;
     font-weight: normal;
     color: $negative-link-color;
 
     &:hover{
       color: $negative-link-color;
+    }
+
+    svg {
+      width: 50%;
+      height: 50%;
     }
 
     span {
@@ -36,7 +41,7 @@ nav {
 }
 
 .navbar-logo {
-  flex-shrink: 0;
+  flex-shrink: 2;
 
   img {
     transition: filter 0.3s ease;
