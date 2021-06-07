@@ -59,7 +59,7 @@ nav {
   display: flex;
 }
 
-@media screen and (max-width: $mobile-width) {
+@media (max-width: $mobile-width) {
   #navbar-links {
     position: absolute;
     flex-direction: column;

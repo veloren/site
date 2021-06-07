@@ -1,17 +1,15 @@
 {% macro post_preview(page) -%}
   <section class="post-overview">
-    <div class="thumbnail">
-      {% if page.extra.banner is defined %}
-        {# we want to link to media.discordapp.net for resizing #}
-        {% set url = page.extra.banner %}
-        {% if url is containing("cdn.discordapp.com") %}
-          {% set url = transform::to_discord_media(url=url) %}
-        {% endif %}
-        <a href="{{ page.permalink }}">
-          <img src="{{ url }}?width=192&height=108" width="192" height="108" />
-        </a>
+    {% if page.extra.banner is defined %}
+      {# we want to link to media.discordapp.net for resizing #}
+      {% set url = page.extra.banner %}
+      {% if url is containing("cdn.discordapp.com") %}
+        {% set url = transform::to_discord_media(url=url) %}
       {% endif %}
-    </div>
+      <a href="{{ page.permalink }}" class="thumbnail">
+        <img src="{{ url }}?width=384&height=216" width="384" height="216" />
+      </a>
+    {% endif %}
     <div class="overview">
       <a class="header-link" href="{{ page.permalink }}">
         <h3 class="title">{{- page.title -}}</h3>

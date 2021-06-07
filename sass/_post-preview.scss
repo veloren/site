@@ -3,11 +3,12 @@
 .post-overview {
 	display: flex;
 	flex-flow: row nowrap;
+  align-items: center;
 
   & > .thumbnail {
     flex: 0 0 auto;
 
-    & > a > img {
+    & > img {
       border-radius: 4px;
     }
   }
@@ -17,6 +18,12 @@
     .title {
       margin-top: 0;
     }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .post-overview {
+    flex-flow: column;
   }
 }
 
