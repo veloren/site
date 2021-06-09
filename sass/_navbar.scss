@@ -4,7 +4,6 @@ nav {
   font-family: $navbar-font;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   max-width: $main_width;
   height: 4em;
@@ -15,12 +14,14 @@ nav {
 .navbar-section {
   display: flex;
   height: 100%;
+  gap: 2.5em;
+  z-index: 1;
+  margin: 0 1em;
 
   a {
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 1.5em;
     font-weight: normal;
     color: $negative-link-color;
 
@@ -29,7 +30,7 @@ nav {
     }
 
     svg {
-      width: 50%;
+      width: 3em;
       height: 50%;
     }
 
@@ -41,8 +42,6 @@ nav {
 }
 
 .navbar-logo {
-  flex-shrink: 2;
-
   img {
     transition: filter 0.3s ease;
     &:hover {
@@ -61,6 +60,7 @@ nav {
 
 @media (max-width: $mobile-width) {
   #navbar-links {
+    margin: 0;
     position: absolute;
     flex-direction: column;
     background-color: #0d0d13;
@@ -83,7 +83,6 @@ nav {
     cursor: pointer;
 
     svg {
-      width: 100%;
       height: 100%;
     }
   }
