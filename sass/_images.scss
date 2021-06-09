@@ -47,11 +47,11 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	gap: 1em;
 	margin-top: 4em;
 	margin-bottom: 2em;
 
 	img {
-		margin: .5em;
 		max-width: 90vw;
 		max-height: 90vh;
 		object-fit: cover;
