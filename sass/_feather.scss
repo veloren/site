@@ -108,21 +108,6 @@ blockquote {
 	margin: 36px 0;
 }
 
-// Links and Selections
-a {
-	color: $link-color;
-	text-decoration-thickness: 2px;
-	text-underline-offset: 4px;
-
-	&:hover {
-		text-decoration: none;
-	}
-}
-
-::selection {
-	background: rgba(237, 18, 73,0.5);
-}
-
 section {
 	margin: 46px 0;
 }
