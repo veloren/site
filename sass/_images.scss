@@ -50,18 +50,12 @@
 	margin-top: 4em;
 	margin-bottom: 2em;
 
-	a {
-		margin: 0.5em;
-	}
 	img {
+		margin: .5em;
 		max-width: 90vw;
-		max-height: 90vw;
+		max-height: 90vh;
 		object-fit: cover;
 		border-radius: 4px;
-    transition: filter 0.3s ease;
-		&:hover {
-			filter: brightness(110%);
-		}
 	}
 }
 
