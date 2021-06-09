@@ -20,9 +20,11 @@
       </a>
     {% endif %}
     <div class="overview">
-      <a class="header-link" href="{{ page.permalink }}">
-        <h3 class="title">{{- page.title -}}</h3>
-      </a>
+        <h3 class="title">
+          <a class="header-link" href="{{ page.permalink }}">
+            {{- page.title -}}
+          </a>
+        </h3>
       <p class="post-content-preview">
         {{- page.content | striptags | truncate(length=255) | safe -}}
       </p>

@@ -9,7 +9,6 @@ body {
 	background-color: black;
 	display: flex;
 	flex-flow: column;
-	line-height: 1.75;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
