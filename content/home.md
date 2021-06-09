@@ -26,8 +26,6 @@ screenshot3.png
 screenshot4.png
 {% end %}
 
-<br>
-
 Development of Veloren started in mid-2018. There are around 20 active
 developers working on the game, with another 20 artists, writers, designers, and
 composers contributing as well. Over 150 people have contributed to the
