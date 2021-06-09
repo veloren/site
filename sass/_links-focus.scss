@@ -10,11 +10,16 @@ a {
 }
 
 // Blog preview titles
-h3 > a {
+.header-link {
   color: inherit;
   text-decoration-color: $link-color;
   text-decoration-thickness: 2px;
 	text-underline-offset: 4px;
+}
+
+nav a {
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
 }
 
 ::selection {
