@@ -33,4 +33,4 @@ developers working on the game, with another 20 artists, writers, designers, and
 composers contributing as well. Over 150 people have contributed to the
 project. Veloren currently has builds for Windows, Linux, and MacOS.
 
-<p style="text-align: center; margin-top: 1em;">What are you waiting for?</p>
+<p style="text-align: center">What are you waiting for?</p>
