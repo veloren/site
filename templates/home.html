@@ -1,7 +1,18 @@
 {% import "macros/icon.html" as icon %}
 {% import "macros/transform.html" as transform %}
+{% import "macros/generate.html" as gen %}
 
 {% extends "base.html" %}
+
+{% block header %}
+  <figure class="header-video">
+    <video playsinline muted loop preload="auto" width="960" height="310">
+      <source src="{{ get_url(path='videos/veloren.webm') }}" type="video/webm">
+      <source src="{{ get_url(path='videos/veloren.mp4') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </figure>
+{% endblock header %}
 
 {% block content %}
   <section class="post">
@@ -21,37 +32,7 @@
             {% for page in cat.pages %}
               {% if show_posts > 0 and page.date %}
                 {% set_global show_posts = show_posts - 1 %}
-                <section class="post-overview">
-                  <div class="thumbnail">
-                    {% if page.extra.banner is defined %}
-                      {# we want to link to media.discordapp.net for resizing #}
-                      {% set url = page.extra.banner %}
-                      {% if url is containing("cdn.discordapp.com") %}
-                        {% set url = transform::to_discord_media(url=url) %}
-                      {% endif %}
-                      <a href="{{ page.permalink }}">
-                        <img height="108" src="{{ url }}?width=192&height=108" width="192"/>
-                      </a>
-                    {% endif %}
-                  </div>
-                  <div class="overview">
-                    <a class="header-link" href="{{ page.permalink }}">
-                      <h3 class="title">
-                        {{- page.title -}}
-                      </h3>
-                    </a>
-                    <p>
-                      {{- page.content | striptags | truncate(length=255) | safe -}}
-                    </p>
-                    <div class="info">
-                      <span>{{ page.reading_time }} minute read</span>
-                      {% if page.date and page.title != "Welcome!" %}
-                        <span class="divider"/>
-                        <span>{{ page.date | date(format="%d %B %Y") }}</span>
-                      {% endif %}
-                    </div>
-                  </div>
-                </section>
+                {{ gen::post_preview(page=page) }}
               {% endif %}
             {% endfor %}
           {% endif %}

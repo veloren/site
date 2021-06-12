@@ -9,7 +9,7 @@ weight = 0
 
 ### Minimum requirements:
 
-- GPU with OpenGL support >= 3.3
+- GPU with either Vulkan, Metal, or DirectX 11+ support
 - 4GB RAM
 - multi-core CPU
 - 2GB of free disk space

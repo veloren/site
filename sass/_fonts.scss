@@ -1,0 +1,71 @@
+// NOTE: Don't touch fonts unless you know what you're doing.
+// This is font overengineering at its finest.
+
+// Fonts have been subsetted with the latin+latin-extended unicode ranges
+// and all font features included.
+
+/*
+Inter v3.18, if these values change in a future update,
+ensure the fallback font still _roughly_ visually aligns.
+
+unitsPerEm 2816
+ascender 2728
+descender -680
+lineGap 0
+advanceWidthMax 7552
+*/
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  // Font weights below 300 are hard to read for the visually impaired.
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("fonts/Inter-subset.woff2?v=3.18") format("woff2");
+  unicode-range: U+0-24F,U+259,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+1E00-1EFF,U+2000-206F,U+2074,U+20A0-20CF,U+2113,U+2122,U+2191,U+2193,U+2212,U+2215,U+2C60-2C7F,U+A720-A7FF,U+FEFF,U+FFFD;
+}
+
+/*
+Ascent override and letter/word spacing are not consistent
+across different dppx. So we must account for it with the
+following media queries.
+*/
+@media (resolution: 1.5dppx)  {
+  @font-face {
+    font-family: "Arial Fallback";
+    src: local("Arial"), local("Helvetica");
+    ascent-override: 96%;
+    advance-override: 2.6818181818181817;
+  }
+
+  body {
+    letter-spacing: .46px;
+    word-spacing: initial;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  @font-face {
+    font-family: "Arial Fallback";
+    src: local("Arial"), local("Helvetica");
+    ascent-override: 92%;
+    advance-override: 2.6818181818181817;
+  }
+
+  body {
+    letter-spacing: .62px;
+    word-spacing: -1.1px;
+  }
+}
+
+// default (1dppx)
+@font-face {
+  font-family: "Arial Fallback";
+  src: local("Arial"), local("Helvetica");
+  ascent-override: 100%;
+  advance-override: 2.6818181818181817;
+}
+
+body {
+  letter-spacing: .46px;
+  word-spacing: -.1px;
+}

@@ -1,0 +1,45 @@
+@import 'variables';
+
+.post-overview {
+	display: flex;
+	flex-flow: row nowrap;
+  align-items: center;
+
+  & > .thumbnail {
+    flex: 0 0 auto;
+    line-height: 0;
+
+    & > img {
+      border-radius: 4px;
+    }
+  }
+  & > .overview {
+    flex: 1 1 auto;
+    padding-left: 1em;
+    .title {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .post-overview {
+    flex-flow: column;
+  }
+}
+
+.info {
+	display: flex;
+  text-transform: uppercase;
+	font-size: .75em;
+	color: $info-color;
+
+	.divider::before {
+		padding: 0 .5em;
+		content: "•";
+	}
+
+	@media (max-width: $mobile-width){
+		padding: 0 $hpadding-small;
+	}
+}

@@ -16,7 +16,36 @@ with integer values in the angle brackets.
 The macro doesn't check if the provided input is a valid Discord CDN URL. #}
 {% macro to_discord_media(url) -%}
   {{ url
-  | replace(from="cdn.discordapp.net", to="media.discordapp.com")
+  | replace(from="cdn.discordapp.com", to="media.discordapp.net")
   | split(pat="?")
   | first }}
 {%- endmacro to_discord_media %}
+
+{# Wraps given string into a mention element if it matches Discord's username format,
+either with or without the discriminator. #}
+{% macro to_mention(username) -%}
+  {% if username is matching("^@[^#]+(?:#\d{4})?$") %}
+    {{ '<span class="mention">' ~ username ~ '</span>' }}
+  {% endif %}
+{%- endmacro to_mention %}
+
+{# I don't want to talk about it. #}
+{% macro replace_tags_with_mentions(s) -%}
+  {# This handles like 99% of the cases. If you find an edge case, add another filter. #}
+  {% set words_list = s
+                      | replace(from=">", to="> ") | replace(from=",", to=" ") | replace(from="!", to=" !")
+                      | replace(from=".<", to=" ") | replace(from=":", to=" ")
+                      | split(pat=" ") %}
+  {% for word in words_list %}
+    {% set word = word | trim %}
+    {% if word is starting_with("@") %}
+      {% set mention = '<span class="mention">' ~ word ~ '</span>' %}
+      {# In case we accidentally nest mentions, this will undo it #}
+      {% set nested_mention = '<span class="mention">' ~ mention ~ '</span>' %}
+      {% set_global s = s
+                        | replace(from=word, to=mention)
+                        | replace(from=nested_mention, to=mention) %}
+    {% endif %}
+  {% endfor %}
+  {{ s | safe }}
+{%- endmacro replace_tags_with_mentions %}

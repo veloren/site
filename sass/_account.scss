@@ -1,8 +1,5 @@
-/* 100% custom css rules, not derived from any template. */
-
 .account {
     --focus-color: #3083A6;
-    font-family: 'Source Sans Pro';
 
     .center {
         display: flex;
@@ -17,13 +14,8 @@
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
     }
 
-    .login, .login * {
-        box-sizing: border-box;
-    }
-
     .container {
         padding: 30px;
-        background: #eeeeee;
         padding-bottom: 15px;
     }
 
@@ -66,29 +58,16 @@
         cursor: pointer;
     }
 
-    .login-links {
-        margin-top: 15px;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-    }
-
     a {
-        font-size: 0.9em;
         color: var(--focus-color);
-        text-decoration: none;
     }
 
     span {
-        font-size: 0.9em;
-        color: #333333;
         text-align: left;
         display: block;
     }
 
     p {
-        font-size: 0.9em;
-        color: #333333;
         text-align: left;
         display: block;
         margin-bottom: 5px;

@@ -1,7 +1,6 @@
 @import 'variables';
 
 // Variables and Mixins
-$break-small: 500px; // at what point the site becomes "mobile"
 $hpadding: 1.25rem; // The side-padding
 $hpadding-small: .75rem; // The side-padding on mobile
 
@@ -13,28 +12,38 @@ $hpadding-small: .75rem; // The side-padding on mobile
 h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font;
 	font-weight: 700;
+	@supports (font-variation-settings: normal) {
+		font-variation-settings: "wght" 700;
+	}
 	margin-bottom: .75em;
-	line-height: 1.2;
+	line-height: 1.3;
 	color: #414142;
+	margin-top: 1.5rem;
+	margin-bottom: .8rem;
 }
 
 h1 {
-	font-size: 4.5em;
+  margin-top: 0;
+  font-size: 3.052rem;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 2.441rem;
 }
 
 h3 {
-	font-size: 2.25em;
+	font-size: 1.953rem;
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: 1.563rem;
 }
 
-.title-and-info {
+h5 {
+	font-size: 1.25rem;
+}
+
+.title-container {
 	margin-bottom: 2.25em;
 }
 
@@ -45,9 +54,9 @@ hr {
 	background: #edeeef;
 	height: 1px;
 	border: none;
-	margin-bottom: 48px;
+	margin-bottom: 3em;
 
-	@media (max-width: $break-small){
+	@media (max-width: $mobile-width){
 		width: calc(100% - 32px);
 	}
 }
@@ -55,17 +64,14 @@ hr {
 // paragraphs and lists
 p, ul, ol {
 	font-family: $body-font;
-	font-size: $body-font-size;
-	line-height: 1.7;
 	text-align: justify;
+	line-height: 1.75;
 	margin-bottom: 1em;
 }
 
 ul, ol {
-	p {
-		padding: 0 0 !important;
-	}
-	@media (max-width: $break-small){
+	padding-left: 2em;
+	@media (max-width: $mobile-width){
 		list-style-position: inside;
 	}
 }
@@ -92,88 +98,22 @@ blockquote {
 	max-width: 750px;
 	blockquote {
 		// add margin to nested blockquotes
-	    margin-left: 8px;
+	    margin-left: .5em;
 	    margin-bottom: 0;
 	    p {
-	    	margin: 12px 0;
+	    	margin: .75em 0;
 	    }
 	}
 	p {
 		margin: 0;
-		padding-left: 32px;
+		padding-left: 2em;
 	}
 
 	margin: 36px 0;
 }
 
-// Links and Selections
-a {
-	color: $link-color;
-
-	&:hover {
-		text-decoration: none;
-	}
-}
-
-::selection {
-	background: rgba(237, 18, 73,0.5); /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-	background: rgba(237, 18, 73,0.5); /* Gecko Browsers */
-}
-
-// Code
-pre, code {
-	font-family: "Lucida Console", Monaco, monospace;
-
-}
-
-// Misc.
-.date, .info { // the small text that shows info related to dates, etc.
-	text-transform: uppercase;
-	font-size: .75em;
-	color: $info-color;
-}
-
-// overall rules
-body {
-	overflow-wrap: break-word;
-}
-
 section {
 	margin: 46px 0;
-}
-	article {
-		// reduce header size for items within
-		// an article (e.g. a blog post)
-		h1, h2, h3, h4, h5, h6 {
-			margin-top: 36px;
-			margin-bottom: 12px;
-		}
-		h1 {
-			font-size: 36px;
-		}
-		h2 {
-			font-size: 24px;
-		}
-		h3, h4, h5, h6 {
-			font-size: 18px;
-		}
-	}
-
-.info {
-	padding: 0 $hpadding;
-	span {
-		padding: 0px;
-	}
-	.divider:before {
-		padding: 0 8px;
-		content: "•";
-	}
-	@media (max-width: $break-small){
-		padding: 0 $hpadding-small;
-	}
 }
 
 // ------------------------------------------------ //
@@ -202,7 +142,7 @@ section {
 		padding-bottom: 6px;
 	}
 
-	@media (max-width: $break-small) {
+	@media (max-width: $mobile-width) {
 		border-radius: 0;
 		div {
 			padding-left: $hpadding;
@@ -212,7 +152,12 @@ section {
 	}
 }
 
-// inline code
+// Code
+pre, code {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+// Inline code
 code {
 	white-space: pre;
 	white-space: pre-wrap;
@@ -239,7 +184,7 @@ pre {
 		color: inherit;
 		background-color: transparent;
 	}
-	@media (max-width: $break-small){
+	@media (max-width: $mobile-width){
 		padding-left: $hpadding-small;
 		padding-right: $hpadding-small;
 		border-radius: 0;

@@ -1,0 +1,35 @@
+{% macro length_and_date(page) -%}
+  <div class="info">
+    <span>{{ page.reading_time }} minute read</span>
+    {% if page.date %}
+      <span class="divider">{{ page.date | date(format="%d %B %Y") }}</span>
+    {% endif %}
+  </div>
+{%- endmacro length_and_date %}
+
+{% macro post_preview(page) -%}
+  <section class="post-overview">
+    {% if page.extra.banner is defined %}
+      {# we want to link to media.discordapp.net for resizing #}
+      {% set url = page.extra.banner %}
+      {% if url is containing("cdn.discordapp.com") %}
+        {% set url = transform::to_discord_media(url=url) %}
+      {% endif %}
+      <a href="{{ page.permalink }}" class="thumbnail">
+        <img src="{{ url }}?width=384&height=216" width="384" height="216" />
+      </a>
+    {% endif %}
+    <div class="overview">
+        <h3 class="title">
+          <a class="header-link" href="{{ page.permalink }}">
+            {{- page.title -}}
+          </a>
+        </h3>
+      <p class="post-content-preview">
+        {{- page.content | striptags | truncate(length=255) | safe -}}
+      </p>
+      {# This is fragile as hell. #}
+      {{ gen::length_and_date(page=page) }}
+    </div>
+  </section>
+{%- endmacro post_preview %}

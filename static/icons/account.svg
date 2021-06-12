@@ -1,4 +1,4 @@
-<svg width="16" height="16" shape-rendering="crispEdges">
+<svg viewBox="0 0 16 16"shape-rendering="crispEdges">
   <path fill="#eec39a" d="M12 4h1v1h1V2H4v4h3v1h3V6h1v1h1v1H6v1h1v1h1v1H4V8H3v4h10V5h-3v1H9V5H5V3h1v1h1V3h1v1h2V3h2v1zM2 13h9v2H2z" />
   <path fill="#bc8752" d="M12 13v2h1v-2h-1z" />
   <path fill="#847e87" d="M6 10H5v1h1v-1zm1-1H6v1h1V9z" />
