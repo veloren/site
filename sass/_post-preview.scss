@@ -7,6 +7,7 @@
 
   & > .thumbnail {
     flex: 0 0 auto;
+    line-height: 0;
 
     & > img {
       border-radius: 4px;
@@ -14,7 +15,7 @@
   }
   & > .overview {
     flex: 1 1 auto;
-    padding-left: 16px;
+    padding-left: 1em;
     .title {
       margin-top: 0;
     }

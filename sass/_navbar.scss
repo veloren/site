@@ -14,6 +14,7 @@ nav {
 .navbar-section {
   display: flex;
   height: 100%;
+  align-items: center;
   gap: 2.5em;
   z-index: 1;
   margin: 0 1em;
@@ -21,7 +22,9 @@ nav {
   a {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 80%;
+    margin-top: .25em;
+    margin-bottom: .25em;
     font-weight: normal;
     color: $negative-link-color;
 
@@ -30,12 +33,12 @@ nav {
     }
 
     svg {
-      width: 3em;
+      width: 2em;
       height: 50%;
     }
 
     span {
-      margin-left: .3em;
+      margin: .15em;
       white-space: nowrap;
     }
   }
