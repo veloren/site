@@ -5,14 +5,10 @@ html, body {
 }
 
 body {
-	position: relative;
 	background-color: black;
-	display: flex;
-	flex-flow: column;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
-		padding-bottom: 2em;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(bg_main.png);
 		background-size: cover, cover;
 		background-repeat: no-repeat, no-repeat;
@@ -23,10 +19,12 @@ body {
 
 main {
 	background-color: #f2f2EC;
-	min-height: 80vh;
+	// Viewport height - navbar height
+	min-height: calc(100vh - 4em);
 	color: $text-color;
 	padding: 0.5em 1em 1em 1em;
-	max-width: $main_width;
+	width: $main_width;
+ 	max-width: 100%;
 
 	@media (min-width: $main_width) {
 		margin: 0 auto;
