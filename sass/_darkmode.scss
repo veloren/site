@@ -5,6 +5,12 @@
 @media (prefers-color-scheme: dark) {
 	// note: the navbar is always white on black
 
+	body {
+		@media (min-width: $main_width) {
+			background-image: url(bg_main_dark.png);
+		}
+	}
+
 	// overrides from _layout.scss
 	main {
 		color: $negative-text-color;
