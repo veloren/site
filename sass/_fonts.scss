@@ -36,11 +36,6 @@ following media queries.
     ascent-override: 96%;
     advance-override: 2.6818181818181817;
   }
-
-  body {
-    letter-spacing: .46px;
-    word-spacing: initial;
-  }
 }
 
 @media (min-resolution: 2dppx) {
@@ -50,11 +45,6 @@ following media queries.
     ascent-override: 92%;
     advance-override: 2.6818181818181817;
   }
-
-  body {
-    letter-spacing: .62px;
-    word-spacing: -1.1px;
-  }
 }
 
 // default (1dppx)
@@ -63,9 +53,4 @@ following media queries.
   src: local("Arial"), local("Helvetica");
   ascent-override: 100%;
   advance-override: 2.6818181818181817;
-}
-
-body {
-  letter-spacing: .46px;
-  word-spacing: -.1px;
 }

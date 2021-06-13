@@ -61,8 +61,6 @@
     <link href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}" rel="apple-touch-icon"/>
     <link href="{{ get_url(path='icons/favicon/icon-192.png') }}" rel="icon"/>
     <link href="{{ get_url(path='icons/favicon/manifest.json') }}" rel="manifest"/>
-    {# We no longer need artisan spacing when the custom font loads in. #}
-    <script>document.fonts.ready.then(() => { document.body.style = "letter-spacing:initial;word-spacing:initial;" })</script>
     <script defer src="{{ get_url(path='js/navbar.js') }}"></script>
     <script defer src="{{ get_url(path='js/motion-manager.js') }}"></script>
     {# RSS #}
