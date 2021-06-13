@@ -5,10 +5,9 @@ description = "Join the Veloren community!"
 weight = 0
 +++
 
-# Join Us
-
 Veloren is open-source! Join us in making this game the best it can be.
 
-* [Gitlab - Grab the source](https://gitlab.com/veloren/veloren)
-* [Discord - Join the discussion](https://discord.gg/ecUxc9N)
-* [Reddit - Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/)
+* [Gitlab — Browse the source code](https://gitlab.com/veloren/veloren)
+* [Discord — Join the discussion](https://discord.gg/ecUxc9N)
+* [Reddit — Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/)
+* [Veloren Wiki — Contribute or read articles about every aspect of the game](https://wiki.veloren.net/)

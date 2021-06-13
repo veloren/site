@@ -62,7 +62,7 @@ hr {
 }
 
 // paragraphs and lists
-p, ul, ol {
+p, ul, ol, a {
 	font-family: $body-font;
 	text-align: justify;
 	line-height: 1.75;
@@ -82,17 +82,24 @@ li {
 }
 
 // text styles
-em {
+i, em {
 	font-style: italic;
+
+	@supports (font-variation-settings: normal) {
+		font-variation-settings: 'ital' 1;
+	}
 }
 
-strong {
+b, strong {
 	font-weight: bold;
 }
-
-// blockquotes
 blockquote {
 	font-style: italic;
+
+	@supports (font-variation-settings: normal) {
+		font-variation-settings: 'ital' 1;
+	}
+
 	color: #777777;
 	border-left: 3px solid #edeeef;
 	max-width: 750px;
@@ -113,7 +120,7 @@ blockquote {
 }
 
 section {
-	margin: 46px 0;
+	margin: 3em 0;
 }
 
 // ------------------------------------------------ //

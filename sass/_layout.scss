@@ -5,20 +5,16 @@ html, body {
 }
 
 body {
-	background-color: black;
+	background-color: $text-background-color;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(bg_main.png);
-		background-size: cover, cover;
-		background-repeat: no-repeat, no-repeat;
-		background-position: center bottom, center bottom;
-		background-attachment: fixed, fixed;
+		background: fixed url(bg_main.png) center bottom / cover no-repeat;
 	}
 }
 
 main {
-	background-color: #f2f2EC;
+	background-color: $text-background-color;
 	// Viewport height - navbar height
 	min-height: calc(100vh - 4em);
 	color: $text-color;
@@ -34,5 +30,5 @@ main {
 }
 
 td {
-	padding: 5px;
+	padding: .25em .5em;
 }

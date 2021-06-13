@@ -6,7 +6,7 @@
 
 {% block header %}
   <figure class="header-video">
-    <video playsinline muted loop preload="auto" width="960" height="310">
+    <video playsinline muted loop preload="auto" width="960" height="310" tabindex="-1">
       <source src="{{ get_url(path='videos/veloren.webm') }}" type="video/webm">
       <source src="{{ get_url(path='videos/veloren.mp4') }}" type="video/mp4">
       Your browser does not support the video tag.
@@ -37,11 +37,10 @@
             {% endfor %}
           {% endif %}
         {% endfor %}
-        <section>
+        <section class="read-more-container">
           {# We could link to the auto-generated taxonomy at /tags/devblogs/, but /devblogs/ is a much nicer url. #}
           {# <a class="header-link" href="{{get_taxonomy_url(kind="tags", name="devblog")}}"> #}
-            <a class="header-link" href="{{ get_url(path="@/devblogs.md") }}">Read older posts...
-          </a>
+            <a href="{{ get_url(path="@/devblogs.md") }}">Read older posts...</a>
         </section>
       </div>
     </article>
