@@ -17,6 +17,12 @@ a {
 	text-underline-offset: 4px;
 }
 
+.read-more-container {
+	display: flex;
+	flex-direction: row-reverse;
+	font-size: 1.25em;
+}
+
 nav {
 	a {
 		text-underline-offset: 2px;
@@ -24,7 +30,7 @@ nav {
 	}
 
 	:focus {
-		outline: #F5F2F7 dashed 2px;
+		outline: $navbar-focus-color dashed 2px;
 	}
 }
 

@@ -37,11 +37,10 @@
             {% endfor %}
           {% endif %}
         {% endfor %}
-        <section>
+        <section class="read-more-container">
           {# We could link to the auto-generated taxonomy at /tags/devblogs/, but /devblogs/ is a much nicer url. #}
           {# <a class="header-link" href="{{get_taxonomy_url(kind="tags", name="devblog")}}"> #}
-            <a class="header-link" href="{{ get_url(path="@/devblogs.md") }}">Read older posts...
-          </a>
+            <a href="{{ get_url(path="@/devblogs.md") }}">Read older posts...</a>
         </section>
       </div>
     </article>
