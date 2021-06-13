@@ -14,7 +14,7 @@ body {
 }
 
 main {
-	background-color: #f2f2EC;
+	background-color: $text-background-color;
 	// Viewport height - navbar height
 	min-height: calc(100vh - 4em);
 	color: $text-color;
