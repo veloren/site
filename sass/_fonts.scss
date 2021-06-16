@@ -30,6 +30,15 @@ Ascent override and letter/word spacing are not consistent
 across different dppx. So we must account for it with the
 following media queries.
 */
+
+// default (1dppx)
+@font-face {
+  font-family: "Arial Fallback";
+  src: local("Arial"), local("Helvetica");
+  ascent-override: 100%;
+  advance-override: 2.6818181818181817;
+}
+
 @media (resolution: 1.5dppx)  {
   @font-face {
     font-family: "Arial Fallback";
@@ -46,12 +55,4 @@ following media queries.
     ascent-override: 92%;
     advance-override: 2.6818181818181817;
   }
-}
-
-// default (1dppx)
-@font-face {
-  font-family: "Arial Fallback";
-  src: local("Arial"), local("Helvetica");
-  ascent-override: 100%;
-  advance-override: 2.6818181818181817;
 }
