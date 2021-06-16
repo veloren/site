@@ -19,7 +19,7 @@ a {
 
 .read-more-container {
 	display: flex;
-	flex-direction: row-reverse;
+	justify-content: flex-end;
 	font-size: 1.25em;
 }
 
