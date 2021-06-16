@@ -1,7 +1,7 @@
 <figure class="inline-image">
-	<video width="100%" controls autoplay playsinline muted loop>
+	<video width="100%" controls playsinline muted loop>
 		<source src="{{ src }}" type="{% if type %}{{ type }}{% else %}video/mp4{% endif %}">
 		Your browser does not support the video tag.
 	</video>
-	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
+	{% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
 </figure>
