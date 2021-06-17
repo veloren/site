@@ -13,19 +13,21 @@
 {# TODO: If we ever know the aspect ratio of the image at compile-time,
    we can use .ratio169 to eliminate CLS. #}
 <figure class="inline-image">
-  <img
-      {% if url_large %}
-        srcset="{{ url_medium ~ " 416w," }}
-                {{ url_large ~ " 832w" }}"
-      {% endif %}
-      src="{{ src }}"
-      loading="lazy"
-      {% if alt %}
-        alt="{{ alt }}"
-      {% endif %}>
-  {% if caption %}
-    <figcaption>
-      <p>{{ caption }}</p>
-    </figcaption>
-  {% endif %}
+  <a href="{{ src }}">
+    <img
+        {% if url_large %}
+          srcset="{{ url_medium ~ " 416w," }}
+                  {{ url_large ~ " 832w" }}"
+        {% endif %}
+        src="{{ src }}"
+        loading="lazy"
+        {% if alt %}
+          alt="{{ alt }}"
+        {% endif %}>
+    {% if caption %}
+      <figcaption>
+        <p>{{ caption }}</p>
+      </figcaption>
+    {% endif %}
+  </a>
 </figure>

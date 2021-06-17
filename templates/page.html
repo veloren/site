@@ -18,11 +18,13 @@
           {% set url_large = transform::resize_discord_image(url=url, width=832, height=468) %}
         {% endif %}
         <figure class="inline-image">
-          <img {% if url_large %}
-                 srcset="{{ url_medium ~ " 416w," }}
-                         {{ url_large ~ " 832w" }}"
-               {% endif %}
-               src="{{ url }}">
+          <a href="{{ url }}">
+            <img {% if url_large %}
+                   srcset="{{ url_medium ~ " 416w," }}
+                           {{ url_large ~ " 832w" }}"
+                 {% endif %}
+                   src="{{ url }}">
+          </a>
         </figure>
       {% endif %}
       {{ transform::replace_tags_with_mentions(s=page.content) }}
