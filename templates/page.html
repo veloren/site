@@ -13,13 +13,17 @@
       {% if page.extra.banner is defined %}
         {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
         {% set url = page.extra.banner %}
-        {% if url is containing("media.discordapp.net") %}
-          {% set url = transform::to_discord_cdn(url=url) %}
+        {% if url is containing("media.discordapp.net") or url is containing("cdn.discordapp.com") %}
+          {% set url_medium = transform::resize_discord_image(url=url, width=416, height=234) %}
+          {% set url_large = transform::resize_discord_image(url=url, width=832, height=468) %}
         {% endif %}
         <figure class="inline-image">
-          <a href="{{url}}" target="_blank"><img src="{{url}}" alt="banner" /></a>
+          <img {% if url_large %}
+                 srcset="{{ url_medium ~ " 416w," }}
+                         {{ url_large ~ " 832w" }}"
+               {% endif %}
+               src="{{ url }}">
         </figure>
-        <hr />
       {% endif %}
       {{ transform::replace_tags_with_mentions(s=page.content) }}
     </article>

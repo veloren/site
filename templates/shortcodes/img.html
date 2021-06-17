@@ -1,19 +1,28 @@
 {% import "macros/transform.html" as transform %}
+
 {#
 	Sanitize the URL first. Discord has two domains for hosted images:
 	- media.discordapp.net, which allows resizing
-	- cdn.discordapp.com, which only hosts full resolution. Presumably it's faster.
-
-	For full sized images, we want to always link to the cdn and strip any ?width=&height= parameters.
+	- cdn.discordapp.com, which only hosts full resolution
 #}
-{% set url = src %}
-{% if url is containing("media.discordapp.net") %}
-  {% set url = transform::to_discord_cdn(url=url) %}
+
+{% if src is containing("media.discordapp.net") or src is containing("cdn.discordapp.com") %}
+  {% set url_medium = transform::resize_discord_image(url=src, width=416, height=234) %}
+  {% set url_large = transform::resize_discord_image(url=src, width=832, height=468) %}
 {% endif %}
+{# TODO: If we ever know the aspect ratio of the image at compile-time,
+   we can use .ratio169 to eliminate CLS. #}
 <figure class="inline-image">
-  {# TODO: Extract image's intrinsic dimensions to assist with lazy loading #}
-  <a href="{{ url }}" target="_blank"><img {% if alt %} alt="{{ alt }}" {% endif %} loading="lazy" src="{{ url }}"/>
-  </a>
+  <img
+      {% if url_large %}
+        srcset="{{ url_medium ~ " 416w," }}
+                {{ url_large ~ " 832w" }}"
+      {% endif %}
+      src="{{ src }}"
+      loading="lazy"
+      {% if alt %}
+        alt="{{ alt }}"
+      {% endif %}>
   {% if caption %}
     <figcaption>
       <p>{{ caption }}</p>

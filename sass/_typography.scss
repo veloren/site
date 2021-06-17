@@ -59,11 +59,6 @@ following media queries.
   }
 }
 
-// ------------------------------------------------ //
-//					  Typography 					//
-// -------------------------------------------------//
-
-// Headers
 h1, h2, h3, h4, h5, h6 {
 	font-family: $title-font;
 	font-weight: 700;
@@ -152,6 +147,7 @@ pre {
 	white-space: pre-wrap;
 	word-break: break-word;
 	overflow-wrap: break-word;
+
 	code {
 		background-color: inherit;
 	}
