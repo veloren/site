@@ -6,25 +6,17 @@
 	- cdn.discordapp.com, which only hosts full resolution
 #}
 
-{% if src is containing("media.discordapp.net") or src is containing("cdn.discordapp.com") %}
-  {% set url_medium = transform::resize_discord_image(url=src, width=416, height=234) %}
-  {% set url_large = transform::resize_discord_image(url=src, width=832, height=468) %}
+{% if src is containing("cdn.discordapp.com") %}
+  {% set src = transform::to_discord_media(url=src) %}
 {% endif %}
 {# TODO: If we ever know the aspect ratio of the image at compile-time,
    we can use .ratio169 to eliminate CLS. #}
 <figure class="inline-image">
-  <a href="{{ src }}">
-    <img
-        {% if url_large %}
-          srcset="{{ url_medium ~ " 416w," }}
-                  {{ url_large ~ " 832w" }}"
-        {% endif %}
-        src="{{ src }}"
-        loading="lazy"
-        {% if alt %}
-          alt="{{ alt }}"
-        {% endif %}>
-  </a>
+  <img src="{{ src }}"
+       loading="lazy"
+       {% if alt %}
+         alt="{{ alt }}"
+       {% endif %}>
   {% if caption %}
     <figcaption>
       <p>{{ caption }}</p>
