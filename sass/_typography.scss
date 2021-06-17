@@ -1,3 +1,5 @@
+@import 'variables';
+
 // NOTE: Don't touch fonts unless you know what you're doing.
 // This is font overengineering at its finest.
 
@@ -55,4 +57,102 @@ following media queries.
     ascent-override: 92%;
     advance-override: 2.6818181818181817;
   }
+}
+
+// ------------------------------------------------ //
+//					  Typography 					//
+// -------------------------------------------------//
+
+// Headers
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font;
+	font-weight: 700;
+	@supports (font-variation-settings: normal) {
+		font-variation-settings: "wght" 700;
+	}
+	margin-bottom: .75em;
+	line-height: 1.3;
+	color: #414142;
+	margin-top: 1.5rem;
+	margin-bottom: .8rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+	font-size: 2.441rem;
+}
+
+h3 {
+	font-size: 1.953rem;
+}
+
+h4 {
+	font-size: 1.563rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+.title-container {
+	margin-bottom: 2.25em;
+}
+
+p, ul, ol, a {
+	font-family: $body-font;
+	text-align: justify;
+	line-height: 1.75;
+	margin-bottom: 1em;
+}
+
+ul, ol {
+	padding-left: 2em;
+	@media (max-width: $mobile-width){
+		list-style-position: inside;
+	}
+}
+
+li {
+	list-style-type: square;
+	padding: .5em 0;
+}
+
+// Italics
+i, em {
+	font-style: italic;
+
+	@supports (font-variation-settings: normal) {
+		font-variation-settings: 'ital' 1;
+	}
+}
+
+// Bold
+b, strong {
+	font-weight: bold;
+}
+
+// Inline code
+code {
+	white-space: pre-wrap;
+	background: #0001;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+pre {
+	display: block;
+	margin: 2em auto;
+	padding: 1.5em $hpadding;
+	border-radius: 4px;
+  line-height: 1.75;
+	white-space: pre-wrap;
+	word-break: break-word;
+	overflow-wrap: break-word;
+	code {
+		background-color: inherit;
+	}
 }
