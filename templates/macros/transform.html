@@ -21,6 +21,23 @@ The macro doesn't check if the provided input is a valid Discord CDN URL. #}
   | first }}
 {%- endmacro to_discord_media %}
 
+{% macro resize_discord_image(url, width, height) -%}
+  {% if url is containing("cdn.discordapp.com") %}
+    {% set url = url
+    | replace(from="cdn.discordapp.com", to="media.discordapp.net")
+    | split(pat="?")
+    | first %}
+  {% elif url is containing("media.discordapp.net") %}
+    {% set url = url
+    | split(pat="?")
+    | first %}
+  {% else %}
+    {{ throw(message="Non-Discord URL was provided!") }}
+  {% endif %}
+  {% set query_param = "?width=" ~ width ~ "&height=" ~ height %}
+  {{ url ~ query_param }}
+{%- endmacro resize_discord_image %}
+
 {# Wraps given string into a mention element if it matches Discord's username format,
 either with or without the discriminator. #}
 {% macro to_mention(username) -%}

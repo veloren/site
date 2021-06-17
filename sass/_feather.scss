@@ -1,52 +1,5 @@
 @import 'variables';
 
-// Variables and Mixins
-$hpadding: 1.25rem; // The side-padding
-$hpadding-small: .75rem; // The side-padding on mobile
-
-// ------------------------------------------------ //
-//					  Typography 					//
-// -------------------------------------------------//
-
-// Headers
-h1, h2, h3, h4, h5, h6 {
-	font-family: $title-font;
-	font-weight: 700;
-	@supports (font-variation-settings: normal) {
-		font-variation-settings: "wght" 700;
-	}
-	margin-bottom: .75em;
-	line-height: 1.3;
-	color: #414142;
-	margin-top: 1.5rem;
-	margin-bottom: .8rem;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
-}
-
-h2 {
-	font-size: 2.441rem;
-}
-
-h3 {
-	font-size: 1.953rem;
-}
-
-h4 {
-	font-size: 1.563rem;
-}
-
-h5 {
-	font-size: 1.25rem;
-}
-
-.title-container {
-	margin-bottom: 2.25em;
-}
-
 // Horizonal lines
 hr {
 	height: 1px;
@@ -61,38 +14,6 @@ hr {
 	}
 }
 
-// paragraphs and lists
-p, ul, ol, a {
-	font-family: $body-font;
-	text-align: justify;
-	line-height: 1.75;
-	margin-bottom: 1em;
-}
-
-ul, ol {
-	padding-left: 2em;
-	@media (max-width: $mobile-width){
-		list-style-position: inside;
-	}
-}
-
-li {
-	list-style-type: square;
-	padding: .5em 0;
-}
-
-// text styles
-i, em {
-	font-style: italic;
-
-	@supports (font-variation-settings: normal) {
-		font-variation-settings: 'ital' 1;
-	}
-}
-
-b, strong {
-	font-weight: bold;
-}
 blockquote {
 	font-style: italic;
 
@@ -123,11 +44,13 @@ section {
 	margin: 3em 0;
 }
 
-// ------------------------------------------------ //
-//					  Code Blocks 					//
-// -------------------------------------------------//
+.read-more-container {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.25em;
+}
 
-// an optional filename field that goes before a pre
+// Optional filename field that goes before a pre
 .filename {
 	display: block;
 	background: #444c5b;
@@ -156,44 +79,5 @@ section {
 			padding-right: $hpadding;
 			border-radius: 0;
 		}
-	}
-}
-
-// Code
-pre, code {
-	font-family: "Lucida Console", Monaco, monospace;
-}
-
-// Inline code
-code {
-	white-space: pre;
-	white-space: pre-wrap;
-	background: #edeef2;
-	border-radius: 4px;
-	padding: 2px 6px;
-}
-
-pre {
-	display: block;
-	margin: 36px 0;
-	padding: 36px $hpadding;
-	border-radius: 4px;
-	font-size: .8rem;
-	line-height: 1.4;
-	white-space: pre;
-	white-space: pre-wrap;
-	word-break: break-all;
-	word-wrap: break-word;
-	background-color: #f9f9f9;
-	code {
-		padding: 0;
-		font-size: 100%;
-		color: inherit;
-		background-color: transparent;
-	}
-	@media (max-width: $mobile-width){
-		padding-left: $hpadding-small;
-		padding-right: $hpadding-small;
-		border-radius: 0;
 	}
 }

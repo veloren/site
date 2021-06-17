@@ -1,12 +1,17 @@
-const motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
-const videos = document.querySelector('video');
+const motionQuery = matchMedia("(prefers-reduced-motion: reduce)");
+const videos = Array.from(document.getElementsByTagName("video"));
 
 function reducedMotionCheck() {
   if (motionQuery.matches) {
-    videos.removeAttribute("autoplay")
-    videos.pause()
+    videos.forEach(element => {
+      element.autoplay = false;
+      element.pause();
+    });
   } else {
-    videos.setAttribute("autoplay", "")
+    videos.forEach(element => {
+      element.autoplay = true;
+      element.play();
+    });
   }
 }
 

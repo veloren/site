@@ -18,7 +18,7 @@ main {
 	// Viewport height - navbar height
 	min-height: calc(100vh - 4em);
 	color: $text-color;
-	padding: 0.5em 1em 1em 1em;
+	padding: .5em .5em 1em .5em;
 	width: $main_width;
  	max-width: 100%;
 
@@ -31,4 +31,32 @@ main {
 
 td {
 	padding: .25em .5em;
+}
+
+a {
+	color: $link-color;
+	text-decoration-thickness: 2px;
+
+	&:hover {
+		color: $text-background-color;
+		background: $link-color;
+		text-decoration: inherit;
+	}
+}
+
+::selection {
+	background: $selection-color;
+}
+
+*:focus {
+	outline: red dashed 2px;
+	outline-offset: 2px;
+}
+
+.mention {
+  border-radius: 3px;
+  font-weight: 500;
+  padding: 0 2px;
+  color: #687dc6;
+  background-color: rgba(114, 137, 218, .15);
 }
