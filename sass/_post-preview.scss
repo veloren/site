@@ -1,5 +1,12 @@
 @import 'variables';
 
+.header-link {
+  color: inherit;
+  text-decoration-color: $link-color;
+  text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+}
+
 .post-overview {
 	display: flex;
 	flex-flow: row nowrap;

@@ -14,21 +14,31 @@ nav {
   display: flex;
   height: 100%;
   align-items: center;
-  gap: 2.5em;
+  gap: 1em;
   z-index: 1;
   margin: 0 1em;
 
   a {
     display: flex;
     align-items: center;
-    height: 80%;
+    height: 67%;
     margin-top: .25em;
     margin-bottom: .25em;
+    padding-left: .75em;
+    padding-right: .75em;
     font-weight: normal;
     color: $negative-link-color;
+    text-underline-offset: 2px;
+		text-decoration-thickness: 2px;
 
     &:hover{
-      color: $negative-link-color;
+      color: $background-color-200;
+		  background: $negative-link-color;
+      font-weight: 500;
+    }
+
+    &:focus {
+      outline: $navbar-focus-color dashed 2px;
     }
 
     svg {

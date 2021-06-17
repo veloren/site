@@ -44,11 +44,13 @@ section {
 	margin: 3em 0;
 }
 
-// ------------------------------------------------ //
-//					  Code Blocks 					//
-// -------------------------------------------------//
+.read-more-container {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.25em;
+}
 
-// an optional filename field that goes before a pre
+// Optional filename field that goes before a pre
 .filename {
 	display: block;
 	background: #444c5b;

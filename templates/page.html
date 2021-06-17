@@ -11,7 +11,6 @@
     </div>
     <article>
       {% if page.extra.banner is defined %}
-        {# we're not allowed to use shortcodes here, so we'll copy/paste from shortcodes/img #}
         {% set url = page.extra.banner %}
         {% if url is containing("cdn.discordapp.com") %}
           {% set url = transform::to_discord_media(url=url) %}
