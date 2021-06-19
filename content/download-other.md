@@ -7,8 +7,11 @@ aliases = ["stable"]
 weight = 0
 +++
 
-**Note that currently the official server hosted at** `server.veloren.net` **runs nightly version so you have to run your own server or play singleplayer if not using Airshipper or the latest nightly.**<br>
-[Go Back](@/download.md) if you want to play multiplayer.
+**Please note that currently the official server hosted at** `server.veloren.net`
+**runs the nightly version so you have to run your own server or play singleplayer**
+**if you're not using Airshipper or the latest nightly.**
+
+If you want to play multiplayer, you should [download Airshipper](@/download.md) instead.
 
 To play the game, extract all files and run `veloren-voxygen`.
 
@@ -16,9 +19,9 @@ To play the game, extract all files and run `veloren-voxygen`.
 
 You can download nightly here directly without the launcher but note that for any new update you will have to download the nightly here again.
 
-[Windows x64](https://download.veloren.net/latest/windows) -
-[Linux x64](https://download.veloren.net/latest/linux) - 
-[Mac x64](https://download.veloren.net/latest/macos)
+* [Windows x64](https://download.veloren.net/latest/windows)
+* [Linux x64](https://download.veloren.net/latest/linux)
+* [Mac x64](https://download.veloren.net/latest/macos)
 
 #### Flatpak
 
@@ -36,46 +39,60 @@ This package is usually out of sync with the main server, but is still updated r
 [AUR latest release](https://aur.archlinux.org/packages/veloren/
 ): `yay -Sy veloren`
 
+## Older versions of Veloren
+
+### 0.10.0
+
+* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=windows)
+* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=linux)
+* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=macos)
+
+### 0.9.0
+
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-linux.tar.gz)
+* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-macos.tar.gz)
+
 ### 0.8.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-linux.tar.gz) -
-[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-macos.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-linux.tar.gz)
+* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-macos.tar.gz)
 
 ### 0.7.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-linux.tar.gz) -
-[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-macos.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-linux.tar.gz)
+* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-macos.tar.gz)
 
 ### 0.6.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-linux.tar.gz) -
-[MacOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-macos.zip)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-linux.tar.gz)
+* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-macos.zip)
 
 ### 0.5.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
 
 ### 0.4.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-linux.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-linux.tar.gz)
 
 ### 0.3.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-linux.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-linux.tar.gz)
 
 ### 0.2.0
 
-[Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-windows.zip) -
-[Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-linux.tar.gz)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-linux.tar.gz)
 
 ### 0.1.0 - Legacy
 
-[Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-windows-optimized) -
-[Linux x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-linux-optimized) -
-[macOS](/download/macos.zip)
+* [Windows x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-windows-optimized)
+* [Linux x64](https://gitlab.com/veloren/game/-/jobs/artifacts/v0.1.0/download?job=stable-linux-optimized)
+* [macOS](/download/macos.zip)
