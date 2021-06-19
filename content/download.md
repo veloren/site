@@ -7,10 +7,13 @@ weight = 0
 
 ## Minimum requirements
 
-- GPU with either Vulkan, Metal, or DirectX 11+ support
+- GPU with either Vulkan, Metal, or DirectX 11.2+ support
 - 4GB RAM
 - multi-core CPU
 - 2GB of free disk space
+
+For Windows 7 systems with an Nvidia GPU,
+we recommend installing an Nvidia driver version 465 or newer.
 
 ## Airshipper, the official Veloren launcher
 
