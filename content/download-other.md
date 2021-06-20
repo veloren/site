@@ -43,9 +43,9 @@ This package is usually out of sync with the main server, but is still updated r
 
 ### 0.10.0
 
-* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=windows)
-* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=linux)
-* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.10.0/download?job=macos)
+* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-windows.zip)
+* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-linux.tar.gz)
+* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-macos.tar.gz)
 
 ### 0.9.0
 
