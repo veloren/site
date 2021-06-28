@@ -43,53 +43,53 @@ This package is usually out of sync with the main server, but is still updated r
 
 ### 0.10.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-linux.tar.gz)
-* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.10.0-macos.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.10.0/v0.10.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.10.0/v0.10.0-linux.tar.gz)
+* [macOS x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.10.0/v0.10.0-macos.tar.gz)
 
 ### 0.9.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-linux.tar.gz)
-* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.9.0-macos.tar.gz)
+* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.9.0/download?job=windows)
+* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.9.0/download?job=linux)
+* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.9.0/download?job=macos)
 
 ### 0.8.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-linux.tar.gz)
-* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.8.0-macos.tar.gz)
+* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.8.0/download?job=windows)
+* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.8.0/download?job=linux)
+* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.8.0/download?job=macos)
 
 ### 0.7.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-linux.tar.gz)
-* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.7.0-macos.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.7.0/v0.7.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.7.0/v0.7.0-linux.tar.gz)
+* [macOS x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.7.0/v0.7.0-macos.tar.gz)
 
 ### 0.6.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-linux.tar.gz)
-* [macOS x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.6.0-macos.zip)
+* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.6.0/download?job=windows)
+* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.6.0/download?job=linux)
+* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.6.0/download?job=macos)
 
 ### 0.5.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.5.0-linux.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.5.0/v0.5.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.5.0/v0.5.0-linux.tar.gz)
 
 ### 0.4.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.4.0-linux.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.4.0/v0.4.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.4.0/v0.4.0-linux.tar.gz)
 
 ### 0.3.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.3.0-linux.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.3.0/v0.3.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.3.0/v0.3.0-linux.tar.gz)
 
 ### 0.2.0
 
-* [Windows x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-windows.zip)
-* [Linux x64](https://veloren-4129.fra1.digitaloceanspaces.com/releases/0.2.0-linux.tar.gz)
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.2.0/v0.2.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.2.0/v0.2.0-linux.tar.gz)
 
 ### 0.1.0 - Legacy
 
