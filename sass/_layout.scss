@@ -15,8 +15,8 @@ body {
 
 main {
 	background-color: $text-background-color;
-	// Viewport height - navbar height
-	min-height: calc(100vh - 4em);
+	// Viewport height - navbar height - footer height
+	min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
 	color: $text-color;
 	padding: .5em .5em 1em .5em;
 	width: $main_width;

@@ -1,0 +1,34 @@
+@import 'variables';
+
+@mixin functional-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer {
+  display: flex;
+  height: $footer-height;
+  background-color: $background-color-200;
+  max-width: $main_width;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    @include functional-text();
+    color: $footer-text-color;
+    font-size: .9em;
+    text-decoration-thickness: 1px;
+
+    &:hover {
+      background-color: initial;
+      color: $footer-text-color;
+    }
+  }
+
+  ul {
+    color: $footer-text-color;
+    margin-bottom: 0;
+    margin-left: 1em;
+  }
+}
