@@ -20,9 +20,9 @@ we recommend installing an Nvidia driver version 465 or newer.
 Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date.
 Currently due to our very frequent update schedule we recommend using it for optimal experience.
 
-* [Airshipper (Windows)](https://github.com/songtronix/airshipper/releases/latest/download/airshipper-windows.msi)
-* [Airshipper (macOS)](https://github.com/songtronix/airshipper/releases/latest/download/airshipper-macos.tar.gz)
-* [Airshipper (Linux)](https://github.com/songtronix/airshipper/releases/latest/download/airshipper-linux.tar.gz)
+* [Airshipper (Windows)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-windows.msi)
+* [Airshipper (macOS)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos.tar.gz)
+* [Airshipper (Linux)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-linux.tar.gz)
 
 ### Airshipper Linux packages
 
