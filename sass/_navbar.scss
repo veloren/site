@@ -5,7 +5,7 @@ nav {
   display: flex;
   justify-content: space-between;
   max-width: $main_width;
-  height: 4em;
+  height: $navbar-height;
   background-color: $background-color-200;
   margin: 0 auto;
 }
@@ -22,10 +22,7 @@ nav {
     display: flex;
     align-items: center;
     height: 67%;
-    margin-top: .25em;
-    margin-bottom: .25em;
-    padding-left: .75em;
-    padding-right: .75em;
+    margin: .25em .75em;
     font-weight: normal;
     color: $negative-link-color;
     text-underline-offset: 2px;
