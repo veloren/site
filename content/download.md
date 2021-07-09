@@ -67,7 +67,9 @@ sudo dnf install airshipper
 
 #### Snap
 
-`sudo snap install veloren --edge`
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/veloren)
+
+`sudo snap install veloren --beta`
 
 <br>
 
