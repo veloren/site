@@ -1,10 +1,11 @@
 +++
-title = "This Week In Veloren 129"
+title = "This Week In Veloren"
 description = ""
+draft = true
 
 date = 2021-07-19
 weight = 0
-slug = "devblog-129"
+slug = "devblog-1"
 
 [extra]
 banner = ""
