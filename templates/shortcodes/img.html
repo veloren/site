@@ -13,10 +13,13 @@
    we can use .ratio169 to eliminate CLS. #}
 <figure class="inline-image">
   <img src="{{ src }}"
-       loading="lazy"
-       {% if alt %}
-         alt="{{ alt }}"
-       {% endif %}>
+      {% if size %}
+        style="width: {{ size }}%;"
+      {% endif %}
+      loading="lazy"
+      {% if alt %}
+        alt="{{ alt }}"
+      {% endif %}>
   {% if caption %}
     <figcaption>
       <p>{{ caption }}</p>
