@@ -20,10 +20,17 @@ development community and user community is one and the same: developers,
 players, artists and musicians come together to develop the game.
 
 {% gallery() %}
-screenshot1.png
-screenshot2.png
-screenshot3.png
-screenshot4.png
+0.jpg
+1.jpg
+2.jpg
+3.jpg
+4.jpg
+5.jpg
+6.jpg
+7.jpg
+8.jpg
+9.png
+10.png
 {% end %}
 
 Development of Veloren started in mid-2018. There are around 20 active
