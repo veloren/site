@@ -25,10 +25,7 @@ party. To join, you can download the game for free at
 account](https://veloren.net/account/), then launch the game and hop on the
 default server. See you there!
 
-{{
-  img(src="https://media.discordapp.net/attachments/634860358623821835/879194912749400094/screenshot_1629679274776.png",
-  size=80)
-}}
+{{ youtube(id="l1oOjvaWJlw") }}
 
 ## Changelog
 
@@ -153,7 +150,8 @@ sample every block in the chunk, only blocks inside dungeon rooms. Keep an eye
 out for these new detail in the release!
 
 {{
-  video(src="https://cdn.discordapp.com/attachments/634860358623821835/875904635741806604/simplescreenrecorder-2021-08-13_17.51.44.mp4")
+  video(src="https://cdn.discordapp.com/attachments/634860358623821835/875904635741806604/simplescreenrecorder-2021-08-13_17.51.44.mp4",
+  caption="Taken by @KaliKatz. Say cheese!")
 }}
 
 ## Support the Project
