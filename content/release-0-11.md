@@ -16,11 +16,18 @@ tags = ["devblog"]
 # 0.11 Release
 
 Today, Veloren is releasing 0.11. This version is 3 months in the making, and we
-have a lot to show off! If you're reading this before 18:00 today (September
-11th), make sure to join the release party on the main server. See you there!
+have a lot to show off!
+
+If you're reading this before [18:00 GMT today (September
+11th)](https://everytimezone.com/s/cefd9f4d), make sure to join the release
+party. To join, you can download the game for free at
+[veloren.net](https://veloren.net/download) and [create an
+account](https://veloren.net/account/), then launch the game and hop on the
+default server. See you there!
 
 {{
-  img(src="https://media.discordapp.net/attachments/634860358623821835/879194912749400094/screenshot_1629679274776.png")
+  img(src="https://media.discordapp.net/attachments/634860358623821835/879194912749400094/screenshot_1629679274776.png",
+  size=80)
 }}
 
 ## Changelog
