@@ -10,7 +10,7 @@ slug = "hacktoberfest-2021"
 banner = "https://cdn.discordapp.com/attachments/539518074106413056/894296884347289661/logo-hacktoberfest-full.png"
 
 [taxonomies]
-tags = ["update"]
+tags = ["devblog"]
 +++
 
 ## Hacktoberfest 2021

@@ -10,7 +10,7 @@ slug = "release-0-11"
 banner = "https://media.discordapp.net/attachments/885518024516452362/886071387113009224/veloren-0-11.jpg"
 
 [taxonomies]
-tags = ["release"]
+tags = ["devblog"]
 +++
 
 # 0.11 Release
