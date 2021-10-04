@@ -2,7 +2,8 @@
 	{% for url in body | split(pat="\n") %}
 		{% set src = url | trim %}
 		{% if src != "" %}
-			<img src="{{ resize_image(path='../static/' ~ src, width=400, height=225, op='fill') }}" alt="In-game screenshot" width="400" height="225"/>
+			{% set image = resize_image(path='../static/' ~ src, width=400, height=225, op='fill') %}
+			<img src="{{ image.url }}" alt="In-game screenshot" width="400" height="225"/>
 		{% endif %}
 	{% endfor %}
 </div>
