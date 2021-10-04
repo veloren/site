@@ -72,7 +72,10 @@
   <body>
     <nav>
       <div class="navbar-section navbar-logo">
-        <a class="navbar-item" href="{{ get_url(path='/') }}"><img alt="Veloren" src="{{ resize_image(path='../static/logo.png', width=142, height=40, op='fill') }}" width="142" height="40"/> </a>
+        <a class="navbar-item" href="{{ get_url(path='/') }}">
+          {% set logo = resize_image(path='../static/logo.png', width=142, height=40, op='fill') %}
+          <img alt="Veloren" src="{{ logo.url }}" width="142" height="40"/> 
+        </a>
       </div>
       <div class="navbar-section navbar-content" id="navbar-links">
         <a href="{{ get_url(path='download') }}" >
