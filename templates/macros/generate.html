@@ -33,3 +33,24 @@
     </div>
   </section>
 {%- endmacro post_preview %}
+
+{% macro gallery(image_array) -%}
+  <div class="gallery">
+    {% for link in image_array %}
+      {% set image = resize_image(path='../static/' ~ link, width=400, height=225, op='fill') %}
+      <img src="{{ image.url }}" alt="In-game screenshot" width="400" height="225" />
+    {% endfor %}
+  </div>
+{%- endmacro gallery %}
+
+{# Refer to https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload for further details.
+   Surprisingly, even though gallery and preload_images macros both resize images,
+   it seems to be a deterministic operation, as the images end up with the same URLs.
+
+   Call with `type = false` if the image array contains a mix of file formats. #}
+{% macro preload_images(image_array, type) -%}
+  {% for link in image_array %}
+    {% set image = resize_image(path='../static/' ~ link, width=400, height=225, op='fill') %}
+    <link rel="preload" as="image" href="{{ image.url }}" {% if type -%} type="{{ type }}" {%- endif %}>
+  {% endfor %}
+{%- endmacro gallery %}
