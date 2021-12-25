@@ -7,7 +7,7 @@ weight = 0
 slug = "holiday-2021-christmas"
 
 [extra]
-banner = "https://media.discordapp.net/attachments/523568428905398283/923406133866168370/screenshot_1640227517868.png?width=804&height=452"
+banner = "https://media.discordapp.net/attachments/523568428905398283/923406133866168370/screenshot_1640227517868.png"
 
 [taxonomies]
 tags = ["devblog"]
