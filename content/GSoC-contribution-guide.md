@@ -13,7 +13,7 @@ banner = "https://media.discordapp.net/attachments/634860358623821835/9066952290
 tags = ["devblog"]
 +++
 
-## GSoC Contributions 2022
+## Applying for GSoC
 
 Welcome! The application process consists of the following steps
 
@@ -30,7 +30,10 @@ Welcome! The application process consists of the following steps
   focus on. Reach out with questions!
 - Submit the application/proposal including all requirements at the Google
   Summer of Code Site.
-## GSoC Contributions 2022
+  
+## Ideas for GSoC Contributions
+
+We're welcome to any ideas you can come up with for contibuting to Veloren, and we've compiled a few examples.
 
 - Refactoring the AI system for robustness and ease of use.
 - Integrating the wiring system in procedurally generated structures allowing for increased player interaction.
