@@ -20,7 +20,9 @@ Welcome! The application process consists of the following steps
 - First of all, [Read up on the Veloren
   book](https://book.veloren.net/introduction/index.html) to understand the
   basics of what the project is about, how to compile and much more.
-- Play!
+- Play! You can [download the game here](https://veloren.net/download/), and
+  then either [create an account](https://veloren.net/account/) or try out
+  single player.
 - [Join us on social media platforms](https://veloren.net/joinus) to get in
   contact with developers and better understand the different areas of the
   codebase, known as Working Groups.
