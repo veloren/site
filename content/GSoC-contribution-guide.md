@@ -13,7 +13,7 @@ banner = "https://media.discordapp.net/attachments/634860358623821835/9066952290
 tags = ["devblog"]
 +++
 
-## SGoC Contributions 2022
+## GSoC Contributions 2022
 
 Welcome! The application process consists of the following steps
 
@@ -30,3 +30,18 @@ Welcome! The application process consists of the following steps
   focus on. Reach out with questions!
 - Submit the application/proposal including all requirements at the Google
   Summer of Code Site.
+## GSoC Contributions 2022
+
+- Refactoring the AI system for robustness and ease of use.
+- Integrating the wiring system in procedurally generated structures allowing for increased player interaction.
+- Implement a site governance AI that can grow a site over time based on economic factors
+- Combat expansion, developing new ability sets and attacks.
+- Interactive vehicles, expanding on ships and airships to allow player use.
+- Transitioning network to QUIC.
+- Create diagnostics for tracking bandwidth contribution of each type of message with counts, uncompressed size, and estimated compressed size.
+- Expand authorization system with password reset, email tracking, a friends list, etc.
+- Develop the plugin system to a maturity that allows for writing useful plugins.
+- Implement server federation, allowing characters to transfer between servers in the same federation.
+- UI refactor to continue the transition to new GUI backend.
+- Implement UDP hole-punching on the auth server so that players can host games locally without needing to port-forward.
+- Improve controller support, adding a GUI for editing controller bindings
