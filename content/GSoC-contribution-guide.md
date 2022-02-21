@@ -42,6 +42,6 @@ Welcome! The application process consists of the following steps
 - Expand authorization system with password reset, email tracking, a friends list, etc.
 - Develop the plugin system to a maturity that allows for writing useful plugins.
 - Implement server federation, allowing characters to transfer between servers in the same federation.
-- UI refactor to continue transition to new GUI backend.
+- UI refactor to continue the transition to new GUI backend.
 - Implement UDP hole-punching on the auth server so that players can host games locally without needing to port-forward.
 - Improve controller support, adding a GUI for editing controller bindings
