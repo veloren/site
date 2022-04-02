@@ -19,9 +19,9 @@ To play the game, extract all files and run `veloren-voxygen`.
 
 You can download nightly here directly without the launcher but note that for any new update you will have to download the nightly here again.
 
-* [Windows x64](https://download.veloren.net/latest/windows)
-* [Linux x64](https://download.veloren.net/latest/linux)
-* [Mac x64](https://download.veloren.net/latest/macos)
+* [Windows x64](https://download.veloren.net/latest/windows/x86_64/nightly)
+* [Linux x64](https://download.veloren.net/latest/linux/x86_64/nightly)
+* [Mac x64](https://download.veloren.net/latest/macos/x86_64/nightly)
 
 #### Flatpak
 
@@ -40,6 +40,18 @@ This package is usually out of sync with the main server, but is still updated r
 ): `yay -Sy veloren`
 
 ## Older versions of Veloren
+
+### 0.12.0
+
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.12.0/v0.12.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.12.0/v0.12.0-linux.tar.gz)
+* [macOS x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.12.0/v0.12.0-macos.tar.gz)
+
+### 0.11.0
+
+* [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.11.0/v0.11.0-windows.zip)
+* [Linux x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.11.0/v0.11.0-linux.tar.gz)
+* [macOS x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.11.0/v0.11.0-macos.tar.gz)
 
 ### 0.10.0
 
