@@ -1,5 +1,5 @@
 +++
-title = "Need for Voxels: Veloren Cart"
+title = "[April Fools] Need for Voxels: Veloren Cart"
 description = "Veloren's Direction"
 
 date = 2022-04-01
