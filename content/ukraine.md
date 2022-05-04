@@ -1,8 +1,8 @@
 +++
-title = ""
+title = "War in Ukraine"
 description = ""
 
-date = 2022-04-13
+date = 2022-05-04
 weight = 0
 slug = "ukraine"
 
@@ -16,30 +16,43 @@ tags = ["devblog"]
 *The following was written by @JulianCoffee, an active contributor to Veloren*
 
 On 24th February, in Kyiv I woke up earlier than usual because my parents were
-chaotically searching something in closets. My uncle in town near Kyiv, who left
+chaotically searching something in closets.</br>
+My uncle in town near Kyiv, who left
 Russia years ago, woke up earlier than usual because of sounds of explosions and
-was trying to leave his home. My grandfather in town near Kherson woke up
-earlier than usual because of sound of Russian tanks moving. Millions of people
+was trying to leave his home.</br>
+My grandfather in town near Kherson woke up
+earlier than usual because of sound of Russian tanks moving.</br>
+Millions of people
 in Ukraine woke up earlier than usual that day, because Russia went for
 full-scale war against Ukraine.
 
-Do you know what war looks like? Imagine that 9/11 happens multiple times per
-day in hundred of towns. Imagine that people leaving its home to save their
-families. Imagine that in blocked cities people don't have water, roof, medicine
-and food. Imagine that children became orphans because their father was killed
-by enemy soldier and his mother was raped and then killed. There is no war
-without war crimes, [like in Bucha](https://youtu.be/oJHhB85huXQ). If you can't
+Do you know what war looks like?</br>
+Imagine that 9/11 happens multiple times per
+day in hundred of towns.</br>
+Imagine that people leaving its home to save their
+families.</br>
+Imagine that in blocked cities people don't have water, roof, medicine
+and food.</br>
+Imagine that children became orphans because their father was killed
+by enemy soldier and his mother was raped and then killed.</br>
+There is no war
+without war crimes, [like in Bucha](https://youtu.be/oJHhB85huXQ).</br>
+If you can't
 imagine that, that probably good at least for you.
 
 At first day I explored shelters near my home. While I was coming from one of
 them, I heard sound of flying missile. People run in panic back to shelter. And
 I should say that sound of flying missile is just sound of something moving
-fast, so I was in fear for my life each time I heard regular car moving. At
+fast, so I was in fear for my life each time I heard regular car moving.
+
+At
 second day when I heard sound of air alarm, I run to shelter and I saw
 helicopter moving above us. And the most scary thing is that I had no idea which
 side this helicopter belongs to and whether I will be able to run to shelter or
 will die right there. When I got to shelter I was told that helicopter was
-Ukrainian helicopter specialised on emergency situations. For me the war is just
+Ukrainian helicopter specialised on emergency situations.
+
+For me the war is just
 pure chaos and understanding that most elementary things might vanish. At second
 day I didn't have electricity and most markets were closed, partly because
 workers were scared of leaving their houses, partly because people bought
