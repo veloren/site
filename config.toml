@@ -8,6 +8,8 @@ description = "An open-world, open-source voxel RPG"
 
 # RSS feed
 generate_feed = true
+# We will provide our own template at templates/rss.xml derived from
+# https://github.com/getzola/zola/blob/master/components/templates/src/builtins/rss.xml
 feed_filename = "rss.xml"
 feed_limit = 50
 
