@@ -54,3 +54,14 @@
     <link rel="preload" as="image" href="{{ image.url }}" {% if type -%} type="{{ type }}" {%- endif %}>
   {% endfor %}
 {%- endmacro gallery %}
+
+{# Generate RSS enclosure from URL.
+  Since the image_url is often external, we can't determine the `length` attribute,
+  so hopefully we'll be fine without it. #}
+{% macro enclosure(image_url) -%}
+  {% if image_url is matching(".+\..+") %}
+    <enclosure url="{{ image_url }}" type="image/{{ image_url | split(pat='.') | last }}" />
+  {% else %}
+    <enclosure url="{{ image_url }}" />
+  {% endif %}
+{%- endmacro enclosure %}
