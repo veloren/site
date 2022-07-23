@@ -31,7 +31,7 @@ account](https://veloren.net/account/), then launch the game and hop on the
 default server. See you there!
 
 We've also put together trailer for 0.13 release party, made by @Hannibal, and
-with music by @Oolnokk.
+with music by Benjam Soule H. Walker, aka @Oolnokk.
 
 {{ youtube(id="TEQHYO-hbz0") }}
 
