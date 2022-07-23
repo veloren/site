@@ -41,6 +41,14 @@ This package is usually out of sync with the main server, but is still updated r
 
 ## Older versions of Veloren
 
+### 0.13.0
+
+* [Windows x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.13.0/download?job=windows-x86_64)
+* [Linux x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.13.0/download?job=linux-x86_64)
+* [Linux aarch64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.13.0/download?job=linux-aarch64)
+* [macOS x64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.13.0/download?job=macos-x86_64)
+* [macOS aarch64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.13.0/download?job=macos-aarch64)
+
 ### 0.12.0
 
 * [Windows x64](https://s3.eu-central-1.wasabisys.com/veloren-releases/v0.12.0/v0.12.0-windows.zip)
