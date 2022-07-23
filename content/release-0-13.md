@@ -30,21 +30,68 @@ To join, you can download the game for free at
 account](https://veloren.net/account/), then launch the game and hop on the
 default server. See you there!
 
-New in this release:
-
-- ⚔️  Modular weapons
-- ⛈️  Real-time weather: rain, wind, thunder, lightning
-- 🏔️  Cliff towns
-- 🔦  Interconnected cave networks with cave biomes
-- 🌲  LoD trees
-- 💇‍♂️  More character customisation options
-- 🤸  NPC personalities
-- 🙌  And much more!
-
 We've also put together trailer for 0.13 release party, made by @Hannibal, and
 with music by @Oolnokk.
 
 {{ youtube(id="TEQHYO-hbz0") }}
+
+## New in this release
+
+### ⚔️  Modular weapons
+
+You can now craft weapons in new ways!
+
+{{
+  img(src="https://media.discordapp.net/attachments/634860358623821835/997831957062881280/screenshot_1657972255467.png",
+  size=80)
+}}
+
+### ⛈️  Real-time weather: rain, wind, thunder, lightning
+
+{{
+  img(src="https://cdn.discordapp.com/attachments/634860358623821835/998929435405328434/screenshot_1658231904841.png",
+  size=80)
+}}
+
+### 🏔️  Cliff towns
+
+{{
+  img(src="https://media.discordapp.net/attachments/450064928720814081/995108691718176858/screenshot_1657322762101.png",
+  size=80)
+}}
+### 🔦  Interconnected cave networks with cave biomes
+
+So much more cave to explore!
+
+{{
+  video(src="https://cdn.discordapp.com/attachments/634860358623821835/999835380012568686/CaveDive.mp4")
+}}
+
+### 🌲  LoD trees
+
+You can see trees past the boundaries of loaded chunks now. This is going to add
+a lot to far-off mountains!
+
+{{
+  img(src="https://cdn.discordapp.com/attachments/634860358623821835/999103903603892294/screenshot_1658025212968.png",
+  size=80)
+}}
+
+### 💇‍♂️  More character customisation options
+
+{{
+  img(src="https://cdn.discordapp.com/attachments/634860358623821835/998368480782983218/Rest.png",
+  size=80)
+}}
+
+### 🤸  NPC personalities
+
+{{
+  img(src="https://media.discordapp.net/attachments/634860358623821835/997928610784628906/screenshot_1657995067178.png",
+  size=80)
+}}
+
+### 🙌  And much more!
 
 ## Changelog
 
