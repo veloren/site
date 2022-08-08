@@ -5,6 +5,7 @@ description = ""
 date = 2022-05-04
 weight = 0
 slug = "shanty"
+draft = true
 
 [extra]
 banner = "https://cdn.discordapp.com/attachments/444005079410802699/963927545672241212/unknown.png"

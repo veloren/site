@@ -17,5 +17,5 @@ pages:
       - public
   script:
     - apt update && apt install wget -y
-    - wget -c https://github.com/getzola/zola/releases/download/v0.16.0/zola-v0.16.0-x86_64-unknown-linux-gnu.tar.gz -O - | tar -xz
+    - wget -c https://github.com/getzola/zola/releases/download/v0.15.3/zola-v0.15.3-x86_64-unknown-linux-gnu.tar.gz -O - | tar -xz
     - ./zola build
