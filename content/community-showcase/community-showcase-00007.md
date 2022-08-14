@@ -7,7 +7,7 @@ weight = 0
 slug = "community-showcase-7"
 
 [extra]
-banner = "https://cdn.discordapp.com/attachments/523568428905398283/1007343916800036924/screenshot_1660239894066.png"
+banner = "https://media.discordapp.net/attachments/599550179024306188/1008396936912572546/screenshot_1660239894066.png"
 
 [taxonomies]
 tags = ["community-showcase"]
