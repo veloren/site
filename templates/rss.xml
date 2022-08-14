@@ -20,6 +20,10 @@
         <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
         <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
         {%- for page in pages %}
+        {% set cats = page.taxonomies['tags'] %}
+        {% if not section or section.title != "Community Showcase" %}
+          {% if cats is containing("community-showcase") %}{% continue %}{% endif %}
+        {% endif %}
         <item>
           <title>{{ page.title }}</title>
           <pubDate>{{ page.date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
