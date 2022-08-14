@@ -1,0 +1,15 @@
+{% import "macros/transform.html" as transform %}
+{% import "macros/generate.html" as gen %}
+
+{% extends "base.html" %}
+
+{% block content %}
+  {% set cats = get_taxonomy(kind="tags") %}
+  {% for cat in cats.items %}
+    {% if cat.name == "community-showcase" %}
+      {% for page in cat.pages %}
+        {{ gen::post_preview(page=page) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endblock content %}
