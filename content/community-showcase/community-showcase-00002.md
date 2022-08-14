@@ -1,15 +1,14 @@
 +++
-title = "Community Showcase 2"
+title = "Forest by Blue"
 description = ""
 
-date = 2022-07-18
-weight = 2
+date = 2022-08-14
+weight = 0
 slug = "community-showcase-2"
 
 [extra]
-banner = "https://media.discordapp.net/attachments/634860358623821835/996079671777173514/screenshot_1657554495531.png"
+banner = "https://cdn.discordapp.com/attachments/634860358623821835/1001347487757512734/Journey.png"
 
 [taxonomies]
 tags = ["community-showcase"]
 +++
-Flying at sunset
