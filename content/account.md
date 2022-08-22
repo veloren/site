@@ -34,18 +34,6 @@ template = "account.html"
                 <button type='button' onclick="window.postToBackend();">I acknowledge and want to register</button>
             </div>
         </form>
-        <form class="delete">
-            <div class="container">
-                <h4>Delete Account</h4>
-                <p>If you wish to remove your account from Veloren's auth system, fill out this form. Note, this is not reversible. Also note, you must delete any characters you like from any gameservers before using this, or else those characters will remain on those servers with no way to be deleted. Once you fill out this box, your account will be gone forever.</p>
-                <div id="alertbox" class="alertbox hidden">
-                    <span class="closebtn" onclick="window.closeAlert();">&times;</span>
-                    <span id="alerttext" class="alerttext" >.</span>
-                </div>
-                <input id="username" type="text" name="username" placeholder="Username">
-                <input id="password" type="password" name="password" placeholder="Password">
-                <button type='button' onclick="window.postToBackend();" style="background-color: #ff0000;">Delete Account</button>
-            </div>
-        </form>
-    </form>
+        <p><a href="/account-delete">I would like to delete an existing account</a></p>
+    </div>
 </div>
