@@ -23,7 +23,7 @@ template = "account.html"
                 </div>
                 <input id="username" type="text" name="username" placeholder="Username">
                 <input id="password" type="password" name="password" placeholder="Password">
-                <button type='button' class="button-delete" onclick="window.postToBackend();">Delete Account</button>
+                <button type='button' class="button-delete" onclick="window.postToBackendDeleteAccount();">Delete Account</button>
             </div>
         </form>
     </form>
