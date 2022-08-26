@@ -70,7 +70,7 @@ class RegisterPayload {
 
   sendRegisterAccount() {
     const httpr = new XMLHttpRequest();
-    const url = "http://localhost:19253/register";
+    const url = "https://auth.veloren.net/register";
     httpr.open("POST", url);
     httpr.send(JSON.stringify(this));
 
@@ -103,7 +103,7 @@ class RegisterPayload {
 
   sendDeleteAccount() {
     const httpr = new XMLHttpRequest();
-    const url = "http://localhost:19253/delete_account";
+    const url = "https://auth.veloren.net/delete_account";
     httpr.open("POST", url);
     httpr.send(JSON.stringify(this));
 
