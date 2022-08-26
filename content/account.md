@@ -31,8 +31,9 @@ template = "account.html"
                 <input id="password_repeat" type="password" placeholder="Repeat Password">
                 <p>Please note, we <strong>cannot</strong> reset your account if you forget your password.
                 Make sure it's <a href="https://www.xkcd.com/936/" target="_blank">secure</a> and write it down.</p>
-                <button type='button' onclick="window.postToBackend();">I acknowledge and want to register</button>
+                <button type='button' onclick="window.postToBackendNewAccount();">I acknowledge and want to register</button>
             </div>
         </form>
-    </form>
+        <p><a href="/account-delete">I would like to delete an existing account</a></p>
+    </div>
 </div>
