@@ -129,7 +129,7 @@ class RegisterPayload {
       } else {
         alert.classList.add("success");
         alerttext.textContent =
-          "Successfully registered! You can now play veloren!";
+          "This account has successfully been deleted from Veloren's official authentication system.";
       }
     };
   }
