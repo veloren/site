@@ -12,12 +12,35 @@ $footer-height: 4em;
 
 $hpadding: 1.25rem; // The side-padding
 
-$background-color-100: black;
-$background-color-200: #0d0d13;
+$gray-100: #000000;
+$gray-200: #0d0d13;
 
-$text-background-color: #f2f2ec;
+$text-background-color: #f2f0e9;
 
-$text-color: black;
+$beige-700: #fdfcfb;
+$beige-600: #f2edea;
+$beige-500: #d8c8bb;
+$beige-400: #a39386;
+$beige-300: #471c01;
+$beige-200: #4d4641;
+$beige-100: #403b38;
+
+$blue-700: #79a8f9;
+$blue-600: #3997f7;
+$blue-500: #2c86d2;
+$blue-400: #2774af;
+$blue-300: #216290;
+$blue-200: #1a5173;
+$blue-100: #144059;
+
+$main-background-color: $beige-600;
+
+$button-color: $blue-500;
+$input-color: $beige-700;
+$input-placeholder-color: $beige-400;
+$input-border-color: $beige-200;
+
+$text-color: #313132;
 $negative-text-color: #ececec;
 $footer-text-color: #839197;
 
@@ -27,4 +50,7 @@ $negative-link-color: $negative-text-color;
 
 $selection-color: rgba(237, 18, 73, 0.5);
 
-$info-color: #6e6e6e;
+$info-text-color: #6e6e6e;
+
+$success-color: #4caf50;
+$error-color: #f44336;

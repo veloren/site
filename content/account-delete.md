@@ -7,24 +7,30 @@ template = "account.html"
 +++
 
 <div class="account">
-    <div class="center">
-        <form class="delete">
-            <div class="container">
-                <h4>Delete Account</h4>
-                <p>If you wish to remove your account from Veloren's auth system, fill out this form. <b>Please note the following limitations:</b></p>
-                <ul style="text-align: start;">
-                    <li>This action is not reversible.</li>
-                    <li>We have no way to delete any characters from gameservers, you must do this yourself <em>before</em> deleting your account,
-                        otherwise those characters will remain on those servers with no way to be deleted.</li>
-                </ul>
-                <div id="alertbox" class="alertbox hidden">
-                    <span class="closebtn" onclick="window.closeAlert();">&times;</span>
-                    <span id="alerttext" class="alerttext" >.</span>
-                </div>
-                <input id="username" type="text" name="username" placeholder="Username">
-                <input id="password" type="password" name="password" placeholder="Password">
-                <button type='button' class="button-delete" onclick="window.postToBackendDeleteAccount();">Delete Account</button>
-            </div>
-        </form>
+    <noscript>
+        <div class="alertbox error">
+            <span class="alerttext">
+                We're sorry but this page does not work properly without JavaScript.
+                Please enable JavaScript to continue.
+            </span>
+        </div>
+        <style type="text/css">
+            .account form { display: none }
+        </style>
+    </noscript>
+    <form onsubmit="window.postToBackendDeleteAccount(event)">
+        <div id="alertbox" class="alertbox">
+            <span id="alerttext" class="alerttext"></span>
+            <button type="button" class="closebtn" onclick="window.closeAlert();">{{ icon(path='static/icons/cross.svg') }}</button>
+        </div>
+        <p>If you wish to remove your account from Veloren's auth system, fill out this form. <b>Please note the following limitations:</b></p>
+        <ul>
+            <li>This action is not reversible.</li>
+            <li>We have no way to delete any characters from gameservers, you must do this yourself <em>before</em> deleting your account,
+                otherwise those characters will remain on those servers with no way to be deleted.</li>
+        </ul>
+        <label>Username<input type="text" required name="username"></label>
+        <label>Password<input type="password" required name="password"></label>
+        <button type="submit" class="button-delete">Delete account</button>
     </form>
 </div>

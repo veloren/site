@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	background-color: $text-background-color;
+	background-color: $main-background-color;
 	overflow-wrap: break-word;
 
 	@media (min-width: $main_width) {
@@ -14,7 +14,7 @@ body {
 }
 
 main {
-	background-color: $text-background-color;
+	background-color: $main-background-color;
 	// Viewport height - navbar height - footer height
 	min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
 	color: $text-color;
@@ -38,7 +38,7 @@ a {
 	text-decoration-thickness: 2px;
 
 	&:hover {
-		color: $text-background-color;
+		color: $main-background-color;
 		background: $link-color;
 		text-decoration: inherit;
 	}

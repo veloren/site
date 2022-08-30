@@ -1,20 +1,13 @@
 @import 'variables';
 
 .account {
-    --focus-color: #3083A6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .center {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container {
-        max-width: 375px;
-        overflow: hidden;
-        padding: 30px;
-        padding-bottom: 15px;
+    form {
+        max-width: 480px;
+        padding: 0 2rem 1rem;
     }
 
     .header {
@@ -24,93 +17,88 @@
         color: #333333;
     }
 
+    label {
+        display: block;
+        font-size: 100%;
+        margin-bottom: .75rem;
+        line-height: 2;
+        font-weight: 600;
+    }
+
     input {
         width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        border: 2px solid #dddddd;
-        background: #ffffff;
-        outline: none;
-        transition: border-color 0.5s;
+        font-size: 100%;
+        padding: .75rem;
+        border: 2px solid $input-border-color;
+        background: $input-color;
 
         &:focus {
-            border-color: var(--focus-color);
-        }
-
-        &::placeholder {
-            color: #4b4b4b;
+            border-color: $button-color;
+            outline: none;
         }
     }
 
-    button {
-        margin-top: 10px;
-        padding: 10px;
+    button[type=submit] {
+        margin-block: 1em;
+        padding: 1rem;
+        font-size: 100%;
         color: white;
-        font-weight: bold;
-        background: var(--focus-color);
+        font-weight: 500;
+        background: $button-color;
         width: 100%;
         border: none;
-        outline: none;
-        border-radius: 5px;
         cursor: pointer;
     }
 
-    .button-delete {
+    button[type=submit].button-delete {
         background: $link-color;
     }
 
     a {
-        color: var(--focus-color);
+        color: $button-color;
     }
 
-    span {
-        text-align: left;
-        display: block;
-    }
-
-    p {
-        text-align: left;
-        display: block;
-        margin-bottom: 5px;
+    span, p, ul {
+        text-align: start;
     }
 
     .alertbox {
-        padding: 20px;
+        visibility: hidden;
+        display: flex;
         color: white;
-        margin-bottom: 15px;
-    }
+        margin-block-end: 1rem;
 
-    .alerttext {
-        color: white;
-        font-size: 1em;
-        text-align: left;
-    }
+        & .alerttext {
+            flex: 1;
+            margin: 1rem;
+            color: white;
+            font-size: 1em;
+            text-align: left;
+        }
 
-    .success {
-        background-color: #4CAF50;
-    }
+        &.success {
+            visibility: visible;
+            background-color: $success-color;
+        }
 
-    .error {
-        background-color: #f44336;
-    }
+        &.error {
+            visibility: visible;
+            background-color: $error-color;
+        }
 
-    .closebtn {
-      margin-left: 15px;
-      color: white;
-      font-weight: bold;
-      float: right;
-      font-size: 22px;
-      line-height: 20px;
-      cursor: pointer;
-      transition: 0.3s;
+        .closebtn {
+            background-color: inherit;
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+            margin: 1rem;
+            border: none;
+            color: white;
+            cursor: pointer;
 
-      &:hover {
-          color: black;
-      }
-    }
-
-    .hidden {
-        display: none;
+            &:hover {
+                color: black;
+            }
+        }
     }
 }

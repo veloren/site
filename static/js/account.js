@@ -2,65 +2,46 @@ import init, { hash } from "./argon2wasm.js";
 
 init();
 
-function postToBackendNewAccount() {
-  const username = document.getElementById("username");
-  const password = document.getElementById("password");
-  const password_rep = document.getElementById("password_repeat");
+const Alert = {
+  alertElement: document.getElementById("alertbox"),
+  alertTextElement: document.getElementById("alerttext"),
+  success(message) {
+    Alert.alertElement.className = "alertbox success";
+    Alert.alertTextElement.textContent = message;
+  },
+  error(message) {
+    Alert.alertElement.className = "alertbox error";
+    Alert.alertTextElement.textContent = message;
+  },
+  close() {
+    Alert.alertElement.className = "alertbox";
+    Alert.alertTextElement.textContent = "";
+  },
+};
 
-  const alert = document.getElementById("alertbox");
-  const alerttext = document.getElementById("alerttext");
+window.closeAlert = Alert.close;
 
-  if (password.value !== password_rep.value) {
-    alert.classList.add("error");
-    alert.classList.remove("hidden");
-    alerttext.textContent = "Passwords do not match.";
-  } else if (
-    password.value.length === 0 ||
-    password_rep.value.length === 0 ||
-    username.value.length === 0
-  ) {
-    alert.classList.add("error");
-    alert.classList.remove("hidden");
-    alerttext.textContent = "Please enter a valid password and username.";
+window.passwordRepeatValidity = function () {
+  const password = document.querySelector("input[name=password]");
+  const password_repeat = document.querySelector("input[name=password_repeat]");
+  if (password_repeat.value === password.value) {
+    password_repeat.setCustomValidity("");
   } else {
-    // hash the password before transmitting
-    let hash_string = hash(password.value);
-    let x = new RegisterPayload(username.value, hash_string);
-    x.sendRegisterAccount();
+    password_repeat.setCustomValidity("Passwords do not match.");
   }
-}
+};
 
-window.postToBackendNewAccount = postToBackendNewAccount;
+const getFormData = () => new FormData(document.querySelector("form"));
 
-function postToBackendDeleteAccount() {
-  const username = document.getElementById("username");
-  const password = document.getElementById("password");
+window.postToBackendNewAccount = function (event) {
+  event.preventDefault();
+  RegisterPayload.fromFormData(getFormData()).sendRegisterAccount();
+};
 
-  const alert = document.getElementById("alertbox");
-  const alerttext = document.getElementById("alerttext");
-
-  if (
-    password.value.length === 0 ||
-    username.value.length === 0
-  ) {
-    alert.classList.add("error");
-    alert.classList.remove("hidden");
-    alerttext.textContent = "Please enter a valid password and username.";
-  } else {
-    // hash the password before transmitting
-    let hash_string = hash(password.value);
-    let x = new RegisterPayload(username.value, hash_string);
-    x.sendDeleteAccount();
-  }
-}
-
-window.postToBackendDeleteAccount = postToBackendDeleteAccount;
-
-function closeAlert() {
-  document.getElementById("alertbox").classList.add("hidden");
-}
-
-window.closeAlert = closeAlert;
+window.postToBackendDeleteAccount = function (event) {
+  event.preventDefault();
+  RegisterPayload.fromFormData(getFormData()).sendDeleteAccount();
+};
 
 class RegisterPayload {
   constructor(username, password) {
@@ -68,69 +49,49 @@ class RegisterPayload {
     this.password = password;
   }
 
+  /**
+   * @param {FormData} formData
+   * @returns {RegisterPayload}
+   */
+  static fromFormData(formData) {
+    const { username, password } = Object.fromEntries(formData);
+    const hashedPassword = hash(password);
+    return new this(username, hashedPassword);
+  }
+
+  get fetchOptions() {
+    return { method: "POST", body: JSON.stringify(this) };
+  }
+
   sendRegisterAccount() {
-    const httpr = new XMLHttpRequest();
     const url = "https://auth.veloren.net/register";
-    httpr.open("POST", url);
-    httpr.send(JSON.stringify(this));
-
-    const alert = document.getElementById("alertbox");
-    alert.classList.add('hidden');
-    alert.classList.remove('error');
-    alert.classList.remove('success');
-
-    httpr.onreadystatechange = function () {
-      let alerttext = document.getElementById("alerttext");
-
-      alert.classList.remove("hidden");
-
-      if (httpr.status != 200) {
-        alert.classList.add("error");
-
-        if (httpr.responseText.length === 0) {
-          alerttext.textContent =
-            "Error " + httpr.status + ": " + httpr.statusText;
+    fetch(url, this.fetchOptions)
+      .then((res) => {
+        if (res.ok) {
+          Alert.success("Successfully registered! You can now play Veloren!");
         } else {
-          alerttext.textContent = "Error " + ": " + httpr.responseText;
+          return res
+            .text()
+            .then((text) => Promise.reject(`Error ${res.status}: ${text}`));
         }
-      } else {
-        alert.classList.add("success");
-        alerttext.textContent =
-          "Successfully registered! You can now play veloren!";
-      }
-    };
+      })
+      .catch((error) => Alert.error(error));
   }
 
   sendDeleteAccount() {
-    const httpr = new XMLHttpRequest();
     const url = "https://auth.veloren.net/delete_account";
-    httpr.open("POST", url);
-    httpr.send(JSON.stringify(this));
-
-    const alert = document.getElementById("alertbox");
-    alert.classList.add('hidden');
-    alert.classList.remove('error');
-    alert.classList.remove('success');
-
-    httpr.onreadystatechange = function () {
-      let alerttext = document.getElementById("alerttext");
-
-      alert.classList.remove("hidden");
-
-      if (httpr.status != 200) {
-        alert.classList.add("error");
-
-        if (httpr.responseText.length === 0) {
-          alerttext.textContent =
-            "Error " + httpr.status + ": " + httpr.statusText;
+    fetch(url, this.fetchOptions)
+      .then((res) => {
+        if (res.ok) {
+          Alert.success(
+            "This account has successfully been deleted from Veloren's official authentication system."
+          );
         } else {
-          alerttext.textContent = "Error " + ": " + httpr.responseText;
+          return res
+            .text()
+            .then((text) => Promise.reject(`Error ${res.status}: ${text}`));
         }
-      } else {
-        alert.classList.add("success");
-        alerttext.textContent =
-          "This account has successfully been deleted from Veloren's official authentication system.";
-      }
-    };
+      })
+      .catch((error) => Alert.error(error));
   }
 }
