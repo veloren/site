@@ -33,9 +33,21 @@ $blue-300: #216290;
 $blue-200: #1a5173;
 $blue-100: #144059;
 
+$red-700: #fdb8be;
+$red-600: #fd8d99;
+$red-500: #fc5970;
+$red-400: #ed1249;
+$red-300: #bd0c38;
+$red-200: #900729;
+$red-100: #66031a;
+
 $main-background-color: $beige-600;
 
 $button-color: $blue-500;
+$button-shadow: 4px 4px 0 0 $blue-100;
+$button-negative-color: $red-400;
+$button-negative-shadow: 4px 4px 0 0 $red-100;
+
 $input-color: $beige-700;
 $input-placeholder-color: $beige-400;
 $input-border-color: $beige-200;
@@ -44,7 +56,7 @@ $text-color: #313132;
 $negative-text-color: #ececec;
 $footer-text-color: #839197;
 
-$link-color: #ed1249;
+$link-color: $red-400;
 $navbar-focus-color: #f5f2f7;
 $negative-link-color: $negative-text-color;
 

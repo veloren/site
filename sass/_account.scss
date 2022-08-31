@@ -37,14 +37,16 @@
         font-size: 100%;
         color: white;
         font-weight: 500;
-        background: $button-color;
+        background-color: $button-color;
         width: 100%;
         border: none;
         cursor: pointer;
+        box-shadow: $button-shadow;
     }
 
     button[type=submit].button-delete {
-        background: $link-color;
+        background-color: $button-negative-color;
+        box-shadow: $button-negative-shadow;
     }
 
     a {
