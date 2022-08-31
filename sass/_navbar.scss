@@ -6,7 +6,7 @@ nav {
   justify-content: space-between;
   max-width: $main_width;
   height: $navbar-height;
-  background-color: $background-color-200;
+  background-color: $gray-200;
   margin: 0 auto;
 }
 
@@ -29,7 +29,7 @@ nav {
 		text-decoration-thickness: 2px;
 
     &:hover{
-      color: $background-color-200;
+      color: $gray-200;
 		  background: $negative-link-color;
     }
 

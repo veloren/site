@@ -7,33 +7,28 @@ template = "account.html"
 +++
 
 <div class="account">
-    <div class="center">
-        <noscript>
-            <div class="alertbox error no-js">
-                <span class="alerttext">
-                    We're sorry but the Veloren registration form doesn't work properly without JavaScript enabled.
-                    Please enable it to continue.
-                </span>
-            </div>
-            <style type="text/css">
-                .login { display: none }
-            </style>
-        </noscript>
-        <form class="login">
-            <div class="container">
-                <div id="alertbox" class="alertbox hidden">
-                    <span class="closebtn" onclick="window.closeAlert();">&times;</span>
-                    <span id="alerttext" class="alerttext" >.</span>
-                </div>
-                <h4>Enter account details</h4>
-                <input id="username" type="text" name="username" placeholder="Username">
-                <input id="password" type="password" name="password" placeholder="Password">
-                <input id="password_repeat" type="password" placeholder="Repeat Password">
-                <p>Please note, we <strong>cannot</strong> reset your account if you forget your password.
-                Make sure it's <a href="https://www.xkcd.com/936/" target="_blank">secure</a> and write it down.</p>
-                <button type='button' onclick="window.postToBackendNewAccount();">I acknowledge and want to register</button>
-            </div>
-        </form>
-        <p><a href="/account-delete">I would like to delete an existing account</a></p>
-    </div>
+    <noscript>
+        <div class="alertbox error">
+            <span class="alerttext">
+                We're sorry but this page does not work properly without JavaScript.
+                Please enable JavaScript to continue.
+            </span>
+        </div>
+        <style type="text/css">
+            .account form { display: none }
+        </style>
+    </noscript>
+    <form onsubmit="window.postToBackendNewAccount(event)">
+        <div id="alertbox" class="alertbox">
+            <span id="alerttext" class="alerttext"></span>
+            <button type="button" class="closebtn" onclick="window.closeAlert();">{{ icon(path='static/icons/cross.svg') }}</button>
+        </div>
+        <label>Username<input type="text" minlength="3" maxlength="32" required name="username"></label>
+        <label>Password<input type="password" required name="password" onchange="window.passwordRepeatValidity()"></label>
+        <label>Repeat password<input type="password" required name="password_repeat" onchange="window.passwordRepeatValidity()"></label>
+        <p>Please note, we <b>cannot</b> reset your account if you forget your password.
+           Make sure it's <a href="https://www.xkcd.com/936/" target="_blank">secure</a> and write it down.</p>
+        <button type="submit">Register account</button>
+    </form>
+    <a href="/account-delete">I want to delete an existing account</a>
 </div>
