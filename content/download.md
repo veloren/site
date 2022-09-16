@@ -21,7 +21,8 @@ Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren u
 Currently due to our very frequent update schedule we recommend using it for optimal experience.
 
 * [Airshipper (Windows)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-windows.msi)
-* [Airshipper (macOS)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos.tar.gz)
+* [Airshipper (macOS - Intel)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-x86_64.zip)
+* [Airshipper (macOS - ARM (M1/M2))](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-aarch64.zip)
 * [Airshipper (Linux)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-linux.tar.gz)
 
 ### Airshipper Linux packages
