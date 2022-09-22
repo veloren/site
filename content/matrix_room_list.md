@@ -1,11 +1,11 @@
 +++
-title = "Matrix room list"
-description = "Matrix room list"
+title = "Matrix Room List (Old)"
+description = "Matrix room list (old)."
 
 weight = 0
 +++
 
-Listing of individual matrix rooms.
+List of individual matrix rooms.
 
 * [blog-content](https://matrix.to/#/!TUeUnNhXpLle4RG2xY:conduit.rs?via=conduit.rs&via=matrix.org&via=tchncs.de)
 * [bugs-and-support](https://matrix.to/#/!XE8JMjIKOzVcryA0kc:conduit.rs?via=conduit.rs&via=matrix.org&via=tchncs.de)
