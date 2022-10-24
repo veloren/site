@@ -9,7 +9,7 @@ Veloren is an open-source, community-driven project! Join us in making the game 
 
 * [Gitlab — Browse the source code](https://gitlab.com/veloren/veloren)
 * [Discord — Join the discussion](https://discord.gg/ecUxc9N)
-* [Matrix — Join the discussion](https://matrix.to/#/#veloren-space:fachschaften.org) | [(Room list)](@/matrix_room_list.md) | WIP
+* [Matrix — Join the discussion](https://matrix.to/#/#veloren-space:fachschaften.org) | [Room List (Old)](@/matrix_room_list.md) 
 * [Reddit — Get the latest updates to this blog at r/Veloren](https://www.reddit.com/r/Veloren/)
 * [Youtube - Official Videos](https://youtube.com/channel/UCmRjlnKnSRRihWPPNasl_Qw) | [(RSS)](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious)](https://yewtu.be/channel/UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious - RSS)](https://yewtu.be/feed/channel/UCmRjlnKnSRRihWPPNasl_Qw)
 * [Twitch - Developer Channel](https://www.twitch.tv/veloren_dev/videos) | [(Live Channels)](https://www.twitch.tv/directory/game/Veloren)
