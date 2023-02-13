@@ -18,6 +18,12 @@ template = "account.html"
             .account form { display: none }
         </style>
     </noscript>
+    <div class="alertbox error" id="wasmErrorBox" style="display: none">
+        <span class="alerttext">
+                We're sorry but this page does not work without WebAssembly support.
+                Please enable WebAssembly or use a different browser.
+        </span>
+    </div>
     <form onsubmit="window.postToBackendDeleteAccount(event)">
         <p>If you wish to remove your account from Veloren's auth system, fill out this form. <b>Please note the following limitations:</b></p>
         <ul>
