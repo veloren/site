@@ -1,6 +1,13 @@
 import init, { hash } from "./argon2wasm.js";
 
-init();
+const wasmSupported = (typeof WebAssembly === "object");
+
+if (wasmSupported) {
+	init();
+} else {
+	document.querySelector(".account form").style.display = "none";
+	document.getElementById("wasmErrorBox").style.display = "";
+}
 
 const Alert = {
   alertElement: document.getElementById("alertbox"),
