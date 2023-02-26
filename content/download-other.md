@@ -39,7 +39,7 @@ This package is usually out of sync with the main server, but is still updated r
 [AUR latest release](https://aur.archlinux.org/packages/veloren/
 ): `yay -Sy veloren`
 
-## Unofficial Airshipper Packages
+## Airshipper Package listing (most are unofficial)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/airshipper.svg?columns=3)](https://repology.org/project/airshipper/versions)
 
