@@ -37,4 +37,5 @@ template = "account.html"
         <button type="submit">Register account</button>
     </form>
     <a href="/account-delete">I want to delete an existing account</a>
+    <a href="/account-change-password">I want to change my password</a>
 </div>

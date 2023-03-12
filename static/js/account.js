@@ -50,6 +50,57 @@ window.postToBackendDeleteAccount = function (event) {
   RegisterPayload.fromFormData(getFormData()).sendDeleteAccount();
 };
 
+window.postToBackendChangePassword = function (event) {
+  event.preventDefault();
+  ChangePasswordPayload.fromFormData(getFormData()).send();
+};
+
+class ChangePasswordPayload {
+  constructor(username, currentPassword, newPassword) {
+    this.username = username;
+    this.current_password = currentPassword;
+    this.new_password = newPassword
+  }
+
+  /**
+   * @param {FormData} formData 
+   * @returns {ChangePasswordPayload}
+   */
+  static fromFormData(formData) {
+    const {username, current_password, new_password} = Object.fromEntries(formData);
+
+    if (current_password === new_password) {
+      Alert.error("Passwords are the same");
+      throw new Error("Passwords are the same");
+    }
+
+    const hashedCurrentPassword = hash(current_password);
+    const hashedNewPassword = hash(new_password);
+
+    return new this(username, hashedCurrentPassword, hashedNewPassword);
+  }
+
+  get fetchOptions() {
+    return { method: "POST", body: JSON.stringify(this) };
+  }
+
+  send() {
+    const url = "https://auth.veloren.net/change-password";
+
+    fetch(url, this.fetchOptions)
+      .then(res => {
+        if (res.ok) {
+          Alert.success("Password changed succesfully");
+        } else {
+          return res
+            .text()
+            .then((text) => Promise.reject(`Error ${res.status}: ${text}`));
+        }
+      })
+      .catch(err => Alert.error(err));
+  }
+}
+
 class RegisterPayload {
   constructor(username, password) {
     this.username = username;

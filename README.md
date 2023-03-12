@@ -1,7 +1,13 @@
 # Repo of the veloren.net website
 
+## Setup
 
-#Cheatcheet
+This website uses the [Zola](https://www.getzola.org/) static site generator.  
+Unafortunately there are some problems with the latest version of Zola, as a workaround you have to use the [`0.15` version](https://github.com/getzola/zola/releases/tag/v0.15.3).
+
+To get a server with live reloading run `zola serve`
+
+## Cheatsheet
 
 ```
 +++
@@ -24,7 +30,7 @@ tags = ["devblog"]
 
 Blog content goes here!
 ```
-# Images
+### Images
 
 Add an image:
 
@@ -39,7 +45,7 @@ With a caption:
 `{{ img(src="https://.../foo.png", alt="Foo", caption="This is a nice foo image contributed by @foo!") }}`
 
 
-# Videos
+### Videos
 
 mp4 video, direct download (e.g. a discord url):
 
@@ -65,7 +71,7 @@ With caption:
 `{{ youtube(id="dQw4w9WgXcQ", caption="Best song ever.") }}`
 
 
-# Audio
+### Audio
 
 ogg, direct download:
 
