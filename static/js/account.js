@@ -85,7 +85,7 @@ class ChangePasswordPayload {
   }
 
   send() {
-    const url = "https://auth.veloren.net/change-password";
+    const url = "https://auth.veloren.net/change_password";
 
     fetch(url, this.fetchOptions)
       .then(res => {
