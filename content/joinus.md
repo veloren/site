@@ -15,24 +15,24 @@ Veloren is an open-source, community-driven project! Join us in making the game 
 
 ## Discussion & Development
 
-* [Discord — Talk to the community and developers](https://discord.gg/ecUxc9N)
+* [Discord — Talk to the community and developers](https://discord.gg/veloren-community-449602562165833758)
 * [Matrix — Talk to the community and developers](https://matrix.to/#/#veloren-space:fachschaften.org) | [Room List (Old)](@/matrix_room_list.md) 
 
 ## Community
 
 * [Reddit — Discuss Veloren](https://www.reddit.com/r/Veloren/)
-* [Youtube — Watch videos about development news](https://youtube.com/channel/UCmRjlnKnSRRihWPPNasl_Qw) | [(RSS)](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious)](https://yewtu.be/channel/UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious - RSS)](https://yewtu.be/feed/channel/UCmRjlnKnSRRihWPPNasl_Qw)
-* [Twitch — Developer Channel](https://www.twitch.tv/veloren_dev/videos) | [(Live Channels)](https://www.twitch.tv/directory/game/Veloren)
+* [YouTube — Watch videos about development news](https://youtube.com/@Veloren) | [(RSS)](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious)](https://yewtu.be/channel/UCmRjlnKnSRRihWPPNasl_Qw) | [(Invidious - RSS)](https://yewtu.be/feed/channel/UCmRjlnKnSRRihWPPNasl_Qw)
+* [Twitch — Core development channel](https://www.twitch.tv/veloren_dev) | [Veloren streamers live on Twitch](https://www.twitch.tv/directory/game/Veloren)
 
 ## Wiki & Information
 
-* [Veloren Wiki — Contribute to or read articles about playing the game](https://wiki.veloren.net/)
-* [The Book — A technical manual for players and developers](https://book.veloren.net/)
+* [The wiki — Contribute to or read articles about playing the game](https://wiki.veloren.net/)
+* [The book — A technical manual for players and developers](https://book.veloren.net/)
 
 ## Source Code
 
-* [Gitlab — Read and contribute to the project's code](https://gitlab.com/veloren/veloren)
-* [GitHub (MIRROR) — Read the project's code](https://github.com/veloren/veloren)
+* [GitLab — Read and contribute to the project's source code](https://gitlab.com/veloren/veloren)
+* [GitHub (Mirror) — Read the project's source code in the backup repository](https://github.com/veloren/veloren)
 
 *It has unfortunately come to our attention that Veloren's assets, code, and imagery have, on occasion, been used to
 promote malicious scams such as 'pump-and-dump' schemes, often involving cryptocurrency or NFTs. The core development
