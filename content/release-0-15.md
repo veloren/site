@@ -15,11 +15,11 @@ tags = ["devblog"]
 
 # 0.15 Release
 
-Veloren is releasing 0.15! This version is about 5 months in the making, and we
+Veloren is releasing 0.15! This version is about 6 months in the making, and we
 have a lot to show off!
 
-If you're reading this before [18:00 GMT on January
-7th](https://everytimezone.com/s/2609befe), make sure to join the release party.
+If you're reading this before [18:00 GMT on July
+1st](https://everytimezone.com/s/2609befe), make sure to join the release party.
 On the side, you can also watch the [release party dev
 stream](https://www.youtube.com/watch?v=Ry9Z8Nr6RHM), where we'll be chatting
 with devs about what went into this version.
