@@ -1,6 +1,11 @@
 <figure class="inline-image">
-	<div class="ratio169">
-		<iframe width="100%" src="https://www.youtube.com/embed/{{ id }}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	</div>
-	{% if caption %}<figcaption><p>{{caption}}</p></figcaption>{% endif %}
+  <div class="ratio169">
+    <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ id }}"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    webkitallowfullscreen mozallowfullscreen allowfullscreen>
+    </iframe>
+  </div>
+  {% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
 </figure>

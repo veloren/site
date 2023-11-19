@@ -1,101 +1,125 @@
-@import 'variables';
+/*
+ * SPDX-FileCopyrightText: 2019 Alexander Wulkan
+ * SPDX-FileCopyrightText: 2019 Christian Authmann <https://gitlab.com/cauthmann>
+ * SPDX-FileCopyrightText: 2021 - 2022 Vechro
+ * SPDX-FileCopyrightText: 2021 Forest Anderson <forestkzanderson@gmail.com>
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@use 'variables' as v;
 
 nav {
-  font-family: $navbar-font;
   display: flex;
   justify-content: space-between;
-  max-width: $main_width;
-  height: $navbar-height;
-  background-color: $gray-200;
-  margin: 0 auto;
-}
-
-.navbar-section {
-  display: flex;
-  height: 100%;
   align-items: center;
-  gap: 1em;
-  z-index: 1;
-  margin: 0 1em;
+  
+  background-color: v.$gray-200;
+  font-family: v.$navbar-font;
+  
+  width: 100%;
+  height: v.$navbar-height;
 
-  a {
+  .navbar-section {
     display: flex;
-    align-items: center;
-    height: 67%;
-    margin: .25em .75em;
-    font-weight: normal;
-    color: $negative-link-color;
-    text-underline-offset: 2px;
-		text-decoration-thickness: 2px;
+    flex-grow: 1;
 
-    &:hover{
-      color: $gray-200;
-		  background: $negative-link-color;
+    height: 100%;
+    margin: 0 1em;
+    
+    :hover {
+      background: none;
     }
 
-    &:focus {
-      outline: $navbar-focus-color dashed 2px;
+    a {
+      display:flex;
+      align-items: center;
+
+      height: 67%;
+      margin: .25em .75em;
+      
+      color: v.$negative-link-color;
+      text-decoration: none;
+      margin-left: 1em;
+      margin-right: 0;
+  
+      &:focus {
+        outline: v.$navbar-focus-color dashed 2px;
+      }
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    &.navbar-logo {
+      justify-content: flex-start;
+      align-items: center;
     }
 
+    &.navbar-content {
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    &.navbar-hamburger {
+      display: none;
+    }
+    
     svg {
       width: 2em;
-      height: 50%;
+      height: 60%;
     }
-
+    
     span {
-      margin: .15em;
+      margin: .40em;
+      margin-right: 0;
       white-space: nowrap;
     }
   }
 }
 
-.navbar-logo {
-  img {
-    transition: filter 0.3s ease;
-    &:hover {
-      filter: brightness(110%);
-    }
-  }
-}
-
-.navbar-hamburger {
-  display: none;
-}
-
-.navbar-content {
-  display: flex;
-}
-
-@media (max-width: $mobile-width) {
+@media (max-width: v.$main_width) {
   #navbar-links {
-    margin: 0;
-    position: absolute;
     flex-direction: column;
-    background-color: #0d0d13;
-    width: 100%;
     align-items: center;
+    
+    position: absolute;
+    
     top: 4em;
-    padding: 1.25em;
+    margin: 0;
     height: auto;
+    width: 100%;
+    padding: 1.25em;
+    
+    background-color: #0d0d13;
 
     a {
       font-size: 1.5em;
       padding: inherit;
     }
+
+    &.navbar-content {
+      display: none;
+    }
   }
 
   .navbar-hamburger {
-    color: $negative-text-color;
-    display: block;
+    display: flex !important;
+    justify-content: flex-end;
+    
+    color: v.$negative-text-color;
+    
+    margin: 0;
+    margin-right: 0 !important;
     padding: 1.2em;
+    padding-bottom: 0;
+    
     cursor: pointer;
 
     svg {
       height: 100%;
     }
-  }
-
-  .navbar-content {
-    display: none;
   }
 }

@@ -1,16 +1,21 @@
-name: Mirror Gitlab repo
+# SPDX-FileCopyrightText: 2021 Forest Anderson <forestkzanderson@gmail.com>
+# SPDX-FileCopyrightText: 2023 Javier Pérez
+#
+# SPDX-License-Identifier: CC0-1.0
+
+name: Mirror GitLab repo
 
 # Every other day
 on:
   schedule:
-    - cron: "0 0 1-31/2 * *"
+    - cron: "0 0 */2 * *"
 
 jobs:
   mirror-gitlab-repo:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Clone Gitlab repo
+      - name: Clone GitLab repo
         run: git lfs install;
           git clone https://gitlab.com/veloren/site.git;
 

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Musical works",
+  "description": "The sound recordings used by Veloren",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "license", "type"],
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "description": "The name of the music work",
+        "type": "string"
+      },
+      "authors": {
+        "description": "The people who made the music work",
+        "type": [
+          "string",
+          "array"
+        ],
+        "items": {
+          "type": "string"
+        },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "license": {
+        "description": "The license applicable to the music work",
+        "type": "string",
+        "default": "GPL-3.0-or-later",
+        "enum": [
+          "GPL-3.0-or-later",
+          "CC0-1.0",
+          "CC-BY-4.0",
+          "CC-BY-SA-4.0"
+        ]
+      },
+      "type": {
+        "description": "The type of musical work",
+        "type": "string",
+        "enum": [
+          "theme",
+          "sfx"
+        ]
+      }
+    }
+  }
+}

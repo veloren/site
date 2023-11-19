@@ -1,89 +1,18 @@
-# Repo of the veloren.net website
+<!--
+SPDX-FileCopyrightText: 2023 Javier Pérez
 
-## Setup
+SPDX-License-Identifier: Apache-2.0
+-->
 
-This website uses the [Zola](https://www.getzola.org/) static site generator.  
-Unafortunately there are some problems with the latest version of Zola, as a workaround you have to use the [`0.15` version](https://github.com/getzola/zola/releases/tag/v0.15.3).
+# The official Veloren website
 
-To get a server with live reloading run `zola serve`
+This is the repository of the official Veloren website, hosted at [veloren.net](https://veloren.net).
 
-## Cheatsheet
+The website is the primary news channel for development updates.
 
-```
-+++
-title = "This Week In Veloren 42"
-description = ""
+If you are interested in writing and contributing to the development blog, refer to the [contribution guide](CONTRIBUTING.md).
 
-date = 2020-01-31
-weight = 0
-slug = "devblog-42"
+## Licensing
 
-[extra]
-banner = "https://.../screenshot.png"
-# uncomment one of these to replace this page's background image, either via an absolute url or a relative one
-#background = "https://.../screenshot.png"
-#background = "header.png"
-
-[taxonomies]
-tags = ["devblog"]
-+++
-
-Blog content goes here!
-```
-### Images
-
-Add an image:
-
-`{{ img(src="https://.../foo.png") }}`
-
-With an alt text, for screen readers etc:
-
-`{{ img(src="https://.../foo.png", alt="Foo") }}`
-
-With a caption:
-
-`{{ img(src="https://.../foo.png", alt="Foo", caption="This is a nice foo image contributed by @foo!") }}`
-
-
-### Videos
-
-mp4 video, direct download (e.g. a discord url):
-
-`{{ video(src="https://.../foo.mp4") }}`
-
-With a caption:
-
-`{{ video(src="https://.../foo.mp4", caption="This is a nice video") }}`
-
-Different video type:
-
-```
-{{ video(src="https://.../foo.ogv", type="video/ogg") }}
-{{ video(src="https://.../foo.ogv", type="video/ogg", caption="An ogg vorbis video") }}
-```
-
-Youtube video:
-
-`{{ youtube(id="dQw4w9WgXcQ") }}`
-
-With caption:
-
-`{{ youtube(id="dQw4w9WgXcQ", caption="Best song ever.") }}`
-
-
-### Audio
-
-ogg, direct download:
-
-`{{ audio(src="https://.../foo.ogg") }}`
-
-With a caption:
-
-`{{ audio(src="https://.../foo.ogg", caption="Nice music") }}`
-
-mp3, direct download:
-
-```
-{{ audio(src="https://.../foo.mp3", type="audio/mpeg3") }}
-{{ audio(src="https://.../foo.mp3", type="audio/mpeg3", caption="Nice music") }}
-```
+This repository seeks compliance with version 3.0 of the
+REUSE specification.

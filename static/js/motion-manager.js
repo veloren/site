@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2021 Vechro
+//
+// SPDX-License-Identifier: Apache-2.0
+
 const motionQuery = matchMedia("(prefers-reduced-motion: reduce)");
 const videos = Array.from(document.getElementsByTagName("video"));
 

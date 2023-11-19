@@ -1,8 +1,6 @@
 +++
 title = "Impressum"
 description = "Impressum"
-
-weight = 0
 +++
 
 ## Angaben gemäß § 5 TMG

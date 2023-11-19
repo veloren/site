@@ -1,77 +1,63 @@
 +++
 title = "Download Veloren"
-description = "Download Veloren"
-
-weight = 0
+description = "Download the game for free!"
 +++
 
-## Minimum requirements
+## Airshipper, the official game launcher
 
-- GPU with either Vulkan, Metal, or DirectX 11.2+ support
-- 4GB RAM
-- multi-core CPU
-- 2GB of free disk space
+![Airshipper](/airshipper.png)
 
-For Windows 7 systems with an Nvidia GPU,
-we recommend installing an Nvidia driver version 465 or newer.
+Airshipper brings you the most optimal experience to download and keep the game up-to-date.
+It is available for Windows, macOS and Linux.
 
-## Airshipper, the official Veloren launcher
+### Minimum system requirements
 
-Airshipper is a cross-platform Veloren launcher taking care of keeping Veloren up to date.
-Currently due to our very frequent update schedule we recommend using it for optimal experience.
+- Operating system: Windows 10, Windows 11, macOS or Linux
+- Processor: 64-bit CPU
+- Memory: 4 GiB RAM
+- Graphics: GPU with support for DirectX 11.2 or newer, Vulkan or Metal
+- Storage: 2 GiB available space
 
-* [Airshipper (Windows)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-windows.msi)
-* [Airshipper (macOS - Intel)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-x86_64.zip)
-* [Airshipper (macOS - ARM (M1/M2))](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-aarch64.zip)
-* [Airshipper (Linux)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-linux.tar.gz)
+### Windows 10 / Windows 11
 
-### Airshipper Linux packages
+- [Download Airshipper for Windows](https://github.com/veloren/airshipper/releases/latest/download/airshipper-windows.msi)
 
-#### Flathub
+### macOS
 
-<a style="background:none" href="https://flathub.org/apps/details/net.veloren.airshipper">
-  <img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png"/>
+- [Download Airshipper for macOS (Intel x86 CPU)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-x86_64.zip)
+- [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-aarch64.zip)
+
+### Linux
+
+- [Download Airshipper for Linux](https://github.com/veloren/airshipper/releases/latest/download/airshipper-linux.tar.gz)
+
+#### Flatpak
+
+<a class="flatpak" href="https://flathub.org/apps/details/net.veloren.airshipper" target="_blank">
+  <img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png">
 </a>
 
-```
+```bash
 flatpak install flathub net.veloren.airshipper
 ```
 
-#### PPA for Ubuntu-based distributions (unofficial)
-
-```
-sudo add-apt-repository ppa:frinksy/airshipper
-sudo apt-get update
-sudo apt install airshipper
-```
-
-More information can be found on [the PPA's page](https://launchpad.net/~frinksy/+archive/ubuntu/airshipper).
-
-
 #### Arch User Repository
 
-The launcher and the game are both available in the AUR.
+The game launcher and the standalone version of the game are both available in the AUR.
 
-* [Airshipper (AUR)](https://aur.archlinux.org/packages/airshipper/)
-* [Veloren (AUR)](https://aur.archlinux.org/packages/veloren/)
+- [Airshipper (AUR)](https://aur.archlinux.org/packages/airshipper/)
+- [Veloren (AUR)](https://aur.archlinux.org/packages/veloren/)
 
-#### Copr for RPM-based distribitions (unofficial)
+More information and instructions for other RPM-based distributions
+can be found on [the Copr page](https://copr.fedorainfracloud.org/coprs/frinksy/airshipper/).
 
-Fedora
-```
+#### Unofficial download channels for Linux
+
+##### Copr for RPM-based distributions
+
+```bash
 sudo dnf copr enable frinksy/airshipper
 sudo dnf install airshipper
 ```
-
-* More information and instructions for other RPM-based distributions
-  can be found on [the Copr page](https://copr.fedorainfracloud.org/coprs/frinksy/airshipper/).
-
-#### Snap
-
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/veloren)
-
-`sudo snap install veloren --beta`
-
-<br>
 
 [Older versions and other downloads](@/download-other.md)
