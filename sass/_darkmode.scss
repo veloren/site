@@ -1,42 +1,50 @@
-@import 'variables';
+/*
+ * SPDX-FileCopyrightText: 2020 Christian Authmann <https://gitlab.com/cauthmann>
+ * SPDX-FileCopyrightText: 2021 Vechro
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@use 'variables' as v;
 
 // This overrides some site-wide colors for users who prefer a dark theme
 
 @media (prefers-color-scheme: dark) {
-	// note: the navbar is always white on black
+  // note: the navbar is always white on black
 
-	body {
-		@media (min-width: $main_width) {
-			background-image: url(bg_main_dark.png);
-		}
-	}
+  body {
+    @media (min-width: v.$main_width) {
+      background-image: url(bg_main_dark.png);
+    }
+  }
 
-	// overrides from _layout.scss
-	main {
-		color: $negative-text-color;
-		background-color: #161616;
-	}
+  // overrides from _layout.scss
+  main {
+    color: v.$negative-text-color;
+    background-color: #161616;
+  }
 
-	// NOTE: This is unstyled in the standard theme???
-	a.header-link * {
-		color: $negative-text-color;
-	}
+  // NOTE: This is unstyled in the standard theme???
+  a.header-link * {
+    color: v.$negative-text-color;
+  }
 
-	// overrides from _feather.scss
-	h1, h2, h3, h4, h5, h6 {
-		color: $negative-text-color;
-	}
+  // overrides from _feather.scss
+  h1, h2, h3, h4, h5, h6 {
+    color: v.$negative-text-color;
+  }
 
-	pre {
-		background-color: #2b303b;
-	}
+  pre {
+    background-color: #2b303b;
+  }
 
-	code {
-		color: #c0c5ce;
-		background-color: #2b303b;
-	}
+  code {
+    color: #c0c5ce;
+    background-color: #2b303b;
+  }
 
-	blockquote {
-		border-left-color: #24221a;
-	}
+  blockquote {
+    border-left-color: #24221a;
+  }
 }

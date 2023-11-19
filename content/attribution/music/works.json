@@ -1,0 +1,2645 @@
+[
+  {
+    "name": "veloren_title_tune.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "cavernous_hollow.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "down_the_rabbit_hole.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "mineral_deposits.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "saturated_hallows.ogg",
+    "authors": "Flashbang",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "stars_like_stalactites.ogg",
+    "authors": "DragonDee",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "barred_paths-end.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "barred_paths-loop.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "barred_paths-start.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "reversal-end.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "reversal-loop.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "reversal-start.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "cobbled_halls.ogg",
+    "authors": "Austin Bowers (Crow)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "dank_dungeon.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "mysty_temple.ogg",
+    "authors": "Tiny",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "ruination.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "sacred_temple.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "thrumming_waters.ogg",
+    "authors": "Jeremiah Sweeney",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "vast_onslaught.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_cold_breeze_blows.ogg",
+    "authors": "Stone Music Productions",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_heros_sorrow.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_peaceful_moment.ogg",
+    "authors": "ThanosFisherman",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_solemn_quest.ogg",
+    "authors": "Eden",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "adventurous_soul.ogg",
+    "authors": "Austin Bowers (Crow)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "ballerine_macabre.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "between_the_fairies.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "calling_wild.ogg",
+    "authors": "Ultimafounding",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "calming_hills.ogg",
+    "authors": "Ultimafounding",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "campfire_stories.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "drifting_along.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "ethereal_bonds.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "everbearing.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "field_grazing.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "follow_the_signs.ogg",
+    "authors":"Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "highland_of_the_hawk.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "into_the_dark_forest.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "jungle_ambient.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "just_the_beginning.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "leap_of_faith.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "limits.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "moonbeams.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "moonlit_canopy.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "oceania.ogg",
+    "authors": "Eden",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "raising_below_like_thunder.ogg",
+    "authors": "Rarnage",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "serene_meadows.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "short_meandering.ogg",
+    "authors": "Ap1evideogame",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "snowtop_volume.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "song_of_the_eldwood.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "stargazing.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "the_heavens_weep.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "the_undergrowth.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "torii.ogg",
+    "authors": "FaceImplosion",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "travel_by_night.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "true_nature.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "verdant_glades.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "wandering_voices.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "winter_falls.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_rest_under_the_sunset.ogg",
+    "authors": "phoenix13032005",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "a_tale_worth_telling.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "bustle_and_bloom.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "fiesta_del_pueblo.ogg",
+    "authors": "Aeronic",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "im_home.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "into_the_mines.ogg",
+    "authors": "Stone Music Productions",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "life_of_a_background_mob.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "rest_assured.ogg",
+    "authors": "Tomer (Badbbad)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "starlit_pathways.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "the_quiet_after_the_battle.ogg",
+    "authors": "Tobias Thy",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "warmth_of_the_hearth.ogg",
+    "authors": "Austin Bowers (Crow)",
+    "license": "GPL-3.0-or-later",
+    "type": "theme"
+  },
+  {
+    "name": "cave.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "leaves.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "rain.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "thunder.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wind.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_shot_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_shot_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_shot_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_shot_4.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "barrel_organ.ogg",
+    "authors": "Samstler",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cyclops_charge.ogg",
+    "authors": "Tao In Way",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "deep_laugh.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "explosion.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "fire_shot_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "fire_shot_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flame_thrower.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "gigas_frost_roar.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "heal_bomb.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "ice_crack.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "klonk.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "laser_beam.ogg",
+    "authors": "Tao In Way",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "minotaur_smash_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "minotaur_smash_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sceptre_aura.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sceptre_channeling.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "separated_second_swing.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "separated_third_swing.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "shovel.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "smashklonk.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "steam.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "swing.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "swing_sword.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "swoosh.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "swing_dash.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "yeet.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "bees_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_01.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_02.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_03.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_04.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_05.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_06.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_07.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_08.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_09.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "birdcall_10.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "crickets_1",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "crickets_2",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "crickets_3",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "fire.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "frog_croak_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lightning_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "owl_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "portal_1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "portal_2.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_hit.ogg",
+    "authors": "Zesterer",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "arrow_miss.ogg",
+    "authors": "Zesterer",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "block_1.ogg",
+    "authors": "alfy",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "block_2.ogg",
+    "authors": "alfy",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "block_3.ogg",
+    "authors": "alfy",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_4.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_5.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_6.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_7.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "catch_air_8.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dazed_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dazed_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dazed_3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "death_1.ogg",
+    "authors": "Snowram",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "death_2.ogg",
+    "authors": "Snowram",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "death_3.ogg",
+    "authors": "Snowram",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dive_roll_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dive_roll_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "experience_gained_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "experience_gained_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "experience_gained_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glider_close.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glider_open.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "hit_1.ogg",
+    "authors": "Flashbang",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "hit_2.ogg",
+    "authors": "Flashbang",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "hit_3.ogg",
+    "authors": "Flashbang",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "hit_4.ogg",
+    "authors": "Flashbang",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "interrupted_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "interrupted_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "interrupted_3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "interrupted_4.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "knockeddown_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "knockeddown_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "level_up_sound_-_shorter_wind_up.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "parry_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "parry_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stunned_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stunned_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stunned_3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "hammer.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "snow_step_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "snow_step_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "snow_step_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepdirt_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepdirt_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepdirt_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepdirt_4.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepdirt_5.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_4.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_5.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stepgrass_6.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_4.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_5.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_6.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_7.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_8.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_9.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_10.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_11.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "stone_step_12.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "water_splash_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "water_splash_2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "water_splash_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "water_splash_4.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wood_step_1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wood_step_3.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wood_step_4.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_c1ae.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_cce.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_ceg.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_d1c1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_d1ge.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_dda.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_eeg.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dark_guitar_gec.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_ac1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_ag.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_c.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_c1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_cec.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_de.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_e.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_e1c1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_g.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "double_bass_ge.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_c1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_c1ag.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_c1d1c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_ceg.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_dac1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_eg.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "flute_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_c.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_c1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_c1a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_c1ag.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_c1d1c1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_ceg.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_dac1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_e.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_eg.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "glass_flute_g.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_a.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_ac1a.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_c.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_c1.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_c1d1c1.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_cdc.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_d.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_ded.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_e.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_ege.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_g.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "guitar_gag.ogg",
+    "authors": "Benjam Soule H. Walker (Oolnokk)",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_c1ag.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_cde.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_d1c1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_d1g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_ec1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_ega.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "icy_talharpa_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_c1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_c1d1c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_c1ge.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_cdc.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_ceg.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_da.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "kalimba_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_ac1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_c1d1c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_cdc.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_ded.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_ege.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lute_gag.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_c.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_c1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_c1ag.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_cde.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_d1c1a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_d1g.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_e.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_ec1.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_ega.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lyre_g.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_ad1c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_c1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_d1a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_ec.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_ec1g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "melodica_ge.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_c1ae.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_ce.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_da.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_ec1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_gd1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sitar_gec.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_a.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_c.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_d_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_d_dd.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_dd_d.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_dd.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_e.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "washboard_g.ogg",
+    "authors": "Monty Marz",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_a.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_b.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_c.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_c1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_d.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_e.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_f.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wildskin_drum_g.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "add_failed.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "add_item.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "collect_gemstone.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "drop_item.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "open_inventory.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pickup_staff.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pickup_sword.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "apple.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "food.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "liquid.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "click1.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "click2.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "adlet_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "adlet_angry2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "adlet_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "adlet_hurt2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "alligator_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "alligator_angry2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "antelope_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "antelope_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "asp_angry1.ogg",
+    "authors": "aylana",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "asp_angry2.ogg",
+    "authors": "aylana",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "asp_calm1.ogg",
+    "authors": "aylana",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "asp_hurt1.ogg",
+    "authors": "aylana",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "bird_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cat_calm1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cat_calm2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cow_calm1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cow_calm2.ogg",
+    "authors": "Zesterer",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "cow_calm3.ogg",
+    "authors": "Zesterer",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dagon_hurt1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dagon_hurt2.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "fungome_calm1.ogg",
+    "authors": "Tijn",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "goat_calm1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "humanfemale_greeting1.ogg",
+    "authors": [
+      "Zesterer",
+      "Corvella"
+    ],
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "humanmale_greeting1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "humanmale_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "lion_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "mandragora_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "maneater_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "marlin_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "mindflayer_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "ogre_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "ogre_angry2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "ogre_hurt1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pig_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pig_angry2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pig_calm1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pig_calm2.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "pig_calm3.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "saurok_angry1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sea_crocodile_angry1.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sea_crocodile_angry2.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sheep_calm1.ogg",
+    "authors": "DaforLynx",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "truffler_calm1.ogg",
+    "authors": "Tijn",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "truffler_calm2.ogg",
+    "authors": "Tijn",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry1.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry2.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry3.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry4.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry5.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_angry6.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_calm1.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_calm2.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_calm3.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_calm4.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wendigo_calm5.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry1.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry2.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry3.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry4.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry5.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_angry6.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_hurt1.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_hurt2.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_hurt3.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_hurt4.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wolf_hurt5.ogg",
+    "authors": "GeekyGami",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wyvern_angry.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "wyvern_hurt.ogg",
+    "authors": "flo",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dagger_in.ogg",
+    "authors": "Eden",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "dagger_out.ogg",
+    "authors": "Eden",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "shield_out.ogg",
+    "authors": "Eden",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "staff_in.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "staff_out.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sword_in.ogg",
+    "authors": [
+      "Benjam Soule H. Walker (Oolnokk)",
+      "DaforLynx"
+    ],
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "sword_out.ogg",
+    "authors": [
+      "Benjam Soule H. Walker (Oolnokk)",
+      "DaforLynx"
+    ],
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "weapon_in.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  },
+  {
+    "name": "weapon_out.ogg",
+    "authors": "Ellinia",
+    "license": "GPL-3.0-or-later",
+    "type": "sfx"
+  }
+]

@@ -1,12 +1,22 @@
+// SPDX-FileCopyrightText: 2020 Imbris <imbrisf@gmail.com>
+// SPDX-FileCopyrightText: 2020 Marcel Märtens
+// SPDX-FileCopyrightText: 2022 Forest Anderson <forestkzanderson@gmail.com>
+// SPDX-FileCopyrightText: 2022 Vechro
+// SPDX-FileCopyrightText: 2023 Samtinel
+// SPDX-FileCopyrightText: 2023 Crabman
+// SPDX-FileContributor: hxztnxt
+//
+// SPDX-License-Identifier: Apache-2.0
+
 import init, { hash } from "./argon2wasm.js";
 
 const wasmSupported = (typeof WebAssembly === "object");
 
 if (wasmSupported) {
-	init();
+  init();
 } else {
-	document.querySelector(".account form").style.display = "none";
-	document.getElementById("wasmErrorBox").style.display = "";
+  document.querySelector(".account form").style.display = "none";
+  document.getElementById("wasmErrorBox").style.display = "";
 }
 
 const Alert = {

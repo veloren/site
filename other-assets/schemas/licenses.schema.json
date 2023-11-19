@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Open-source licenses",
+  "description": "A list of open-source licenses used in attributed works",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["spdx-id", "name", "url"],
+    "additionalProperties": false,
+    "properties": {
+      "spdx-id": {
+        "title": "SPDX license ID",
+        "description": "The SPDX standard assigns each license a unique ID in short-form",
+        "type": "string"
+      },
+      "name": {
+        "title": "Full license name",
+        "description": "Each license has a full name by which they are known",
+        "type": "string"
+      },
+      "url": {
+        "title": "License URL",
+        "description": "A link to the license terms and conditions",
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  }
+}

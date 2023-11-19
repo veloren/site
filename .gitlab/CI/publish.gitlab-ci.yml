@@ -1,4 +1,12 @@
-# Publishes veloren-server-cli to the gitlab container registry
+# SPDX-FileCopyrightText: 2020 Marcel Märtens
+# SPDX-FileCopyrightText: 2021 - 2022 Forest Anderson <forestkzanderson@gmail.com>
+# SPDX-FileCopyrightText: 2021 Vechro
+# SPDX-FileCopyrightText: 2021 Fernando Pastorelli <fernando.n.p.d.moscu@gmail.com>
+# SPDX-FileCopyrightText: 2023 Javier Pérez
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Publishes veloren-server-cli to the GitLab container registry
 # https://gitlab.com/veloren/veloren/container_registry
 .publish:
   stage: publish
@@ -17,5 +25,5 @@ pages:
       - public
   script:
     - apt update && apt install wget -y
-    - wget -c https://github.com/getzola/zola/releases/download/v0.15.3/zola-v0.15.3-x86_64-unknown-linux-gnu.tar.gz -O - | tar -xz
+    - wget -c https://github.com/getzola/zola/releases/download/v0.17.2/zola-v0.17.2-x86_64-unknown-linux-gnu.tar.gz -O - | tar -xz
     - ./zola build

@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 - 2022 Vechro
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
 {% macro length_and_date(page) -%}
   <div class="info">
     <span>{{ page.reading_time }} minute read</span>
@@ -20,11 +26,11 @@
       </a>
     {% endif %}
     <div class="overview">
-        <h3 class="title">
-          <a class="header-link" href="{{ page.permalink }}">
-            {{- page.title -}}
-          </a>
-        </h3>
+      <h3 class="title">
+        <a class="header-link" href="{{ page.permalink }}">
+          {{- page.title -}}
+        </a>
+      </h3>
       <p class="post-content-preview">
         {{- page.content | striptags | truncate(length=255) | safe -}}
       </p>
@@ -43,21 +49,24 @@
   </div>
 {%- endmacro gallery %}
 
-{# Refer to https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload for further details.
-   Surprisingly, even though gallery and preload_images macros both resize images,
-   it seems to be a deterministic operation, as the images end up with the same URLs.
-
-   Call with `type = false` if the image array contains a mix of file formats. #}
+{#
+  Refer to https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload for further details.
+  Surprisingly, even though gallery and preload_images macros both resize images,
+  it seems to be a deterministic operation, as the images end up with the same URLs.
+  Call with `type = false` if the image array contains a mix of file formats.
+#}
 {% macro preload_images(image_array, type) -%}
   {% for link in image_array %}
     {% set image = resize_image(path='../static/' ~ link, width=400, height=225, op='fill') %}
     <link rel="preload" as="image" href="{{ image.url }}" {% if type -%} type="{{ type }}" {%- endif %}>
   {% endfor %}
 {%- endmacro gallery %}
-
-{# Generate RSS enclosure from URL.
+  
+{#
+  Generate RSS enclosure from URL.
   Since the image_url is often external, we can't determine the `length` attribute,
-  so hopefully we'll be fine without it. #}
+  so hopefully we'll be fine without it.
+#}
 {% macro enclosure(image_url) -%}
   {% if image_url is matching(".+\..+") %}
     <enclosure url="{{ image_url }}" type="image/{{ image_url | split(pat='.') | last }}" />

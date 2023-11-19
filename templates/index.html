@@ -1,6 +1,82 @@
+{% import "macros/generate.html" as gen %}
+
 {% extends "base.html" %}
 
+{% block extra_head %}
+  {# We preload the first 6 images, as they are the only ones visible above the fold on a 16:9 display. #}
+  {{
+    gen::preload_images(
+      image_array = 
+      ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"],
+      type = "image/jpeg")
+  }}
+{% endblock extra_head %}
+
+{% block header %}
+  <video class="header-video" playsinline muted loop preload="auto" tabindex="-1">
+    <source src="{{ get_url(path='videos/veloren.webm') }}" type="video/webm">
+    <source src="{{ get_url(path='videos/veloren.mp4') }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+{% endblock header %}
+
 {% block content %}
-	{# Currently, no indexes are being generated. #}
-	{# The index on / is overridden with home.html. #}
+  <section class="post">
+    <article>
+      <h1>Welcome to Veloren!</h1>
+      <p>
+        Veloren is an action role-playing game set in a voxel fantasy world. It features:
+      </p>
+      <ul>
+        <li>⚔️ Fast-paced combat with a variety of playstyles: greatswords, bows, magical staves, and more!</li>
+        <li>💀 Fight menacing bosses inside dungeons and on the open world.</li>
+        <li>✨ Explore dungeons and other places to loot their valuable treasures.</li>
+        <li>⛏️ Gather resources to craft items and equipment to aid in your adventures.</li>
+        <li>🐴 Tame creatures to accompany you in your journey and serve as mounts to travel quickly.</li>
+        <li>🌎 Live in an open and dynamic world. New worlds you create are generated procedurally!</li>
+        <li>❤️ Adventure together with friends in multiplayer mode.</li>
+        <li>🛠️ The source code and the assets are open source. Extend and modify the game easily!</li>
+      </ul>
+      {{ gen::gallery(image_array = [
+        "0.jpg",
+        "1.jpg",
+        "2.jpg",
+        "3.jpg",
+        "4.jpg",
+        "5.jpg",
+        "6.jpg",
+        "7.jpg",
+        "8.jpg",
+        "9.png"
+        ])
+      }}
+      <p>What are you waiting for?</p>
+    </article>
+  </section>
+  <section class="post">
+    <article>
+      <div class="posts">
+        <h2>Latest development updates</h2>
+        {% set cats = get_taxonomy(kind="tags") %}
+        {% set show_posts = 3 %}
+        {% for cat in cats.items %}
+          {% if cat.name == "devblog" %}
+            {% for page in cat.pages %}
+              {% if show_posts > 0 and page.date %}
+                {% set_global show_posts = show_posts - 1 %}
+                {{ gen::post_preview(page=page) }}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        <section class="read-more-container">
+          {# We could link to the auto-generated taxonomy at /tags/devblogs/, but /devblogs/ is a much nicer URL. #}
+          <!--
+            {# <a class="header-link" href="{{ get_taxonomy_url(kind="tags", name="devblog") }}"> #}
+          -->
+          <a href="/blog">Read older posts...</a>
+        </section>
+      </div>
+    </article>
+  </section>
 {% endblock content %}

@@ -1,4 +1,11 @@
-@import 'variables';
+/*
+ * SPDX-FileCopyrightText: 2021 - 2022 Vechro
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@use 'variables' as v;
 
 @mixin functional-text {
   text-transform: uppercase;
@@ -7,28 +14,40 @@
 
 footer {
   display: flex;
-  height: $footer-height;
-  background-color: $gray-200;
-  max-width: $main_width;
-  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
 
+  background-color: v.$gray-200;
+  
+  width: 100%;
+  height: v.$footer-height;
+  margin: 0;
+
   a {
     @include functional-text();
-    color: $footer-text-color;
+    color: v.$footer-text-color;
+    
     font-size: .9em;
     text-decoration-thickness: 1px;
 
     &:hover {
-      background-color: initial;
-      color: $footer-text-color;
+      color: v.$footer-text-color;
+      background-color: unset;
     }
   }
 
   ul {
-    color: $footer-text-color;
+    color: v.$footer-text-color;
+
     margin-bottom: 0;
-    margin-left: 1em;
+    padding-left: 0;
+
+    li {
+      display: inline-block;
+
+      margin: 1em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }

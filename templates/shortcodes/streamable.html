@@ -1,0 +1,97 @@
+{#
+  This shortcode allows embedding videos hosted on Streamable (https://streamable.com/).
+  
+  The following arguments are mandatory:
+    - id
+      - Value type: string
+  
+  The following arguments are optional:
+    - caption
+      - Default value: none
+      - Value type: string
+    - loop
+      - Default value: true
+      - Value type: boolean
+    - autoplay
+      - Default value: false
+      - Value type: boolean
+    - nocontrols
+      - Default value: false
+      - Value type: boolean
+    - hd
+      - Default value: false
+      - Value type: boolean
+    - muted
+      - Default value: false
+      - Value type: boolean
+  
+  Reference: https://support.streamable.com/article/61-advanced-embedding
+#}
+
+{% if id is undefined %}
+  {{ throw(message="The 'id' argument is missing.") }}
+{% elif id is not string %}
+  {{ throw(message="The value of the 'id' argument must be of type string.") }}
+{% elif id == "" %}
+  {{ throw(message="The value of the 'id' argument cannot be an empty string.") }}
+{% endif %}
+
+{% set src = "https://streamable.com/e/" ~ id %}
+
+{% if loop is defined or autoplay is defined or nocontrols is defined or hd is defined or muted is defined %}
+  {% set src = src ~ "?" %}
+  {% set params = [] %}
+
+  {% if loop is defined %}
+    {% if loop == true or loop == 1 %}
+      {% set params = params | concat(with="loop=1") %}
+    {% else %}
+      {% set params = params | concat(with="loop=0") %}
+    {% endif %}
+  {% endif %}
+
+  {% if autoplay is defined %}
+    {% if autoplay == true or autoplay == 1 %}
+      {% set params = params | concat(with="autoplay=1") %}
+    {% else %}
+      {% set params = params | concat(with="autoplay=0") %}
+    {% endif %}      
+  {% endif %}
+
+  {% if nocontrols is defined %}
+    {% if nocontrols == true or nocontrols == 1 %}
+      {% set params = params | concat(with="nocontrols=1") %}
+    {% else %}
+      {% set params = params | concat(with="nocontrols=0") %}
+    {% endif %}
+  {% endif %}
+
+  {% if hd is defined %}
+    {% if hd == true or hd == 1 %}
+      {% set params = params | concat(with="hd=1") %}
+    {% else %}
+      {% set params = params | concat(with="hd=0") %}
+    {% endif %}
+  {% endif %}
+
+  {% if muted is defined %}
+    {% if muted == true or muted == 1 %}
+      {% set params = params | concat(with="muted=1") %}
+    {% else %}
+      {% set params = params | concat(with="muted=0") %}
+    {% endif %}
+  {% endif %}
+  
+  {% set params = params | join(sep="&") %}
+  {% set src = src ~ params %}
+{% endif %}
+
+<figure class="streamable">
+  <iframe src="{{ src }}"
+  frameborder="0"
+  allowfullscreen>
+  </iframe>
+  {% if caption %}
+    <figcaption>{{ caption }}</figcaption>
+  {% endif %}
+</figure>

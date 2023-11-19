@@ -1,0 +1,58 @@
+{#
+  This shortcode will return a list of musical works used by Veloren,
+  along with who authored it and the applicable license.
+  That list was reviewed manually, new music works are not added here automatically.
+
+  The following arguments are mandatory:
+    - type
+  
+  The 'type' argument must be one of these string values:
+    - "theme"
+    - "sfx"
+
+  A list of music authors and links to their personal sites
+  is defined in the file 'content/attribution/music/authors.son'
+#}
+
+{% if type is defined %}
+  {% if type == "theme" %}
+    {% set works = load_data(path='@/attribution/music/works.json') | filter(attribute="type", value="theme") %}
+  {% elif type == "sfx" %}
+    {% set works = load_data(path='@/attribution/music/works.json') | filter(attribute="type", value="sfx") %}
+  {% else %}
+    {{ throw(message="Invalid value for 'type' argument.") }}
+  {% endif %}
+{% else %}
+  {{ throw(message="The 'type' argument is missing.") }}
+{% endif %}
+
+{% set works = works | sort(attribute="name") %}
+{% set licenses = load_data(path='@/attribution/licenses.json') %}
+{% set authors = load_data(path='@/attribution/music/authors.json') %}
+
+<ul>
+  {% for work in works %}
+    {% set_global author_url = false %}
+    {% for author in authors %}
+      {% if author['url'] and author['name'] == work.authors %}
+        {% set_global author_url = author['url'] %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    <li><strong>{{ work.name }}</strong> by {% if author_url %}<a href="{{ author_url }}" rel="noopener noreferrer" target="_blank">{{ work.authors }}</a>{% else %}{{ work.authors }}{% endif %}</li>
+    
+    {% if work.license %}
+      {% for license in licenses %}
+        {% if license['spdx-id'] == work.license %}
+          <ul>
+            <li>
+              Licensed under the <a href="{{ license['url'] }}" rel="noopener noreferrer" target="_blank">{{ license['name'] }}</a>
+            </li>
+          </ul>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>

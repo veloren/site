@@ -1,62 +1,106 @@
-@import 'variables';
+/*
+ * SPDX-FileCopyrightText: 2019 - 2020 Christian Authmann <https://gitlab.com/cauthmann>
+ * SPDX-FileCopyrightText: 2020 - 2022 Vechro
+ * SPDX-FileCopyrightText: 2020 Forest Anderson <forestkzanderson@gmail.com>
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@use 'variables' as v;
 
 html, body {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
 body {
-	background-color: $main-background-color;
-	overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: v.$main_width;
+  max-width: 100vw;
+  margin: auto;
 
-	@media (min-width: $main_width) {
-		background: fixed url(bg_main.png) center bottom / cover no-repeat;
-	}
+  @media (min-width: v.$main_width) {
+    background: fixed url(bg_main.png) center bottom / cover no-repeat;
+  }
+
+  .header-video {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 main {
-	background-color: $main-background-color;
-	// Viewport height - navbar height - footer height
-	min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
-	color: $text-color;
-	padding: .5em .5em 1em .5em;
-	width: $main_width;
- 	max-width: 100%;
+  // Viewport height - navbar height - footer height
+  min-height: calc(100vh - #{v.$navbar-height} - #{v.$footer-height});
+  width: 100%;
+  padding: .5em .5em 1em .5em;
+  
+  color: v.$text-color;
+  background-color: v.$main-background-color;
 
-	@media (min-width: $main_width) {
-		margin: 0 auto;
-		// increase padding on large screens
-		padding: 0.5em 4em 1em 4em;
-	}
+  @media (min-width: v.$main_width) {
+    margin: 0;
+    // increase padding on large screens
+    padding: 0.5em 3em 1em 3em;
+  }
 }
 
 td {
-	padding: .25em .5em;
+  padding: .25em .5em;
 }
 
 a {
-	color: $link-color;
-	text-decoration-thickness: 2px;
+  color: v.$link-color;
+  text-decoration-thickness: 2px;
 
-	&:hover {
-		color: $main-background-color;
-		background: $link-color;
-		text-decoration: inherit;
-	}
-}
+  &:hover {
+    color: v.$main-background-color;
+    background: v.$link-color;
+    text-decoration: inherit;
+  }
 
-::selection {
-	background: $selection-color;
-}
-
-*:focus {
-	outline: red dashed 2px;
-	outline-offset: 2px;
+  &.donate:hover{
+    background: 0;
+  }
 }
 
 .mention {
-  border-radius: 3px;
-  font-weight: 500;
   padding: 0 2px;
+  
+  font-weight: 500;
+  
   color: #687dc6;
   background-color: rgba(114, 137, 218, .15);
+  
+  border-radius: 3px;
+}
+
+#donation-footer {
+  img {
+    width: 20em;
+    max-width: 80vw;
+  }
+  
+  &:hover {
+    background: none;
+  }
+}
+
+::selection {
+  background: v.$selection-color;
+}
+
+*:focus {
+  outline: red dashed 2px;
+  outline-offset: 2px;
+}
+
+@media (max-width: v.$mobile-width) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
 }

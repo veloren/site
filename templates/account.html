@@ -1,9 +1,7 @@
-{% import "macros/transform.html" as transform %}
-
 {% extends "base.html" %}
 
 {% block extra_head %}
-    <script src="{{ get_url(path='js/account.js', trailing_slash=false) }}" type="module"></script>
+  <script src="{{ get_url(path='js/account.js', trailing_slash=false) }}" type="module"></script>
 {% endblock extra_head %}
 
 {% block content %}
@@ -19,9 +17,9 @@
           {% set url = transform::to_discord_cdn(url=url) %}
         {% endif %}
         <figure class="inline-image">
-          <a href="{{ url }}" target="_blank"><img alt="banner" src="{{ url }}"/> </a>
+          <a href="{{ url }}" target="_blank"><img alt="banner" src="{{ url }}"> </a>
         </figure>
-        <hr/>
+        <hr>
       {% endif %}
       {{ page.content | safe }}
     </article>

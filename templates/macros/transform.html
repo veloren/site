@@ -1,7 +1,16 @@
-{# Transforms a Discord media URL to its equivalent CDN URL and discards the query component.
-It's assumed the benefit of the CDN URL is that it's faster to load,
-however it cannot be resized with query parameters.
-The macro doesn't check if the provided input is a valid Discord media URL. #}
+<!--
+SPDX-FileCopyrightText: 2021 Vechro
+SPDX-FileCopyrightText: 2023 Javier Pérez
+
+SPDX-License-Identifier: Apache-2.0
+-->
+
+{#
+  Transforms a Discord media URL to its equivalent CDN URL and discards the query component.
+  It's assumed the benefit of the CDN URL is that it's faster to load,
+  however it cannot be resized with query parameters.
+  The macro doesn't check if the provided input is a valid Discord media URL.
+#}
 {% macro to_discord_cdn(url) -%}
   {{ url
   | replace(from="media.discordapp.net", to="cdn.discordapp.com")
@@ -9,17 +18,21 @@ The macro doesn't check if the provided input is a valid Discord media URL. #}
   | first }}
 {%- endmacro to_discord_cdn %}
 
-{# Transforms a Discord CDN URL to its equivalent media URL and discards the query component.
-The benefit of "media.discordapp.net" is that it allows resizing by appending query parameters.
-The query parameter format for that is `?width=<width>&height=<height>`,
-with integer values in the angle brackets.
-The macro doesn't check if the provided input is a valid Discord CDN URL. #}
+
+{#
+  Transforms a Discord CDN URL to its equivalent media URL and discards the query component.
+  The benefit of "media.discordapp.net" is that it allows resizing by appending query parameters.
+  The query parameter format for that is `?width=<width>&height=<height>`,
+  with integer values in the angle brackets.
+  The macro doesn't check if the provided input is a valid Discord CDN URL.
+#}
 {% macro to_discord_media(url) -%}
   {{ url
   | replace(from="cdn.discordapp.com", to="media.discordapp.net")
   | split(pat="?")
   | first }}
 {%- endmacro to_discord_media %}
+
 
 {% macro resize_discord_image(url, width, height) -%}
   {% if url is containing("cdn.discordapp.com") %}
@@ -38,31 +51,55 @@ The macro doesn't check if the provided input is a valid Discord CDN URL. #}
   {{ url ~ query_param }}
 {%- endmacro resize_discord_image %}
 
-{# Wraps given string into a mention element if it matches Discord's username format,
-either with or without the discriminator. #}
+
+{#
+  Wraps given string into a mention element if it matches Discord's username format,
+  either with or without the discriminator.
+#}
 {% macro to_mention(username) -%}
   {% if username is matching("^@[^#]+(?:#\d{4})?$") %}
     {{ '<span class="mention">' ~ username ~ '</span>' }}
   {% endif %}
 {%- endmacro to_mention %}
 
-{# I don't want to talk about it. #}
-{% macro replace_tags_with_mentions(s) -%}
-  {# This handles like 99% of the cases. If you find an edge case, add another filter. #}
-  {% set words_list = s
-                      | replace(from=">", to="> ") | replace(from=",", to=" ") | replace(from="!", to=" !")
-                      | replace(from="</", to=" </") | replace(from=":", to=" ")
-                      | split(pat=" ") %}
-  {% for word in words_list %}
-    {% set word = word | trim %}
+
+{#
+  This macro will look for at-mentions (e.g. "@johny did a great job this week!")
+  and insert them inside span elements for CSS styling.
+#}
+{% macro replace_tags_with_mentions(content) %}
+  {% set mentions = [""] %}
+
+  {% set words = content
+    | linebreaksbr
+    | replace(from="<br>", to=" ")
+    | striptags
+    | replace(from=",", to="")
+    | split(pat=" ")
+  %}
+
+  {% for word in words %}
     {% if word is starting_with("@") %}
-      {% set mention = '<span class="mention">' ~ word ~ '</span>' %}
-      {# In case we accidentally nest mentions, this will undo it #}
-      {% set nested_mention = '<span class="mention">' ~ mention ~ '</span>' %}
-      {% set_global s = s
-                        | replace(from=word, to=mention)
-                        | replace(from=nested_mention, to=mention) %}
+        {% set word = word
+          | trim
+          | replace(from="'s", to="")
+          | replace(from=".", to="")
+        %}
+      {% set_global mentions = mentions | concat(with=word) %}
     {% endif %}
   {% endfor %}
-  {{ s | safe }}
-{%- endmacro replace_tags_with_mentions %}
+
+  {% set mentions = mentions | slice(start=1) | unique(case_sensitive=true) %}
+  
+  {% if mentions | length > 1 and mentions | nth(n=0) != "" %}
+    {% for mention in mentions %}
+      {% set_global content = content
+        | replace(from=mention, to="<span class='mention'>" ~ mention ~ "</span>")
+      %}
+    {% endfor %}
+  {% endif %}
+
+  {% if words is iterable %}
+    {{ content | safe }}
+  {% endif%}
+{% endmacro replace_tags_with_mentions %}

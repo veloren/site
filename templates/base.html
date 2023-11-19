@@ -1,72 +1,87 @@
 {% import "macros/icon.html" as icon %}
 {% import "macros/transform.html" as transform %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    {# SEO meta Tags #}
-    <meta content="Veloren is a multiplayer voxel RPG written in Rust. It takes inspiration from games such as Cube World and Dwarf Fortress." name="description"/>
-    <meta content="index, follow" name="robots"/>
-    <meta content="#2cb3a8" name="theme-color"/>
-    {# Twitter Card data #}
-    <meta content="summary_large_image" name="twitter:card"/>
-    <meta content="@velorenproject" name="twitter:site"/>
     {% if page.title %}
-      <meta content="{{ page.title }}" name="twitter:title"/>
-    {% else %}
-      <meta content="Veloren" name="twitter:title"/>
+      <title>{{ page.title }}</title>
+    {% elif config.title %}
+      <title>{{ config.title }}</title>
     {% endif %}
+
     {% if page.description %}
-      <meta content="{{ page.description }}" name="twitter:description"/>
-    {% else %}
-      <meta content="The Veloren devblog website" name="twitter:description"/>
+      <meta name="description" content="{{ page.description }}">
+    {% elif config.description %}
+      <meta name="description" content="{{ config.description }}">
     {% endif %}
-    {% if page.extra.banner is defined %}
-      {% set url = page.extra.banner %}
-      {% if url is containing("media.discordapp.net") %}
-        {% set url = transform::to_discord_cdn(url=url) %}
-      {% endif %}
-      <meta content="{{ url }}" name="twitter:image"/>
-    {% else %}
-      <meta content="{{ get_url(path='Logo_Square.png') }}" name="twitter:image"/>
-    {% endif %}
-    {# Open Graph data #}
-    <meta content="Veloren" property="og:title"/>
-    <meta content="article" property="og:type"/>
-    {% if page.permalink is defined %}
-      <meta content="{{ page.permalink }}" property="og:url"/>
-    {% else %}
-      <meta content="https://veloren.net/" property="og:url"/>
-    {% endif %}
-    {% if page.extra.banner is defined %}
-      {% set url = page.extra.banner %}
-      {% if url is containing("media.discordapp.net") %}
-        {% set url = transform::to_discord_cdn(url=url) %}
-      {% endif %}
-      <meta content="{{ url }}" property="og:image"/>
-    {% else %}
-      <meta content="{{ get_url(path='Logo_Square.png') }}" property="og:image"/>
-    {% endif %}
-    {% if page.description %}
-      <meta content="{{ page.description }}" name="og:description"/>
-    {% else %}
-      <meta content="The Veloren devblog website" name="og:description"/>
-    {% endif %}
-    {# Enable responsiveness on mobile devices #}
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>{{ config.title }}</title>
+
+    <meta charset="utf-8">
+
+
     {# Stylesheet #}
-    <link href="{{ get_url(path='veloren.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ get_url(path='veloren.css') }}" rel="stylesheet" type="text/css">
+
+
     {# Favicons #}
-    <link href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}" rel="apple-touch-icon"/>
-    <link href="{{ get_url(path='icons/favicon/icon-192.png') }}" rel="icon"/>
-    <link href="{{ get_url(path='icons/favicon/manifest.json') }}" rel="manifest"/>
+    <link rel="icon" href="{{ get_url(path='icons/favicon/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}">
+    <link rel="manifest" href="{{ get_url(path='icons/favicon/manifest.json') }}">
+    
+
+    {# Scripts #}
     <script defer src="{{ get_url(path='js/navbar.js') }}"></script>
     <script defer src="{{ get_url(path='js/motion-manager.js') }}"></script>
+
+
+    {# Open Graph data #}
+    {% if page.title %}
+      <meta property="og:title" content="{{ page.title }}">
+    {% elif config.title %}
+      <meta property="og:title" content="{{ config.title }}">  
+    {% endif %}
+    
+    {% block ogtype %}
+      <meta property="og:type" content="website">
+    {% endblock ogtype %}
+
+    {% if page.extra.banner is defined %}
+      {% set url = page.extra.banner %}
+      {% if url is containing("media.discordapp.net") %}
+        {% set url = transform::to_discord_cdn(url=url) %}
+      {% endif %}
+      <meta property="og:image" content="{{ url }}">
+    {% else %}
+      <meta property="og:image" content="{{ get_url(path='Logo_Square.png') }}">
+    {% endif %}
+
+    {% if page.permalink is defined %}
+      <meta property="og:url" content="{{ page.permalink }}">
+    {% else %}
+      <meta property="og:url" content="{{ config.base_url }}">
+    {% endif %}
+
+    {% if page.description %}
+      <meta property="og:description" content="{{ page.description }}">
+    {% elif config.description %}
+      <meta property="og:description" content="{{ config.description }}">
+    {% endif %}
+
+
+    {# SEO meta Tags #}
+    <meta content="index, follow" name="robots">
+    <meta content="#2cb3a8" name="theme-color">
+
+
+    {# Enable responsiveness on mobile devices #}
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    
     {# RSS #}
     {% if config.generate_feed %}
-      <link href="{{ get_url(path='rss.xml') }}" rel="alternate" title="RSS" type="application/rss+xml"/>
+      <link rel="alternate" type="application/rss+xml" title="RSS feed" href="{{ config.base_url }}/rss.xml">
     {% endif %}
+
     {% block extra_head %}{% endblock extra_head %}
   </head>
   <body>
@@ -76,27 +91,23 @@
           {% set logo = resize_image(path='../static/logo.png', width=142, height=40, op='fill') %}
           <img alt="Veloren" src="{{ logo.url }}" width="142" height="40"/> 
         </a>
+
       </div>
       <div class="navbar-section navbar-content" id="navbar-links">
-        <a href="{{ get_url(path='download') }}" >
-          {{ icon::load(path='static/icons/download.svg') }}
-          <span>Download</span>
+        <a href="{{ get_url(path='@/download.md') }}">
+          {{ icon::load(path='static/icons/download.svg') }}<span>Download</span>
         </a>
-        <a href="{{ get_url(path='account') }}">
-          {{ icon::load(path='static/icons/account.svg') }}
-          <span>Account</span>
+        <a href="{{ get_url(path='@/account/create-account.md') }}">
+          {{ icon::load(path='static/icons/account.svg') }}<span>Account</span>
         </a>
-        <a href="https://book.veloren.net/" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">
-          {{ icon::load(path='static/icons/manual.svg') }}
-          <span>Manual</span>
+        <a href="{{ get_url(path='@/joinus.md') }}">
+          {{ icon::load(path='static/icons/join-us.svg') }}<span>Join us</span>
         </a>
-        <a href="{{ get_url(path='joinus') }}">
-          {{ icon::load(path='static/icons/join-us.svg') }}
-          <span>Join Us</span>
+        <a href="https://book.veloren.net/" target="_blank" rel="noopener noreferrer">
+          {{ icon::load(path='static/icons/manual.svg') }}<span>Manual</span>
         </a>
-        <a href="https://opencollective.com/veloren" target="_blank" rel="noopener noreferrer" title="Opens in a new tab">
-          {{ icon::load(path='static/icons/donate.svg') }}
-          <span>Donate</span>
+        <a href="https://opencollective.com/veloren/donate?interval=month&amount=5" target="_blank" rel="noopener noreferrer">
+          {{ icon::load(path='static/icons/donate.svg') }}<span>Donate</span>
         </a>
       </div>
       <div class="navbar-section navbar-hamburger" onclick="toggleMobileMenu()">

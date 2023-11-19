@@ -1,70 +1,105 @@
-$system_fonts: Arial, Helvetica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
+/*
+ * SPDX-FileCopyrightText: 2021 - 2022 Vechro
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
 
+ // Common
+ // Color palette
+ $gray-100: #000000;
+ $gray-200: #0d0d13;
+ 
+ $beige-700: #fdfcfb;
+ $beige-600: #f2edea;
+ $beige-500: #d8c8bb;
+ $beige-400: #a39386;
+ $beige-300: #471c01;
+ $beige-200: #4d4641;
+ $beige-100: #403b38;
+ 
+ $blue-700: #79a8f9;
+ $blue-600: #3997f7;
+ $blue-500: #2c86d2;
+ $blue-400: #2774af;
+ $blue-300: #216290;
+ $blue-200: #1a5173;
+ $blue-100: #144059;
+ 
+ $red-700: #fdb8be;
+ $red-600: #fd8d99;
+ $red-500: #fc5970;
+ $red-400: #ed1249;
+ $red-300: #bd0c38;
+ $red-200: #900729;
+ $red-100: #66031a;
+
+// Fonts
+$system_fonts: Arial, Helvetica, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto;
 $title-font: "Inter", "Arial Fallback", $system_fonts, sans-serif;
 $body-font: $title-font;
-$navbar-font: $body-font;
 
+// Dimensions
 $main_width: 960px;
 $mobile-width: 800px;
 
-$navbar-height: 4em;
-$footer-height: 4em;
-
+// Spacing
 $hpadding: 1.25rem; // The side-padding
 
-$gray-100: #000000;
-$gray-200: #0d0d13;
-
-$text-background-color: #f2f0e9;
-
-$beige-700: #fdfcfb;
-$beige-600: #f2edea;
-$beige-500: #d8c8bb;
-$beige-400: #a39386;
-$beige-300: #471c01;
-$beige-200: #4d4641;
-$beige-100: #403b38;
-
-$blue-700: #79a8f9;
-$blue-600: #3997f7;
-$blue-500: #2c86d2;
-$blue-400: #2774af;
-$blue-300: #216290;
-$blue-200: #1a5173;
-$blue-100: #144059;
-
-$red-700: #fdb8be;
-$red-600: #fd8d99;
-$red-500: #fc5970;
-$red-400: #ed1249;
-$red-300: #bd0c38;
-$red-200: #900729;
-$red-100: #66031a;
-
+// Colors
 $main-background-color: $beige-600;
 
-$button-color: $blue-500;
-$button-shadow: 4px 4px 0 0 $blue-100;
-$button-negative-color: $red-400;
-$button-negative-shadow: 4px 4px 0 0 $red-100;
+$text-color: #313132;
+$negative-text-color: #ececec;
+$text-background-color: #f2f0e9;
 
+$link-color: $red-400;
+$negative-link-color: $negative-text-color;
+
+$header-color: #2f2f2f;
+
+// Pseudo-classes
+$selection-color: rgba(237, 18, 73, 0.5);
+
+
+// Navbar
+// Dimensions
+$navbar-height: 4em;
+
+// Fonts
+$navbar-font: $body-font;
+
+// Pseudo-classes
+$navbar-focus-color: #f5f2f7;
+
+
+// Forms
+// Input
+// Colors
 $input-color: $beige-700;
 $input-placeholder-color: $beige-400;
 $input-border-color: $beige-200;
 
-$text-color: #313132;
-$negative-text-color: #ececec;
+// Buttons
+// Colors
+$button-color: $blue-500;
+$button-negative-color: $red-400;
+$button-shadow: 4px 4px 0 0 $blue-100;
+$button-negative-shadow: 4px 4px 0 0 $red-100;
+
+
+// Footer
+// Dimensions
+$footer-height: 4em;
+
+// Colors
 $footer-text-color: #839197;
 
-$link-color: $red-400;
-$navbar-focus-color: #f5f2f7;
-$negative-link-color: $negative-text-color;
 
-$selection-color: rgba(237, 18, 73, 0.5);
-
-$info-text-color: #6e6e6e;
-
+// System state and responses
+// Colors
 $success-border-color: #4caf50;
 $success-background-color: #4caf504d;
+$info-text-color: #6e6e6e;
 $error-border-color: #f44336;
 $error-background-color: #f440344d;

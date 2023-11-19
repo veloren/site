@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% import "macros/generate.html" as gen %}
+
+{% block content %}
+  {% set cats = get_taxonomy(kind="tags") %}
+  {% for cat in cats.items %}
+    {% if cat.name == "devblog" %}
+      {% for page in cat.pages %}
+        {{ gen::post_preview(page=page) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endblock content %}

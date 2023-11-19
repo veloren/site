@@ -1,10 +1,22 @@
-@import 'reset';
-@import 'typography';
-@import 'feather';
-@import 'navbar';
-@import 'footer';
-@import 'images';
-@import 'account';
-@import 'layout';
-@import 'post-preview';
-@import 'darkmode';
+/*
+ * SPDX-FileCopyrightText: 2019 - 2020 Christian Authmann <https://gitlab.com/cauthmann>
+ * SPDX-FileCopyrightText: 2019 - 2020 Marcel Märtens
+ * SPDX-FileCopyrightText: 2021 Vechro
+ * SPDX-FileCopyrightText: 2023 Javier Pérez
+ * 
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@use 'minireset';
+@use 'typography';
+@use 'feather';
+@use 'navbar';
+@use 'footer';
+@use 'images';
+@use 'account';
+@use 'layout';
+@use 'post-preview';
+@use 'darkmode';
+@use 'streamable';
+@use 'homepage';
+@use 'custom';

@@ -1,4 +1,20 @@
-build
-public
+# SPDX-FileCopyrightText: 2023 Javier Pérez
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Project-specific
+## Output of zola serve and zola build commands
+public/**
+
+## Zola image processing
 static/processed_images/
-.idea
+
+
+# Integrated development environments (IDEs) and text editors
+## Visual Studio Code
+.vscode/**
+
+
+# Operating systems
+## macOS
+.DS_Store

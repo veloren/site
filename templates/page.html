@@ -1,15 +1,16 @@
-{% import "macros/transform.html" as transform %}
-{% import "macros/generate.html" as gen %}
-
 {% extends "base.html" %}
 
 {% block content %}
   <section class="post">
-    <div class="title-container">
-      <h1>{{ page.title }}</h1>
-      {{ gen::length_and_date(page=page) }}
-    </div>
     <article>
+      <div class="title-container">
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+          {% block readtime %}{% endblock readtime %}
+          {% block author %}{% endblock author %}
+        {% endif %}
+      </div>
+      
       {% if page.extra.banner is defined %}
         {% set url = page.extra.banner %}
         {% if url is containing("cdn.discordapp.com") %}
@@ -19,7 +20,9 @@
           <img src="{{ url }}">
         </figure>
       {% endif %}
-      {{ transform::replace_tags_with_mentions(s=page.content) }}
+      
+      {{ transform::replace_tags_with_mentions(content=page.content) }}
     </article>
+    {% block support %}{% endblock support %}
   </section>
 {% endblock content %}

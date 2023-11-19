@@ -1,0 +1,50 @@
+{% import "macros/generate.html" as gen %}
+{% import "macros/transform.html" as transform %}
+
+{% extends "page.html" %}
+
+{% block support %}
+  <a id="donation-footer" href="https://opencollective.com/veloren/donate?interval=month&amount=5" target="_blank">
+    <img src="https://opencollective.com/veloren/contribute/button@2x.png?color=blue">
+  </a>
+{% endblock support %}
+
+{% block readtime %}
+  {{ gen::length_and_date(page=page) }}
+{% endblock readtime %}
+
+{% block author %}
+  {% if page.authors %}
+    <span class="authored">
+      {% if page.authors is iterable and page.authors | length() >= 2 %}
+        {% set authors = page.authors | sort() %}
+        {% set last_author = authors | last() %}
+        {% set authors = authors | join(sep=", ") %} 
+        {% set authors = authors | replace(from=", " ~ last_author, to=" and " ~ last_author) %}
+        <p>Authored by {{ authors }}</p>
+      {% else %}
+        <p>Authored by {{ page.authors | join() }}</p>
+      {% endif %}
+    </span>
+  {% endif %}
+{% endblock author %}
+
+{% block ogtype %}
+  <meta property="og:type" content="article">
+  
+  {% if page.date %}
+    <meta property="article:published_time" content="{{ page.date }}">
+  {% endif %}
+
+  {% if page.updated %}
+    <meta property="article:modified_time" content="{{ page.updated }}">
+  {% endif %}
+
+  {% if page.authors %}
+    {% for author in page.authors %}
+      <meta property="article:author" content="{{ author }}">
+    {% endfor %}
+  {% endif %}
+
+  <meta property="article:tag" content="devblog">
+{% endblock ogtype %}
