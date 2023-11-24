@@ -1,6 +1,10 @@
 {% import "macros/generate.html" as generate %}
-
 <?xml version="1.0" encoding="UTF-8"?>
+{#
+  Be careful when editing this file, as Airshipper displays content from
+  the website by using the RSS feed in specific ways and the integration
+  might break.
+#}
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>{{ config.title }}
