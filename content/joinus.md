@@ -8,7 +8,6 @@ Veloren is an open-source, community-driven project! Join us in making the game 
 
 * [This Week In Veloren — Weekly dev blog](@/blog/_index.md)
 * [Mastodon — Keep up to date with the project](https://floss.social/@veloren)
-* [Twitter — Keep up to date with the project](https://twitter.com/velorenproject/)
 
 ## Discussion & Development
 
