@@ -38,10 +38,9 @@ Certain rules have been changed as follows:
 
 | Rule | Value | Notes |
 | --- | --- | --- |
-| `no-inline-html` | `false` | Some blog posts contain HTML code because CommonMark has certain limitations that HTML helps overcome. |
+| `line-length` | `false` | The project has several lines which exceed this limit. |
+| `no-duplicate-heading` | `siblings_only: true` | A certain blog post conflicts with this rule. |
 | `no-trailing-punctuation` | `.,;:` | The rule is enabled. It is configured to allow the '!' character because it is used in a header in the home page. |
 | `no-blanks-blockquote` | `false` | Some blog posts include consecutive user quotes, which conflicts with this rule. |
-| `line-length` | `false` | The project has several lines which exceed this limit. |
-| `no-duplicate-header` | `siblings_only: true` | A certain blog post conflicts with this rule. |
-| `first-line-h1` | `false` | Shortcodes defined inside the `templates` directory and written in Markdown conflict with this rule. |
-| `single-h1` | `false` | The `<h1>` HTML element is usually defined by Zola templates and not in the content files. Nevertheless, in Markdown files whose `<h1>` header is not provided by a template and where you have to type that header in CommonMark (e.g. `# My awesome blog post!`), the rule is still triggered for some reason. |
+| `no-inline-html` | `false` | Some blog posts contain HTML code because CommonMark has certain limitations that HTML helps overcome. |
+| `no-bare-urls` | `false` | URLs inside Zola shortcode calls get flagged by this rule. |
