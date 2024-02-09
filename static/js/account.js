@@ -38,7 +38,7 @@ const Alert = {
 
 window.closeAlert = Alert.close;
 
-window.passwordRepeatValidity = function () {
+window.passwordRepeatValidity = function() {
   const password = document.querySelector("input[name=password]");
   const password_repeat = document.querySelector("input[name=password_repeat]");
   if (password_repeat.value === password.value) {
@@ -50,19 +50,23 @@ window.passwordRepeatValidity = function () {
 
 const getFormData = () => new FormData(document.querySelector("form"));
 
-window.postToBackendNewAccount = function (event) {
+window.postToBackendNewAccount = function(event) {
   event.preventDefault();
   RegisterPayload.fromFormData(getFormData()).sendRegisterAccount();
 };
 
-window.postToBackendDeleteAccount = function (event) {
+window.postToBackendDeleteAccount = function(event) {
   event.preventDefault();
   RegisterPayload.fromFormData(getFormData()).sendDeleteAccount();
 };
 
-window.postToBackendChangePassword = function (event) {
+window.postToBackendChangePassword = function(event) {
   event.preventDefault();
   ChangePasswordPayload.fromFormData(getFormData()).send();
+};
+window.postToBackendChangeUsername = function(event) {
+  event.preventDefault();
+  ChangeUsernamePayload.fromFormData(getFormData()).send();
 };
 
 class ChangePasswordPayload {
@@ -77,7 +81,7 @@ class ChangePasswordPayload {
    * @returns {ChangePasswordPayload}
    */
   static fromFormData(formData) {
-    const {username, current_password, new_password} = Object.fromEntries(formData);
+    const { username, current_password, new_password } = Object.fromEntries(formData);
 
     if (current_password === new_password) {
       Alert.error("Passwords are the same");
@@ -101,6 +105,51 @@ class ChangePasswordPayload {
       .then(res => {
         if (res.ok) {
           Alert.success("Password changed succesfully");
+        } else {
+          return res
+            .text()
+            .then((text) => Promise.reject(`Error ${res.status}: ${text}`));
+        }
+      })
+      .catch(err => Alert.error(err));
+  }
+}
+
+class ChangeUsernamePayload {
+  constructor(oldUsername, newUsername, password) {
+    this.old_username = oldUsername;
+    this.new_username = newUsername;
+    this.password = password;
+  }
+
+  /**
+   * @param {FormData} formData
+   * @returns {ChangeUsernamePayload}
+   */
+  static fromFormData(formData) {
+    const { old_username, new_username, password } = Object.fromEntries(formData);
+
+    if (new_username === old_username) {
+      Alert.error("Usernames are the same");
+      throw new Error("Usernames are the same");
+    }
+
+    const hashedPassword = hash(password);
+
+    return new this(old_username, new_username, hashedPassword);
+  }
+
+  get fetchOptions() {
+    return { method: "POST", body: JSON.stringify(this) };
+  }
+
+  send() {
+    const url = "https://auth.veloren.net/change_username";
+
+    fetch(url, this.fetchOptions)
+      .then(res => {
+        if (res.ok) {
+          Alert.success("Username changed succesfully");
         } else {
           return res
             .text()
