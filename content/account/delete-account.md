@@ -10,6 +10,7 @@ title = "Delete a Veloren account"
     <li>This action is <b>irreversible</b>!</li>
     <li><b>Before deleting your Veloren account, make sure to have removed all the multiplayer characters associated with the account</b>. You need to remove them manually. Otherwise, your online characters will remain indefinitely on their respective servers.</li>
     <li>Account registrations with the same username will not be permitted for the following 30 days</li>
+    <li>Usernames are saved for 30 days to prevent creation of new accounts with the same name</li>
   </ul>
   <form onsubmit="window.postToBackendDeleteAccount(event)">
     <div id="alertbox" class="alertbox">
