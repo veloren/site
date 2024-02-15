@@ -61,3 +61,10 @@ sudo dnf install airshipper
 ```
 
 [Older versions and other downloads](@/download-other.md)
+
+### Cargo install
+
+If you have cargo you can run `cargo install airshipper`.
+
+On windows you can run with bundled openssl-sys by doing `cargo install airshipper --features bundled`.
+
