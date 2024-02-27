@@ -13,8 +13,8 @@ function reducedMotionCheck() {
     });
   } else {
     videos.forEach(element => {
-      element.autoplay = true;
-      element.play();
+      //element.autoplay = true;
+      //element.play();
     });
   }
 }

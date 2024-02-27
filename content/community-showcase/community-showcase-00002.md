@@ -8,5 +8,5 @@ slug = "community-showcase-2"
 tags = ["community-showcase"]
 
 [extra]
-banner = "https://media.discordapp.net/attachments/599550179024306188/1008396940574208130/Journey.png"
+banner = "https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/599550179024306188/1008396940574208130/Journey.png"
 +++

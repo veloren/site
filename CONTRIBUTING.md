@@ -2,7 +2,7 @@
 SPDX-FileCopyrightText: 2020 Christian Authmann <https://gitlab.com/cauthmann>
 SPDX-FileCopyrightText: 2020 Marcel Märtens
 SPDX-FileCopyrightText: 2023 Crabman
-SPDX-FileCopyrightText: 2023 Javier Pérez
+SPDX-FileCopyrightText: 2023 - 2024 Javier Pérez
 
 SPDX-License-Identifier: Apache-2.0
 -->
@@ -54,6 +54,47 @@ This example demonstrates the structure of a development blog post (using [2019-
 
 All the user-facing web content is located inside the `content` folder. Blog posts reside within the `blog` subdirectory.
 
+### About the Discord CDN
+
+In 2023, Discord changed the way links to files hosted in their CDN works.
+The links are now unreliable because they expire automatically.
+
+It affects these domain names:
+
+- media.discordapp.net
+- cdn.discordapp.com
+
+**If you want to use content posted on Discord, please,
+do not use links to the Discord CDN. Instead, copy the files here and use the
+following REUSE format**:
+
+```txt
+SPDX-FileCopyrightText: <year> <author>
+SPDX-License-Identifier: LicenseRef-DiscordTOS-2023-03-27
+```
+
+For instance, if someone posts a picture in Discord, and their Discord username:
+is "johnDoe":
+
+```txt
+SPDX-FileCopyrightText: 2024 johnDoe (Discord)
+SPDX-License-Identifier: LicenseRef-DiscordTOS-2023-03-27
+```
+
+Additionally, authors of files posted on Discord are free to commit their files here and
+use a different author name and license.
+
+Note:
+
+The `static/discord-cdn` directory has the files that used to be retrieved
+on the blog from the Discord CDN. We now host this content elsewhere.
+
+That directory mirrors the format of Discord CDN URLs:
+`discord-cdn/<channel_id>/<attachment_id?>/<filename>`
+
+It is unclear whether or not that is the attachment ID or, rather,
+a different kind of value.
+
 ### Document filename
 
 The filename of blog posts is comprised of two major parts, separated by a hyphen ('-' character):
@@ -104,7 +145,7 @@ tags = ["devblog"]
 
 # Your own data.
 [extra]
-banner = "https://media.discordapp.net/attachments/634860358623821835/645962072143691786/screenshot_1574079543108.png"
+banner = "https://s3.eu-central-2.wasabisys.com/veloren-blog-images/cdn/634860358623821835/645962072143691786/screenshot_1574079543108.png"
 +++
 
 Blog content goes here! It must be compliant with the CommonMark specification.

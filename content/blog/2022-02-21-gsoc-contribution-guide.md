@@ -8,7 +8,7 @@ authors = ["Justin Shipsey"]
 tags = ["devblog"]
 
 [extra]
-banner = "https://media.discordapp.net/attachments/634860358623821835/906695229028065290/screenshot_1636240466943.png"
+banner = "https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/634860358623821835/906695229028065290/screenshot_1636240466943.png"
 +++
 
 ## Applying for GSoC

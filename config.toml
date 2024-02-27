@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2020 Songtronix <contact@songtronix.com>
 # SPDX-FileCopyrightText: 2020 Marcel Märtens
 # SPDX-FileCopyrightText: 2021 - 2022 Vechro
-# SPDX-FileCopyrightText: 2023 Javier Pérez
+# SPDX-FileCopyrightText: 2023 - 2024 Javier Pérez
 #
 # SPDX-License-Identifier: CC0-1.0
 
@@ -35,6 +35,12 @@ generate_feed = true
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
 feed_filename = "rss.xml"
+
+# When set to "true", files in the `static` directory are hard-linked. Useful for large
+# static files. Note that for this to work, both `static` and the
+# output directory need to be on the same filesystem. Note that the theme's `static`
+# files are always copied, regardless of this setting.
+hard_link_static = true
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
