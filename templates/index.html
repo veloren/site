@@ -13,7 +13,7 @@
 {% endblock extra_head %}
 
 {% block header %}
-  <video class="header-video" playsinline muted loop preload="auto" tabindex="-1">
+  <video class="header-video" autoplay="true" playsinline muted loop preload="auto" tabindex="-1">
     <source src="{{ get_url(path='videos/veloren.webm') }}" type="video/webm">
     <source src="{{ get_url(path='videos/veloren.mp4') }}" type="video/mp4">
     Your browser does not support the video tag.

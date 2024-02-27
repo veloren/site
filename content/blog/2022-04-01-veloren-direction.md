@@ -8,7 +8,7 @@ authors = ["AngelOnFira"]
 tags = ["devblog"]
 
 [extra]
-banner = "https://media.discordapp.net/attachments/726090746528268429/959490907122569246/unknown.png"
+banner = "https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/726090746528268429/959490907122569246/unknown.png"
 +++
 
 ## Veloren's New Direction
@@ -31,5 +31,5 @@ to race while riding horses, fish, and spiders. The planned release date will be
 in exactly one year, on **2023-04-01**.
 
 {{
-  img(src="https://media.discordapp.net/attachments/726090746528268429/959475017341608056/unknown.png")
+  img(src="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/726090746528268429/959475017341608056/unknown.png")
 }}

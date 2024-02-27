@@ -8,7 +8,7 @@ authors = ["AngelOnFira"]
 tags = ["devblog"]
 
 [extra]
-banner = "https://media.discordapp.net/attachments/539518074106413056/894296884347289661/logo-hacktoberfest-full.png"
+banner = "https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/539518074106413056/894296884347289661/logo-hacktoberfest-full.png"
 +++
 
 ## Hacktoberfest 2021
