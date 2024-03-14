@@ -15,56 +15,94 @@ It is available for Windows, macOS and Linux.
 - Operating system: Windows 10, Windows 11, macOS or Linux
 - Processor: 64-bit CPU
 - Memory: 4 GiB RAM
-- Graphics: GPU with support for DirectX 11.2 or newer, Vulkan or Metal
+- Graphics: GPU with support for DirectX 12 or newer, Vulkan or Metal
 - Storage: 2 GiB available space
 
 ### Windows 10 / Windows 11
 
 - [Download Airshipper for Windows](https://github.com/veloren/airshipper/releases/latest/download/airshipper-windows.msi)
 
+Or install with cargo:
+
+```powershell
+cargo install airshipper
+```
+
+You can also install it with bundled `openssl-sys` by doing:
+
+```powershell
+cargo install airshipper --features bundled
+```
+
 ### macOS
 
-- [Download Airshipper for macOS (Intel x86 CPU)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-x86_64.zip)
+- [Download Airshipper for macOS (Intel x86_64 CPU)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-x86_64.zip)
 - [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://github.com/veloren/airshipper/releases/latest/download/airshipper-macos-aarch64.zip)
+
+Or install with cargo:
+
+```bash
+cargo install airshipper
+```
 
 ### Linux
 
 - [Download Airshipper for Linux](https://github.com/veloren/airshipper/releases/latest/download/airshipper-linux.tar.gz)
 
-#### Flatpak
+Or install with cargo:
 
-<a class="flatpak" href="https://flathub.org/apps/details/net.veloren.airshipper" target="_blank">
-  <img width="200" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png">
-</a>
+```bash
+cargo install airshipper
+```
+
+### Unofficial download channels for Linux
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/airshipper.svg?header=Airshipper%20packaging%20status&columns=3)](https://repology.org/project/airshipper/versions)
+
+#### Flathub
+
+The game launcher and the standalone version of the game are both available on Flathub.
+
+**Airshipper** Flatpak:
 
 ```bash
 flatpak install flathub net.veloren.airshipper
 ```
 
-#### Arch User Repository
+[![Download Airshipper on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.airshipper)
+
+**Veloren** Flatpak:
+
+```bash
+flatpak install flathub net.veloren.veloren
+```
+
+[![Download Veloren on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.veloren)
+
+#### Arch User Repository (AUR)
 
 The game launcher and the standalone version of the game are both available in the AUR.
 
-- [Airshipper (AUR)](https://aur.archlinux.org/packages/airshipper/)
-- [Veloren (AUR)](https://aur.archlinux.org/packages/veloren/)
+**Airshipper** package:
 
-More information and instructions for other RPM-based distributions
-can be found on [the Copr page](https://copr.fedorainfracloud.org/coprs/frinksy/airshipper/).
+```bash
+yay -Sy airshipper
+```
 
-#### Unofficial download channels for Linux
+**Veloren** package:
 
-##### Copr for RPM-based distributions
+```bash
+yay -Sy veloren
+```
+
+#### Copr for RPM-based distributions
 
 ```bash
 sudo dnf copr enable frinksy/airshipper
 sudo dnf install airshipper
 ```
 
+More information and instructions for other RPM-based distributions
+can be found on [the Copr page](https://copr.fedorainfracloud.org/coprs/frinksy/airshipper/).
+
 [Older versions and other downloads](@/download-other.md)
-
-### Cargo install
-
-If you have cargo you can run `cargo install airshipper`.
-
-On windows you can run with bundled openssl-sys by doing `cargo install airshipper --features bundled`.
-
