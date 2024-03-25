@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2020 Marcel Märtens
+# SPDX-FileCopyrightText: 2020 - 2024 Marcel Märtens
 # SPDX-FileCopyrightText: 2021 - 2022 Forest Anderson <forestkzanderson@gmail.com>
 # SPDX-FileCopyrightText: 2021 Vechro
 # SPDX-FileCopyrightText: 2021 Fernando Pastorelli <fernando.n.p.d.moscu@gmail.com>
@@ -10,8 +10,7 @@
 # https://gitlab.com/veloren/veloren/container_registry
 .publish:
   stage: publish
-  tags:
-    - docker
+  tags: ["veloren/*", "build", "publish", "trusted"]
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
       when: always
