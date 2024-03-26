@@ -40,9 +40,7 @@ matter what you're celebrating!
   img(src="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/523568428905398283/923840038696022036/veloren.png")
 }}
 
-### Support the Project
+### Support the project
 
 As always, feel free to support the project on Open Collective. It allows us to
 keep our servers running, and launch great holiday parties like the one today!
-
-[Veloren Open Collective](https://opencollective.com/veloren)
