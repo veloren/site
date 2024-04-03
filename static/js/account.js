@@ -38,13 +38,13 @@ const Alert = {
 
 window.closeAlert = Alert.close;
 
-window.passwordRepeatValidity = function() {
-  const password = document.querySelector("input[name=password]");
-  const password_repeat = document.querySelector("input[name=password_repeat]");
-  if (password_repeat.value === password.value) {
-    password_repeat.setCustomValidity("");
+window.fieldRepeatValidity = function(field_name, m) {
+  const field = document.querySelector(`input[name=${field_name}]`);
+  const field_repeat = document.querySelector(`input[name=${field_name}_repeat]`);
+  if (field_repeat.value === field.value) {
+    field_repeat.setCustomValidity("");
   } else {
-    password_repeat.setCustomValidity("Passwords do not match.");
+    field_repeat.setCustomValidity(m);
   }
 };
 

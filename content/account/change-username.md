@@ -15,7 +15,8 @@ description = "Change the username of a Veloren account"
       <button type="button" class="closebtn" onclick="window.closeAlert()">{{ icon(path='static/icons/cross.svg') }}</button>
     </div>
     <label>Current Username<input type="text" required name="old_username"></label>
-    <label>New Username<input type="text" required name="new_username"></label>
+    <label>New username<input type="text" required name="new_username" onchange="window.fieldRepeatValidity('new_username', 'Usernames do not match.')"></label>
+    <label>Confirmn New username<input type="text" required name="new_username_repeat" onchange="window.fieldRepeatValidity('new_username', 'Usernames do not match.')"></label>
     <label>Password<input type="password" required name="password"></label>
     <button type="submit" class="button-change">Change Username</button>
   </form>
