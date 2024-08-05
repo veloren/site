@@ -5,7 +5,7 @@ title = "More video material"
 ## Official Veloren Trailer
 
 {{video(src="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/232/velorentrailer.webm", caption="2024 trailer by @necti")}}
-{{video(src="videos/veloren.webm", caption="2021 trailer")}}
+{{video(src="veloren.webm", caption="2021 trailer")}}
 
 ## Veloren Original sound track
 
