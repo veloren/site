@@ -14,8 +14,8 @@
 
 {% block header %}
   <video class="header-video" autoplay="true" playsinline muted loop preload="auto" tabindex="-1">
-    <source src="{{ get_url(path='videos/veloren.webm') }}" type="video/webm">
-    <source src="{{ get_url(path='videos/veloren.mp4') }}" type="video/mp4">
+    <source src="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/common/velorentrailer_small2.webm" type="video/webm">
+    <source src="https://s3.eu-central-2.wasabisys.com/veloren-blog/cdn/common/velorentrailer_small2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 {% endblock header %}
@@ -23,6 +23,8 @@
 {% block content %}
   <section class="post">
     <article>
+      <a href="{{ get_url(path='videos') }}">Link to the full trailer and more video material</a><p>
+
       <h1>Welcome to Veloren!</h1>
       <p>
         Veloren is an action-adventure role-playing game set in a vast fantasy world.
