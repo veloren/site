@@ -18,6 +18,7 @@ Veloren is an open-source, community-driven project! Join us in making the game 
 
 * [YouTube — Watch videos about development news](https://youtube.com/@Veloren) | [YouTube RSS feed](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw)
 * [Twitch — Core development channel](https://www.twitch.tv/veloren_dev) | [Veloren streamers live on Twitch](https://www.twitch.tv/directory/game/Veloren)
+* [More videos about Veloren](@/videos.md)
 
 ## Information resources
 
