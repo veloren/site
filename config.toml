@@ -29,12 +29,12 @@ minify_html = true
 ignored_content = ["*.license"]
 
 # When set to "true", a feed is automatically generated.
-generate_feed = true
+generate_feeds = true
 
 # The filename to use for the feed. Used as the template filename, too.
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "rss.xml"
+feed_filenames = ["rss.xml"]
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 # Example:
