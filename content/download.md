@@ -71,14 +71,6 @@ flatpak install flathub net.veloren.airshipper
 
 [![Download Airshipper on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.airshipper)
 
-**Veloren** Flatpak:
-
-```bash
-flatpak install flathub net.veloren.veloren
-```
-
-[![Download Veloren on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.veloren)
-
 #### Arch User Repository (AUR)
 
 The game launcher and the standalone version of the game are both available in the AUR.
