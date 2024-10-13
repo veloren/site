@@ -61,23 +61,13 @@ cargo install airshipper
 
 #### Flathub
 
-The game launcher and the standalone version of the game are both available on Flathub.
-
-**Airshipper** Flatpak:
+The game launcher is available on Flathub.
 
 ```bash
 flatpak install flathub net.veloren.airshipper
 ```
 
 [![Download Airshipper on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.airshipper)
-
-**Veloren** Flatpak:
-
-```bash
-flatpak install flathub net.veloren.veloren
-```
-
-[![Download Veloren on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/apps/net.veloren.veloren)
 
 #### Arch User Repository (AUR)
 
