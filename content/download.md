@@ -36,8 +36,8 @@ cargo install airshipper --features bundled
 
 ### macOS
 
-- [Download Airshipper for macOS (Intel x86_64 CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-x86_64)
-- [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-aarch64)
+- [Download Airshipper for macOS (Intel x86_64 CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-x86_64.zip)
+- [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-aarch64.zip)
 
 Or install with cargo:
 
@@ -47,7 +47,7 @@ cargo install airshipper
 
 ### Linux
 
-- [Download Airshipper for Linux](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/linux-client-x86_64)
+- [Download Airshipper for Linux](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/linux-client-x86_64.zip)
 
 Or install with cargo:
 
