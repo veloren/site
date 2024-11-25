@@ -20,7 +20,7 @@ It is available for Windows, macOS and Linux.
 
 ### Windows 10 / Windows 11
 
-- [Download Airshipper for Windows](https://gitlab.com/veloren/airshipper/-/jobs/artifacts/v0.14.0/download?job=windows-installer-x86_64)
+- [Download Airshipper for Windows](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/windows-installer-x86_64)
 
 Or install with cargo:
 
@@ -36,8 +36,8 @@ cargo install airshipper --features bundled
 
 ### macOS
 
-- [Download Airshipper for macOS (Intel x86_64 CPU)](https://gitlab.com/veloren/airshipper/-/jobs/artifacts/v0.14.0/download?job=macos-x86_64)
-- [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://gitlab.com/veloren/airshipper/-/jobs/artifacts/v0.14.0/download?job=macos-aarch64)
+- [Download Airshipper for macOS (Intel x86_64 CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-x86_64.zip)
+- [Download Airshipper for macOS (Apple M1 and M2 Arm CPU)](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/macos-client-aarch64.zip)
 
 Or install with cargo:
 
@@ -47,7 +47,7 @@ cargo install airshipper
 
 ### Linux
 
-- [Download Airshipper for Linux](https://gitlab.com/veloren/airshipper/-/jobs/artifacts/v0.14.0/download?job=linux-x86_64)
+- [Download Airshipper for Linux](https://gitlab.com/veloren/airshipper/-/releases/permalink/latest/downloads/binaries/linux-client-x86_64.zip)
 
 Or install with cargo:
 
