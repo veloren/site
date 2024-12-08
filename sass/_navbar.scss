@@ -86,6 +86,8 @@ nav {
     align-items: center;
     
     position: absolute;
+    // Workaround for Chrome not taking pointer interactions when the video is displayed below
+    z-index: 1;
     
     top: 4em;
     margin: 0;
