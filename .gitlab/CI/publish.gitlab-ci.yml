@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2021 - 2022 Forest Anderson <forestkzanderson@gmail.com>
 # SPDX-FileCopyrightText: 2021 Vechro
 # SPDX-FileCopyrightText: 2021 Fernando Pastorelli <fernando.n.p.d.moscu@gmail.com>
-# SPDX-FileCopyrightText: 2023 Javier Pérez
+# SPDX-FileCopyrightText: 2023 - 2024 Javier Pérez
 #
 # SPDX-License-Identifier: CC0-1.0
 
@@ -23,6 +23,8 @@ pages:
     paths:
       - public
   script:
-    - apt update && apt install wget -y
+    - apt update && apt install wget brotli -y
     - wget -c https://github.com/getzola/zola/releases/download/v0.19.2/zola-v0.19.2-x86_64-unknown-linux-gnu.tar.gz -O - | tar -xz
     - ./zola build
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec gzip --force --keep {} \;
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec brotli --force --keep {} \;
