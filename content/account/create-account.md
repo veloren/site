@@ -15,7 +15,7 @@ description = "Sign up to play Veloren online!"
     <label>Username<input type="text" minlength="3" maxlength="32" required name="username"></label>
     <label>Password<input type="password" required name="password" onchange="window.fieldRepeatValidity('password', 'Passwords do not match.')"></label>
     <label>Confirm password<input type="password" required name="password_repeat" onchange="window.fieldRepeatValidity('password', 'Passwords do not match.')"></label>
-    <button type="submit">Sign up</button>
+    <button type="submit" class="js-enable" disabled="disabled">Sign up</button>
   </form>
   <a href="/account/change-password">I want to change my password</a>
   <a href="/account/change-username">I want to change my username</a>
