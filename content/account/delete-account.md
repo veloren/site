@@ -19,7 +19,7 @@ title = "Delete a Veloren account"
     </div>
     <label>Username<input type="text" required name="username"></label>
     <label>Password<input type="password" required name="password"></label>
-    <button type="submit" class="button-delete">Delete account</button>
+    <button type="submit" class="button-delete js-enable" disabled="disabled">Delete account</button>
   </form>
   <a id="go-back" href="/account/create-account">Go back</a>
 </div>

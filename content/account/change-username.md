@@ -18,7 +18,7 @@ description = "Change the username of a Veloren account"
     <label>New username<input type="text" required name="new_username" onchange="window.fieldRepeatValidity('new_username', 'Usernames do not match.')"></label>
     <label>Confirmn New username<input type="text" required name="new_username_repeat" onchange="window.fieldRepeatValidity('new_username', 'Usernames do not match.')"></label>
     <label>Password<input type="password" required name="password"></label>
-    <button type="submit" class="button-change">Change Username</button>
+    <button type="submit" class="button-change js-enable" disabled="disabled">Change Username</button>
   </form>
   <a id="go-back" href="/account/create-account">Go back</a>
 </div>

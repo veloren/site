@@ -212,3 +212,5 @@ class RegisterPayload {
       .catch((error) => Alert.error(error));
   }
 }
+
+document.querySelectorAll(".js-enable").forEach(element => element.disabled = false);

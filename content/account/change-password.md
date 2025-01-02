@@ -14,7 +14,7 @@ description = "Change the password of a Veloren account"
     <label>Current password<input type="password" required name="current_password"></label>
     <label>New password<input type="password" required name="new_password" onchange="window.fieldRepeatValidity('new_password', 'Passwords do not match.')"></label>
     <label>Confirm new password<input type="password" required name="new_password_repeat" onchange="window.fieldRepeatValidity('new_password', 'Passwords do not match.')"></label>
-    <button type="submit" class="button-change">Change password</button>
+    <button type="submit" class="button-change js-enable" disabled="disabled">Change password</button>
   </form>
   <p>Please, note that <b>if you forget your password, it will not be possible to recover access to your account.</b></p>
   <p>Make sure to use a <a href="https://imgs.xkcd.com/comics/password_strength.png" target="_blank">secure password</a> and write it down. A collection of privacy-friendly apps to store passwords is available <a href="https://www.privacyguides.org/en/passwords/" target="_blank">here</a>.</p>
