@@ -33,6 +33,14 @@ You can download the nightly and weekly releases of Veloren without using the ga
 
 ## Older versions of Veloren
 
+### 0.17.0
+
+- [Windows (x86_64)](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.17.0/download?job=windows-x86_64)
+- [macOS (x86_64)](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.17.0/download?job=macos-x86_64)
+- [macOS (ARM64)](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.17.0/download?job=macos-aarch64)
+- [Linux (x86_64)](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.17.0/download?job=linux-x86_64)
+- [Linux aarch64](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.17.0/download?job=linux-aarch64)
+
 ### 0.16.0
 
 - [Windows (x86_64)](https://gitlab.com/veloren/veloren/-/jobs/artifacts/v0.16.0/download?job=windows-x86_64)
