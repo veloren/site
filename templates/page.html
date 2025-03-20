@@ -18,6 +18,11 @@
         {% endif %}
         <figure class="inline-image">
           <img src="{{ url }}">
+          {% if page.extra.banner_caption is defined %}
+            <figcaption>
+              <p>{{ page.extra.banner_caption }}</p>
+            </figcaption>
+          {% endif %}
         </figure>
       {% endif %}
       
