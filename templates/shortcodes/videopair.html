@@ -1,0 +1,11 @@
+<figure class="inline-image">
+  <video width="100%" controls>
+    <source src="{{ src }}" type="{% if type %}{{ type }}{% else %}video/mp4{% endif %}">
+    Your browser does not support the video tag.
+    {% if src1 != "" %}
+      <source src="{{ src1 }}" type="{% if type1 %}{{ type1 }}{% else %}video/mp4{% endif %}">
+      Your browser does not support the video tag.
+    {% endif %}
+  </video>
+  {% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
+</figure>
