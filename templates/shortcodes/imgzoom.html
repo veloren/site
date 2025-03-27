@@ -1,0 +1,33 @@
+{% import "macros/transform.html" as transform %}
+
+{#
+  Sanitize the URL first. Discord has two domains for hosted images:
+  - media.discordapp.net, which allows resizing
+  - cdn.discordapp.com, which only hosts full resolution
+#}
+
+{% if src is containing("cdn.discordapp.com") %}
+  {% set src = transform::to_discord_media(url=src) %}
+{% endif %}
+
+{#
+  TODO: If we ever know the aspect ratio of the image at compile-time,
+  we can use .ratio169 to eliminate CLS.
+#}
+
+<figure class="inline-image">
+  <a href="{% if link is defined %}{{link}}{% else %}{{src}}{% endif %}"
+        target="_blank"
+        style="text-align: center;{% if size %} width: {{ size }}%;{% endif %}">
+    <img src="{{ src }}"
+      loading="lazy"
+      {% if alt %}
+        alt="{{ alt }}"
+      {% endif %}>
+  </a>
+  {% if caption %}
+    <figcaption>
+      <p>{{ caption }}</p>
+    </figcaption>
+  {% endif %}
+</figure>

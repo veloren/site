@@ -1,0 +1,16 @@
+<div class="gallery">
+  {% for url in srcs | split(pat="\n") %}
+    {% set src = url | trim %}
+    {% if src != "" %}
+      <a href="{{ src }}"
+        {% if size %}
+          style="width: {{ size }}%;"
+        {% endif %}
+        target="_blank">
+      <img src="{{ src }}"
+        loading="lazy"
+        style="cursor: zoom-in;">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
