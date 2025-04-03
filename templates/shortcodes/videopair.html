@@ -7,5 +7,5 @@
       Your browser does not support the video tag.
     {% endif %}
   </video>
-  {% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
+  {% if caption %}<figcaption{% if nonitalic %} class="nonitalic"{% endif %}><p>{{ caption }}</p></figcaption>{% endif %}
 </figure>

@@ -24,7 +24,7 @@
       alt="{{ alt }}"
     {% endif %}>
   {% if caption %}
-    <figcaption>
+    <figcaption{% if nonitalic %} class="nonitalic"{% endif %}>
       <p>{{ caption }}</p>
     </figcaption>
   {% endif %}

@@ -1,5 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2023 Javier Pérez
+ * SPDX-FileCopyrightText: 2025 horblegorble
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -26,4 +27,17 @@ a.flatpak {
 
 video:focus, a:focus {
     outline: none;
+}
+
+.page-content > h1,
+.page-content > h2,
+.page-content > h3,
+.page-content > h4,
+.page-content > h5,
+.page-content > h6 {
+  padding-top: 1.2rem;
+}
+
+tbody.alternating-rows tr:nth-child(odd){
+  background-color: #2b303b;
 }

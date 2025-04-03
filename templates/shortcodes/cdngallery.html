@@ -1,4 +1,4 @@
-<div class="gallery">
+<figure class="gallery">
   {% for url in srcs | split(pat="\n") %}
     {% set src = url | trim %}
     {% if src != "" %}
@@ -13,4 +13,5 @@
       </a>
     {% endif %}
   {% endfor %}
-</div>
+
+</figure>

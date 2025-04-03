@@ -26,7 +26,9 @@
         </figure>
       {% endif %}
       
-      {{ transform::replace_tags_with_mentions(content=page.content) }}
+      <div class="page-content">
+        {{ transform::replace_tags_with_mentions(content=page.content) }}
+      </div>
     </article>
     {% block support %}{% endblock support %}
   </section>

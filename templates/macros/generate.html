@@ -1,5 +1,6 @@
 <!--
 SPDX-FileCopyrightText: 2021 - 2022 Vechro
+SPDX-FileCopyrightText: 2025 horblegorble
 
 SPDX-License-Identifier: Apache-2.0
 -->
@@ -9,6 +10,9 @@ SPDX-License-Identifier: Apache-2.0
     <span>{{ page.reading_time }} minute read</span>
     {% if page.date %}
       <span class="divider">{{ page.date | date(format="%d %B %Y") }}</span>
+    {% endif %}
+    {% if page.extra.content_from %}
+      <span class="divider">{{ page.extra.content_from }}</span>
     {% endif %}
   </div>
 {%- endmacro length_and_date %}
