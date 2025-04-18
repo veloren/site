@@ -15,9 +15,9 @@
 
   body {
     @media (min-width: (v.$main_width + 1)) {
-        background-image: url(bg_main_dark.jpg);
-        background-color: slategrey;
-      }
+      background-image: url(bg_main_dark.jpg);
+      background-color: slategrey;
+    }
   }
 
   // overrides from _layout.scss
