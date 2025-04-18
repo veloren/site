@@ -23,7 +23,11 @@ body {
   margin: auto;
 
   @media (min-width: v.$main_width) {
-    background: fixed url(bg_main.jpg) center bottom / cover no-repeat;
+    background: fixed center bottom / cover no-repeat;
+    
+    @media (prefers-color-scheme: light) {
+      background-image: url(bg_main.jpg);
+    }
   }
 
   .header-video {
