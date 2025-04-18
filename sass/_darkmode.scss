@@ -13,11 +13,11 @@
 @media (prefers-color-scheme: dark) {
   // note: the navbar is always white on black
 
-  @media (min-width: v.$main_width) {
-    body {
-      background-image: url(bg_main_dark.jpg);
-      background-color: slategrey;
-    }
+  body {
+    @media (min-width: v.$main_width) {
+        background-image: url(bg_main_dark.jpg);
+        background-color: slategrey;
+      }
   }
 
   // overrides from _layout.scss
