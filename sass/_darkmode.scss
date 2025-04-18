@@ -8,13 +8,15 @@
 
 @use 'variables' as v;
 
+$min_width_background: v.$main_width + 1;
+
 // This overrides some site-wide colors for users who prefer a dark theme
 
 @media (prefers-color-scheme: dark) {
   // note: the navbar is always white on black
 
   body {
-    @media (min-width: v.$main_width) {
+    @media (min-width: $min_width_background) {
         background-image: url(bg_main_dark.jpg);
         background-color: slategrey;
       }

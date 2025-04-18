@@ -9,6 +9,8 @@
 
 @use 'variables' as v;
 
+$min_width_background: v.$main_width + 1;
+
 html, body {
   min-height: 100vh;
 }
@@ -22,7 +24,7 @@ body {
   max-width: 100vw;
   margin: auto;
 
-  @media (min-width: v.$main_width) {
+  @media (min-width: $min_width_background) {
     background: fixed center bottom / cover no-repeat;
     
     @media (prefers-color-scheme: light) {
