@@ -29,6 +29,10 @@ body {
   .header-video {
     margin: 0;
     width: 100%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
