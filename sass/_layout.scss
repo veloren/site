@@ -57,7 +57,7 @@ td {
   padding: .25em .5em;
 }
 
-a {
+a:not(:has(img)) {
   color: v.$link-color;
   text-decoration-thickness: 2px;
 
