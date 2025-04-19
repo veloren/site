@@ -23,6 +23,11 @@
     <link href="{{ get_url(path='veloren.css') }}" rel="stylesheet" type="text/css">
 
 
+    {# CSS background images #}
+    <link rel="preload" href="bg_main.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: light)">
+    <link rel="preload" href="bg_main_dark.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: dark)">
+
+
     {# Favicons #}
     <link rel="icon" href="{{ get_url(path='icons/favicon/favicon.ico') }}">
     <link rel="apple-touch-icon" href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}">
@@ -92,7 +97,7 @@
       <div class="navbar-section navbar-logo">
         <a class="navbar-item" href="{{ get_url(path='/') }}">
           {% set logo = resize_image(path='../static/logo.png', width=142, height=40, op='fill') %}
-          <img alt="Veloren" src="{{ logo.url }}" width="142" height="40"/> 
+          <img alt="Veloren" src="{{ logo.url }}" width="142" height="40">
         </a>
 
       </div>

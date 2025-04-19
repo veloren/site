@@ -1,7 +1,7 @@
 /*
  * SPDX-FileCopyrightText: 2020 Christian Authmann <https://gitlab.com/cauthmann>
  * SPDX-FileCopyrightText: 2021 Vechro
- * SPDX-FileCopyrightText: 2023 Javier Pérez
+ * SPDX-FileCopyrightText: 2023, 2025 Javier Pérez
  *
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -14,8 +14,9 @@
   // note: the navbar is always white on black
 
   body {
-    @media (min-width: v.$main_width) {
+    @media (min-width: (v.$main_width + 1)) {
       background-image: url(bg_main_dark.jpg);
+      background-color: slategrey;
     }
   }
 
