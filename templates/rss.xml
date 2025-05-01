@@ -35,7 +35,7 @@
           <guid>{{ page.permalink | escape_xml | safe }}</guid>
           <description>{% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}</description>
           {%- if page.extra.banner -%}
-            {{ generate::enclosure(image_url=page.extra.banner) }}
+            {{ generate::enclosure(image_url=page.extra.banner) }}</enclosure>
           {%- endif -%}
         </item>
         {%- endfor %}
