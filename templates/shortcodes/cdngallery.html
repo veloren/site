@@ -13,5 +13,9 @@
       </a>
     {% endif %}
   {% endfor %}
-
+  {% if caption %}
+    <figcaption class="tight">
+      <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+    </figcaption>
+  {% endif %}
 </figure>

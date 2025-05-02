@@ -7,5 +7,9 @@
       Your browser does not support the video tag.
     {% endif %}
   </video>
-  {% if caption %}<figcaption{% if nonitalic %} class="nonitalic"{% endif %}><p>{{ caption }}</p></figcaption>{% endif %}
+  {% if caption %}
+  <figcaption>
+    <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+  </figcaption>
+  {% endif %}
 </figure>

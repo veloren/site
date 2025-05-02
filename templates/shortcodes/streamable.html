@@ -92,6 +92,8 @@
   allowfullscreen>
   </iframe>
   {% if caption %}
-    <figcaption>{{ caption }}</figcaption>
+  <figcaption>
+    <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+  </figcaption>
   {% endif %}
 </figure>
