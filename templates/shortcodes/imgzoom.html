@@ -12,13 +12,13 @@
 
 {#
   TODO: If we ever know the aspect ratio of the image at compile-time,
-  we can use .ratio169 to eliminate CLS.
+  we can use .ratio169 to eliminate Cumulative Layout Shift (CLS).
 #}
 
 <figure class="inline-image">
   <a href="{% if link is defined %}{{link}}{% else %}{{src}}{% endif %}"
-        target="_blank"
-        style="text-align: center;{% if size %} width: {{ size }}%;{% endif %}">
+     target="_blank"
+     style="text-align: center;{% if size %} width: {{ size }}%;{% endif %}{% if click %} cursor: pointer;{% endif %}">
     <img src="{{ src }}"
       loading="lazy"
       {% if alt %}
@@ -27,7 +27,7 @@
   </a>
   {% if caption %}
     <figcaption>
-      <p>{{ caption }}</p>
+      <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
     </figcaption>
   {% endif %}
 </figure>

@@ -12,7 +12,7 @@
 
 {#
   TODO: If we ever know the aspect ratio of the image at compile-time,
-  we can use .ratio169 to eliminate CLS.
+  we can use .ratio169 to eliminate Cumulative Layout Shift (CLS).
 #}
 <figure class="inline-image">
   <img src="{{ src }}"
@@ -24,8 +24,8 @@
       alt="{{ alt }}"
     {% endif %}>
   {% if caption %}
-    <figcaption{% if nonitalic %} class="nonitalic"{% endif %}>
-      <p>{{ caption }}</p>
+    <figcaption>
+      <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
     </figcaption>
   {% endif %}
 </figure>

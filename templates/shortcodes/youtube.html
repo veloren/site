@@ -7,5 +7,9 @@
     webkitallowfullscreen mozallowfullscreen allowfullscreen>
     </iframe>
   </div>
-  {% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
+  {% if caption %}
+  <figcaption>
+    <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+  </figcaption>
+  {% endif %}
 </figure>

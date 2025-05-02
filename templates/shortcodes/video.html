@@ -3,5 +3,9 @@
     <source src="{{ src }}" type="{% if type %}{{ type }}{% else %}video/mp4{% endif %}">
     Your browser does not support the video tag.
   </video>
-  {% if caption %}<figcaption><p>{{ caption }}</p></figcaption>{% endif %}
+  {% if caption %}
+  <figcaption>
+    <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+  </figcaption>
+  {% endif %}
 </figure>

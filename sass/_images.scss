@@ -27,22 +27,20 @@
     
     border-radius: .25em;
   }
+}
 
-  figcaption {
-    padding-top: 0.5em;
+figcaption {
+  padding-top: 0.5em;
+  
+  color: #777777;
 
-    font-style: italic;
-    
-    color: grey;
-
-    p {
-      text-align: center;
-    }
+  p {
+    text-align: center;
   }
+}
 
-  figcaption.nonitalic {
-    font-style: normal;
-  }
+figcaption.tight {
+  padding-top: 0em;
 }
 
 .ratio169 {
