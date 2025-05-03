@@ -73,8 +73,8 @@ SPDX-License-Identifier: Apache-2.0
 #}
 {% macro enclosure(image_url) -%}
   {% if image_url is matching(".+\..+") %}
-    <enclosure url="{{ image_url }}" type="image/{{ image_url | split(pat='.') | last }}">
+    <enclosure url="{{ image_url }}" type="image/{{ image_url | split(pat='.') | last }}"></enclosure>
   {% else %}
-    <enclosure url="{{ image_url }}">
+    <enclosure url="{{ image_url }}"></enclosure>
   {% endif %}
 {%- endmacro enclosure %}
