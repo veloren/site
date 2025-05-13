@@ -2,6 +2,12 @@
 #
 # SPDX-License-Identifier: CC0-1.0
 
+# Domain-level redirects.
+https://www.veloren.net/* https://veloren.net/:splat 301
+http://www.veloren.net/* https://veloren.net/:splat 301
+
+
+# From this point, all requests should be for the "veloren.net" domain.
 # Redirects for old blog URLs.
 /gsoc-contribution-guide/ /blog/gsoc-contribution-guide/ 301
 /birthday-5y/ /blog/birthday-5y/ 301
@@ -13,11 +19,8 @@
 /devblog* /blog/devblog:splat 301
 /release* /blog/release:splat 301
 
+
 # Redirects for other old URLs.
 /account/ /account/create-account/ 301
 /nightly/ /download-other/ 301
 /weekly/ /download-other/ 301
-
-# Domain-level redirects for SEO.
-https://www.veloren.net/* https://veloren.net/:splat 301
-http://www.veloren.net/* https://veloren.net/:splat 301
