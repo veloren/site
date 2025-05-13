@@ -3,15 +3,15 @@
 # SPDX-License-Identifier: CC0-1.0
 
 # Redirects for old blog URLs.
-/gsoc-contribution-guide/ https://veloren.net/blog/gsoc-contribution-guide/ 301
-/birthday-5y/ https://veloren.net/blog/birthday-5y/ 301
-/hacktoberfest-2021/ https://veloren.net/blog/hacktoberfest-2021/ 301
-/holiday-2021-christmas/ https://veloren.net/blog/holiday-2021-christmas/ 301
-/query-serverbrowser-announce/ https://veloren.net/blog/query-serverbrowser-announce/ 301
-/ukraine/ https://veloren.net/blog/ukraine/ 301
-/veloren-direction/ https://veloren.net/blog/veloren-direction/ 301
-/devblog* https://veloren.net/blog/devblog:splat 301
-/release* https://veloren.net/blog/release:splat 301
+/gsoc-contribution-guide/ /blog/gsoc-contribution-guide/ 301
+/birthday-5y/ /blog/birthday-5y/ 301
+/hacktoberfest-2021/ /blog/hacktoberfest-2021/ 301
+/holiday-2021-christmas/ /blog/holiday-2021-christmas/ 301
+/query-serverbrowser-announce/ /blog/query-serverbrowser-announce/ 301
+/ukraine/ /blog/ukraine/ 301
+/veloren-direction/ /blog/veloren-direction/ 301
+/devblog* /blog/devblog:splat 301
+/release* /blog/release:splat 301
 
 
 # Domain-level redirects for SEO.
