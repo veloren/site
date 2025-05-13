@@ -1,7 +1,6 @@
 +++
 title = "GSoC 2022 Contribution Guide"
 description = "How to apply to contribute to Veloren"
-aliases = ["gsoc-contribution-guide"]
 authors = ["Justin Shipsey"]
 
 [taxonomies]

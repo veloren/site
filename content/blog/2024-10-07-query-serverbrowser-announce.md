@@ -1,7 +1,6 @@
 +++
 title = "Preparing to release server queries in Airshipper"
 description = "Read this if you own a server on the serverbrowser list!"
-aliases = ["query-server-preparations"]
 authors = ["Crab"]
 
 [taxonomies]

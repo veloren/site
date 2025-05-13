@@ -1,7 +1,6 @@
 +++
 title = "Hacktoberfest 2021"
 description = "Details about Veloren participating in Hacktoberfest 2021"
-aliases = ["hacktoberfest-2021"]
 authors = ["AngelOnFira"]
 
 [taxonomies]

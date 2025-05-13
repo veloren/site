@@ -1,7 +1,6 @@
 +++
 title = "Veloren Christmas Week"
 description = "Veloren Christmas Week"
-aliases = ["holiday-2021-christmas"]
 authors = ["AngelOnFira"]
 
 [taxonomies]
