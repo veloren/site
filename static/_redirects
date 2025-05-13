@@ -13,6 +13,10 @@
 /devblog* /blog/devblog:splat 301
 /release* /blog/release:splat 301
 
+# Redirects for other old URLs.
+/account/ /account/create-account/ 301
+/nightly/ /download-other/ 301
+/weekly/ /download-other/ 301
 
 # Domain-level redirects for SEO.
 https://www.veloren.net/* https://veloren.net/:splat 301

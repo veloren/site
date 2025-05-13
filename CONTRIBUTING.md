@@ -128,11 +128,6 @@ description = "Clouds, CI, and Game Design WG"
 # Use the YYYY-MM-DD format.
 updated = 2023-09-10
 
-# Use aliases if you are moving content but want to redirect previous URLs to the
-# current one. This takes an array of paths, not URLs.
-# This variable should not be used for new blog posts.
-aliases = ["devblog-42"]
-
 # A list of page authors. If a site feed is enabled, the first author (if any)
 # will be used as the page's author in the default feed template.
 authors = ["AngelOnFira"]
