@@ -1,7 +1,6 @@
 +++
 title = ""
 description = ""
-aliases = ["devblog-"]
 authors = []
 
 [taxonomies]

@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2025 Javier Pérez
+#
+# SPDX-License-Identifier: CC0-1.0
+
+# Domain-level redirects.
+https://www.veloren.net/* https://veloren.net/:splat 301
+http://www.veloren.net/* https://veloren.net/:splat 301
+
+
+# From this point, all requests should be for the "veloren.net" domain.
+# Redirects for old blog URLs.
+/gsoc-contribution-guide/ /blog/gsoc-contribution-guide/ 301
+/birthday-5y/ /blog/birthday-5y/ 301
+/hacktoberfest-2021/ /blog/hacktoberfest-2021/ 301
+/holiday-2021-christmas/ /blog/holiday-2021-christmas/ 301
+/query-serverbrowser-announce/ /blog/query-serverbrowser-announce/ 301
+/ukraine/ /blog/ukraine/ 301
+/veloren-direction/ /blog/veloren-direction/ 301
+/devblog* /blog/devblog:splat 301
+/release* /blog/release:splat 301
+
+
+# Redirects for other old URLs.
+/account/ /account/create-account/ 301
+/nightly/ /download-other/ 301
+/weekly/ /download-other/ 301

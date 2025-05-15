@@ -1,6 +1,5 @@
 +++
 title = "Other downloads"
-aliases = ["nightly", "weekly"]
 +++
 
 ## Nightly and weekly releases

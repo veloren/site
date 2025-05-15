@@ -1,7 +1,6 @@
 +++
 title = "[April Fools] Need for Voxels: Veloren Cart"
 description = "Veloren's Direction"
-aliases = ["veloren-direction"]
 authors = ["AngelOnFira"]
 
 [taxonomies]
