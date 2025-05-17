@@ -15,7 +15,7 @@
 
   body {
     @media (min-width: (v.$main_width + 1)) {
-      background-image: url(bg_main_dark.jpg);
+      background-image: url(/images/backgrounds/bg_main_dark.jpg);
       background-color: slategrey;
     }
   }

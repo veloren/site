@@ -12,7 +12,7 @@ description = "Change the username of a Veloren account"
   <form onsubmit="window.postToBackendChangeUsername(event)">
     <div id="alertbox" class="alertbox">
       <span id="alerttext" class="alerttext"></span>
-      <button type="button" class="closebtn" onclick="window.closeAlert()">{{ icon(path='static/icons/cross.svg') }}</button>
+      <button type="button" class="closebtn" onclick="window.closeAlert()">{{ icon(path='static/images/icons/cross.svg') }}</button>
     </div>
     <label>Current Username<input type="text" required name="old_username"></label>
     <label>New username<input type="text" required name="new_username" onchange="window.fieldRepeatValidity('new_username', 'Usernames do not match.')"></label>
