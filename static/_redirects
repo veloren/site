@@ -7,6 +7,9 @@ https://www.veloren.net/* https://veloren.net/:splat 301
 
 
 # From this point, all requests should be for the "veloren.net" domain.
+/donate/ https://opencollective.com/veloren/donate?interval=month&amount=5 301
+/discord/ https://discord.gg/veloren-community-449602562165833758 301
+/zulip/ https://veloren.zulipchat.com 301
 /account/ /account/create-account/ 301
 /nightly/ /download-other/ 301
 /weekly/ /download-other/ 301
