@@ -15,4 +15,4 @@ title = "More video material"
 
 [Code reading club](https://www.youtube.com/watch?v=DpXwYEe_LWo&list=PLMI4vW_LISAkB0AzfIOvS-W504x3vrXvw)
 
-[Official YouTube page](https://www.youtube.com/@Veloren)
+[Official YouTube page](https://www.youtube.com/veloren)
