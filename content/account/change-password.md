@@ -8,7 +8,7 @@ description = "Change the password of a Veloren account"
   <form onsubmit="window.postToBackendChangePassword(event)">
     <div id="alertbox" class="alertbox">
       <span id="alerttext" class="alerttext"></span>
-      <button type="button" class="closebtn" onclick="window.closeAlert()">{{ icon(path='static/icons/cross.svg') }}</button>
+      <button type="button" class="closebtn" onclick="window.closeAlert()">{{ icon(path='static/images/icons/cross.svg') }}</button>
     </div>
     <label>Username<input type="text" required name="username"></label>
     <label>Current password<input type="password" required name="current_password"></label>

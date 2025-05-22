@@ -15,7 +15,7 @@ title = "Delete a Veloren account"
   <form onsubmit="window.postToBackendDeleteAccount(event)">
     <div id="alertbox" class="alertbox">
       <span id="alerttext" class="alerttext"></span>
-      <button type="button" class="closebtn" onclick="window.closeAlert();">{{ icon(path='static/icons/cross.svg') }}</button>
+      <button type="button" class="closebtn" onclick="window.closeAlert();">{{ icon(path='static/images/icons/cross.svg') }}</button>
     </div>
     <label>Username<input type="text" required name="username"></label>
     <label>Password<input type="password" required name="password"></label>

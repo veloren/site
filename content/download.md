@@ -5,7 +5,7 @@ description = "Download the game for free!"
 
 ## Airshipper, the official game launcher
 
-![Airshipper](/airshipper.png)
+![Airshipper](/images/download/airshipper.webp)
 
 Airshipper brings you the most optimal experience to download and keep the game up-to-date.
 It is available for Windows, macOS and Linux.

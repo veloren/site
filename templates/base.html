@@ -24,14 +24,18 @@
 
 
     {# CSS background images #}
-    <link rel="preload" href="bg_main.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: light)">
-    <link rel="preload" href="bg_main_dark.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: dark)">
+    <link rel="preload" href="/images/backgrounds/bg_main.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: light)">
+    <link rel="preload" href="/images/backgrounds/bg_main_dark.jpg" as="image" type="image/jpeg" media="(min-device-width: 961px) and (prefers-color-scheme: dark)">
 
 
     {# Favicons #}
-    <link rel="icon" href="{{ get_url(path='icons/favicon/favicon.ico') }}">
-    <link rel="apple-touch-icon" href="{{ get_url(path='icons/favicon/apple-touch-icon.png') }}">
-    <link rel="manifest" href="{{ get_url(path='icons/favicon/manifest.json') }}">
+    <link rel="icon" type="image/png" href="/images/icons/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/images/icons/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/images/icons/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Veloren">
+    <link rel="manifest" href="/images/icons/favicon/site.webmanifest">
+
 
     {# Feed #}
     <link rel="alternate" type="application/rss+xml" title="Veloren Blog" href="/rss.xml">
@@ -60,7 +64,7 @@
       {% endif %}
       <meta property="og:image" content="{{ url }}">
     {% else %}
-      <meta property="og:image" content="{{ get_url(path='Logo_Square.png') }}">
+      <meta property="og:image" content="{{ get_url(path='/images/Logo_Square.png') }}">
     {% endif %}
 
     {% if page.permalink is defined %}
@@ -96,20 +100,20 @@
     <nav>
       <div class="navbar-section navbar-logo">
         <a class="navbar-item" href="{{ get_url(path='/') }}">
-          {% set logo = resize_image(path='../static/logo.png', width=142, height=40, op='fill') %}
+          {% set logo = resize_image(path='/static/images/logo.png', width=142, height=40, op='fill') %}
           <img alt="Veloren" src="{{ logo.url }}" width="142" height="40">
         </a>
 
       </div>
       <div class="navbar-section navbar-content" id="navbar-links">
         <a href="{{ get_url(path='@/download.md') }}">
-          {{ icon::load(path='static/icons/download.svg') }}<span>Download</span>
+          {{ icon::load(path='static/images/icons/download.svg') }}<span>Download</span>
         </a>
         <a href="{{ get_url(path='@/account/create-account.md') }}">
-          {{ icon::load(path='static/icons/account.svg') }}<span>Account</span>
+          {{ icon::load(path='static/images/icons/account.svg') }}<span>Account</span>
         </a>
         <a href="{{ get_url(path='@/joinus.md') }}">
-          {{ icon::load(path='static/icons/join-us.svg') }}<span>Join us</span>
+          {{ icon::load(path='static/images/icons/join-us.svg') }}<span>Join us</span>
         </a>
         <a href="https://book.veloren.net/" target="_blank" rel="noreferrer">
           {{ icon::load(path='static/icons/manual.svg') }}<span>Manual</span>
@@ -119,7 +123,7 @@
         </a>
       </div>
       <div class="navbar-section navbar-hamburger" onclick="toggleMobileMenu()">
-        {{ icon::load(path='static/icons/menu.svg') }}
+        {{ icon::load(path='static/images/icons/menu.svg') }}
       </div>
     </nav>
     {% block header %}{% endblock header %}
