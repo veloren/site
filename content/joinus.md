@@ -6,8 +6,8 @@ Veloren is an open-source, community-driven project! Join us in making the game 
 
 ## Community discussion
 
-* [Zulip — Talk to the community and developers](/zulip/)
 * [Discord — Talk to the community and developers](/discord/)
+* [Zulip — Talk to the community and developers](/zulip/)
 
 ## News
 
