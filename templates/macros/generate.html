@@ -19,19 +19,15 @@ SPDX-License-Identifier: Apache-2.0
 
 {% macro post_preview(page) -%}
   <section class="post-overview">
+    {% set curated_link = page.permalink | trim_end_matches(pat='/') %}
     {% if page.extra.banner is defined %}
-      {# we want to link to media.discordapp.net for resizing #}
-      {% set url = page.extra.banner %}
-      {% if url is containing("cdn.discordapp.com") %}
-        {% set url = transform::to_discord_media(url=url) %}
-      {% endif %}
-      <a href="{{ page.permalink }}" class="thumbnail">
-        <img src="{{ url }}?width=384&height=216" width="384" height="216">
+      <a href="{{ curated_link }}" class="thumbnail">
+        <img src="{{ page.extra.banner }}?width=384&height=216" width="384" height="216">
       </a>
     {% endif %}
     <div class="overview">
       <h3 class="title">
-        <a class="header-link" href="{{ page.permalink }}">
+        <a class="header-link" href="{{ curated_link }}">
           {{- page.title -}}
         </a>
       </h3>

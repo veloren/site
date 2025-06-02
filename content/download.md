@@ -95,4 +95,4 @@ sudo dnf install airshipper
 More information and instructions for other RPM-based distributions
 can be found on [the Copr page](https://copr.fedorainfracloud.org/coprs/frinksy/airshipper/).
 
-[Older versions and other downloads](@/download-other.md)
+[Older versions and other downloads](/download-other)
