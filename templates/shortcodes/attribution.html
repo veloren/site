@@ -40,14 +40,14 @@
       {% endif %}
     {% endfor %}
 
-    <li><strong>{{ work.name }}</strong> by {% if author_url %}<a href="{{ author_url }}" rel="noopener noreferrer" target="_blank">{{ work.authors }}</a>{% else %}{{ work.authors }}{% endif %}</li>
+    <li><strong>{{ work.name }}</strong> by {% if author_url %}<a href="{{ author_url }}" rel="noreferrer" target="_blank">{{ work.authors }}</a>{% else %}{{ work.authors }}{% endif %}</li>
     
     {% if work.license %}
       {% for license in licenses %}
         {% if license['spdx-id'] == work.license %}
           <ul>
             <li>
-              Licensed under the <a href="{{ license['url'] }}" rel="noopener noreferrer" target="_blank">{{ license['name'] }}</a>
+              Licensed under the <a href="{{ license['url'] }}" rel="noreferrer" target="_blank">{{ license['name'] }}</a>
             </li>
           </ul>
           {% break %}

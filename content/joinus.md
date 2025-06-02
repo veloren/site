@@ -4,26 +4,26 @@ title = "Join the Veloren community!"
 
 Veloren is an open-source, community-driven project! Join us in making the game the best it can be.
 
-## News
-
-* [This Week In Veloren — Weekly dev blog](@/blog/_index.md)
-* [Mastodon — Keep up to date with the project](https://floss.social/@veloren)
-
 ## Community discussion
 
-* [Discord — Talk to the community and developers](https://discord.gg/veloren-community-449602562165833758)
-* [Matrix — Talk to the community and developers](https://matrix.to/#/#veloren-space:fachschaften.org)
+* [Discord — Talk to the community and developers](/discord)
+* [Zulip — Talk to the community and developers](/zulip)
+
+## News
+
+* [This Week In Veloren — Weekly dev blog](/blog)
+* [Mastodon — Keep up to date with the project](https://floss.social/@veloren)
 
 ## Videos and live streaming
 
-* [YouTube — Watch videos about development news](https://youtube.com/@Veloren) | [YouTube RSS feed](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw)
-* [Twitch — Core development channel](https://www.twitch.tv/veloren_dev) | [Veloren streamers live on Twitch](https://www.twitch.tv/directory/game/Veloren)
-* [More videos about Veloren](@/videos.md)
+* [YouTube — Watch videos about development news](https://www.youtube.com/veloren) | [YouTube RSS feed](https://www.youtube.com/feeds/videos.xml?channel_id=UCmRjlnKnSRRihWPPNasl_Qw)
+* [Twitch — Core development channel](https://www.twitch.tv/veloren_dev) | [Veloren streamers live on Twitch](https://www.twitch.tv/directory/category/veloren)
+* [More videos about Veloren](/videos)
 
 ## Information resources
 
-* [The wiki — Contribute to or read articles about playing the game](https://wiki.veloren.net/)
-* [The book — A technical manual for players and developers](https://book.veloren.net/)
+* [The wiki — Contribute to or read articles about playing the game](https://wiki.veloren.net)
+* [The book — A technical manual for players and developers](https://book.veloren.net)
 
 ## Source code
 

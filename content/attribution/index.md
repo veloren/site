@@ -14,4 +14,4 @@ This website was made with the help of other open source projects:
 - [Inter](https://rsms.me/inter/) font, licensed under the [OFL](https://github.com/rsms/inter/blob/master/LICENSE.txt).
 - [Open Sans](https://fonts.google.com/specimen/Open+Sans) font, licensed under the [OFL](https://scripts.sil.org/cms/scripts/page.php?item_id=OFL_web).
 
-[Music attribution](@/attribution/music/index.md)
+[Music attribution](/attribution/music)

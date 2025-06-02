@@ -1,14 +1,12 @@
-<!--
-SPDX-FileCopyrightText: 2018 Fletcher Haynes
-SPDX-FileCopyrightText: 2021 Marcel Märtens
-SPDX-FileCopyrightText: 2023 Javier Pérez
++++
+title = "Code of Conduct"
++++
 
-SPDX-License-Identifier: Apache-2.0
--->
+**Contact channels**:
 
-# The Veloren Code of Conduct
-
-**Contact**: `@Admin` role on Discord or <info@veloren.net>.
+1. Ping the `@mod` group on Zulip.
+2. Ping the `@Community Moderator` role on Discord.
+3. Send a message to our email address: <info@veloren.net>.
 
 ## Conduct
 
@@ -78,4 +76,4 @@ Veloren; and any other social media platforms related to Veloren.
 This Code of Conduct is based on the Amethyst Code of Conduct, available
 [here](https://github.com/amethyst/amethyst/blob/master/CODE_OF_CONDUCT.md)
 which is based on the Rust Code of Conduct, available
-[here](https://www.rust-lang.org/conduct.html).
+[here](https://www.rust-lang.org/policies/code-of-conduct).
