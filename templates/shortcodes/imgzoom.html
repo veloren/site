@@ -13,21 +13,24 @@
 {#
   TODO: If we ever know the aspect ratio of the image at compile-time,
   we can use .ratio169 to eliminate Cumulative Layout Shift (CLS).
+
+  Note by horblegorble: this need would seem to be fulfilled by providing width and height attribute values
 #}
 
 <figure class="inline-image">
   <a href="{% if link is defined %}{{link}}{% else %}{{src}}{% endif %}"
-     target="_blank"
-     style="text-align: center;{% if size %} width: {{ size }}%;{% endif %}{% if click %} cursor: pointer;{% endif %}">
-    <img src="{{ src }}"
-      loading="lazy"
-      {% if alt %}
-        alt="{{ alt }}"
-      {% endif %}>
+  target="_blank"
+  style="text-align: center;{% if size %} width: {{ size }}%;{% endif %}{% if click %} cursor: pointer;{% endif %}">
+    <img loading="lazy"
+    {% if width %}width={{ width }}{% endif %}
+    {% if height %}height={{ height }}{% endif %}
+    {% if alt %}alt="{{ alt }}"{% endif %}
+    {% if priority %}fetchpriority="{{ priority }}"{% endif %}
+    src="{{ src }}">
   </a>
   {% if caption %}
     <figcaption>
-      <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{{ caption }}{% else %}<i>{{ caption }}</i>{% endif %}</p>
+      <p>{% if emoji %}{{ emoji }} {% endif %}{% if nonitalic %}{% if strike %}<s>{{ strike }}</s>{% endif %}{{ caption }}{% else %}<i>{% if strike %}<s>{{ strike }}</s>{% endif %}{{ caption }}</i>{% endif %}</p>
     </figcaption>
   {% endif %}
 </figure>

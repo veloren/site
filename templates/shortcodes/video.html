@@ -1,5 +1,9 @@
 <figure class="inline-image">
-  <video width="100%" controls>
+  <video controls
+  {% if width %}width={{ width }}{% endif %}
+  {% if height %}height={{ height }}{% endif %}
+  {% if alt %}aria-label="{{ alt }}"{% endif %}
+  {% if poster %}poster="{{ poster }}"{% endif %}>
     <source src="{{ src }}" type="{% if type %}{{ type }}{% else %}video/mp4{% endif %}">
     Your browser does not support the video tag.
   </video>
