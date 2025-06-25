@@ -14,5 +14,5 @@ If you are interested in writing and contributing to the development blog, refer
 
 ## Licensing
 
-This repository seeks compliance with version 3.0 of the
-REUSE specification.
+This repository seeks compliance with version 3.0 of the REUSE specification.
+The `LICENSE` file is NOT represent for all individual LICENSES, but its a requirement by gitlab to give the repo a single "main"-LICENSE, and its the most common one in this repo.
